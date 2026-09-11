@@ -1,0 +1,5048 @@
+{
+  "nodes": {
+    "site_xcqfx3ldie6e0lfq": {
+      "object": "node",
+      "id": "site_xcqfx3ldie6e0lfq",
+      "type": "site",
+      "parentId": null,
+      "visible": true,
+      "metadata": {},
+      "polygon": {
+        "type": "polygon",
+        "points": [
+          [
+            -15,
+            -15
+          ],
+          [
+            20.163105010986328,
+            -14.825708389282227
+          ],
+          [
+            20.124122619628906,
+            0.7422061562538147
+          ],
+          [
+            19.73460578918457,
+            15.689006805419922
+          ],
+          [
+            -15,
+            15
+          ]
+        ]
+      },
+      "children": [
+        "building_gzbrplsp2443oiqt"
+      ]
+    },
+    "building_gzbrplsp2443oiqt": {
+      "object": "node",
+      "id": "building_gzbrplsp2443oiqt",
+      "type": "building",
+      "parentId": "site_xcqfx3ldie6e0lfq",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "level_ytncss7hqafwphlf",
+        "level_vuis3trpnb8fbtql"
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "level_ytncss7hqafwphlf": {
+      "object": "node",
+      "id": "level_ytncss7hqafwphlf",
+      "type": "level",
+      "parentId": "building_gzbrplsp2443oiqt",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "wall_5dh0mmwncgea7toa",
+        "wall_6kr84fh5bo1o40v0",
+        "wall_xu0956t2s2a9vy7e",
+        "wall_zl9a4kpbcno5bpet",
+        "wall_fw8w01jq7o649wkp",
+        "wall_artjok5c0g0s4orl",
+        "wall_hdqxsgto0fqjxl2z",
+        "wall_miptmv55wya4jitz",
+        "wall_1uz3tefepftn9u3n",
+        "slab_ml0yinv0445zy6c4",
+        "ceiling_0kifjhpi9gpo4kaa",
+        "wall_2h4q4v0x568q7nw9",
+        "wall_fxcreud0x3ab96s3",
+        "wall_ofp9tiiqyxezjl65",
+        "wall_uxuikuwg8pqokoi9",
+        "wall_n6neuozj4yz8khtz",
+        "wall_ve2tnrjrjlenn9z8",
+        "wall_2r987d72wpmr9ia6",
+        "wall_wb0qhdsa1ttphomw",
+        "wall_epq1c0sezvs7n83y",
+        "wall_vu6gexc6vrxki44h",
+        "wall_rdq8y4fzcv74e3rj",
+        "wall_3vylv7i7g8ks0j59",
+        "zone_gw8pvsu7dkq7flbj",
+        "zone_6oa0bgh6pk3atuz2",
+        "zone_8bofs81kryv0wqdo",
+        "zone_sl0luhtskwpmbyed",
+        "zone_l8gcc6ykp9pu5dnj",
+        "zone_prvpjabdjtmos2xx",
+        "zone_6y2ndude8gc4jfwg",
+        "zone_dsw3aased9qk8jec",
+        "stair_j3239g1jh0h3h3kt",
+        "stair_m08oyqjz2ul6f323",
+        "column_c1_layout",
+        "column_c2_layout",
+        "column_c3_layout",
+        "column_c4_layout",
+        "column_c5_layout",
+        "column_c6_layout",
+        "column_c7_layout",
+        "column_c8_layout",
+        "column_c9_layout",
+        "column_c10_layout",
+        "column_c11_layout",
+        "column_c12_layout",
+        "column_c13_layout",
+        "column_c14_layout",
+        "column_c15_layout",
+        "column_p1_layout",
+        "column_p2_layout",
+        "column_p3_layout",
+        "column_p4_layout"
+      ],
+      "level": 0,
+      "baseElevation": 0.5,
+      "height": 2.5
+    },
+    "wall_5dh0mmwncgea7toa": {
+      "object": "node",
+      "id": "wall_5dh0mmwncgea7toa",
+      "type": "wall",
+      "name": "บ้าน Wall 1",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "exterior",
+        "storyShell": true
+      },
+      "children": [
+        "window_kvyeycp9yqhipobu",
+        "window_ydv8zsi12a9i57oh",
+        "window_yz066zj3zg1e07r2",
+        "window_qinbhwcndk0ge5s8",
+        "window_fkcgv43dnzoa73tl",
+        "window_h64feo6zvzb80665",
+        "window_71miziafmc4855cy",
+        "window_lyrijengw7pt234w"
+      ],
+      "thickness": 0.12,
+      "height": 3,
+      "start": [
+        0,
+        0
+      ],
+      "end": [
+        11,
+        0
+      ],
+      "frontSide": "interior",
+      "backSide": "exterior"
+    },
+    "wall_6kr84fh5bo1o40v0": {
+      "object": "node",
+      "id": "wall_6kr84fh5bo1o40v0",
+      "type": "wall",
+      "name": "บ้าน Wall 2",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "exterior",
+        "storyShell": true
+      },
+      "children": [
+        "window_41c9dxhk04hm1fmy"
+      ],
+      "thickness": 0.12,
+      "height": 3,
+      "start": [
+        11,
+        0
+      ],
+      "end": [
+        11,
+        5
+      ],
+      "frontSide": "interior",
+      "backSide": "exterior"
+    },
+    "wall_xu0956t2s2a9vy7e": {
+      "object": "node",
+      "id": "wall_xu0956t2s2a9vy7e",
+      "type": "wall",
+      "name": "บ้าน Wall 3",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "exterior",
+        "storyShell": true
+      },
+      "children": [
+        "door_ade3baoke3xnd34x"
+      ],
+      "thickness": 0.12,
+      "height": 3,
+      "start": [
+        11,
+        5
+      ],
+      "end": [
+        12.79,
+        5
+      ],
+      "frontSide": "interior",
+      "backSide": "exterior"
+    },
+    "wall_zl9a4kpbcno5bpet": {
+      "object": "node",
+      "id": "wall_zl9a4kpbcno5bpet",
+      "type": "wall",
+      "name": "บ้าน Wall 4",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "exterior",
+        "storyShell": true
+      },
+      "children": [
+        "window_t8ksge8cbfdnxkd1",
+        "window_qsv6r0m40cfybtxy"
+      ],
+      "thickness": 0.12,
+      "height": 3,
+      "start": [
+        12.79,
+        5
+      ],
+      "end": [
+        12.79,
+        9.38
+      ],
+      "frontSide": "interior",
+      "backSide": "exterior"
+    },
+    "wall_fw8w01jq7o649wkp": {
+      "object": "node",
+      "id": "wall_fw8w01jq7o649wkp",
+      "type": "wall",
+      "name": "บ้าน Wall 5",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "exterior",
+        "storyShell": true
+      },
+      "children": [
+        "window_8vqprtxdnoj15iun"
+      ],
+      "thickness": 0.12,
+      "height": 3,
+      "start": [
+        12.79,
+        9.38
+      ],
+      "end": [
+        11,
+        9.38
+      ],
+      "frontSide": "interior",
+      "backSide": "exterior"
+    },
+    "wall_artjok5c0g0s4orl": {
+      "object": "node",
+      "id": "wall_artjok5c0g0s4orl",
+      "type": "wall",
+      "name": "บ้าน Wall 6",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "exterior",
+        "storyShell": true
+      },
+      "children": [
+        "window_i9rojivie4p2ypo3"
+      ],
+      "thickness": 0.12,
+      "height": 3,
+      "start": [
+        11,
+        9.38
+      ],
+      "end": [
+        11,
+        12.88
+      ],
+      "frontSide": "interior",
+      "backSide": "exterior"
+    },
+    "wall_hdqxsgto0fqjxl2z": {
+      "object": "node",
+      "id": "wall_hdqxsgto0fqjxl2z",
+      "type": "wall",
+      "name": "บ้าน Wall 7",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "exterior",
+        "storyShell": true
+      },
+      "children": [
+        "window_n0hx9tzz4krac6fa",
+        "window_sgpy37kec4uj4t3b"
+      ],
+      "thickness": 0.12,
+      "height": 3,
+      "start": [
+        11,
+        12.88
+      ],
+      "end": [
+        5.5,
+        12.88
+      ],
+      "frontSide": "interior",
+      "backSide": "exterior"
+    },
+    "wall_miptmv55wya4jitz": {
+      "object": "node",
+      "id": "wall_miptmv55wya4jitz",
+      "type": "wall",
+      "name": "บ้าน Wall 9",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "exterior",
+        "storyShell": true
+      },
+      "children": [
+        "window_aafaqoeo7798gd4p"
+      ],
+      "thickness": 0.12,
+      "height": 3,
+      "start": [
+        2.5,
+        5
+      ],
+      "end": [
+        0,
+        5
+      ],
+      "frontSide": "interior",
+      "backSide": "exterior"
+    },
+    "wall_1uz3tefepftn9u3n": {
+      "object": "node",
+      "id": "wall_1uz3tefepftn9u3n",
+      "type": "wall",
+      "name": "บ้าน Wall 10",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "exterior",
+        "storyShell": true
+      },
+      "children": [
+        "window_0pmya5ei9vxpbhb9"
+      ],
+      "thickness": 0.12,
+      "height": 3,
+      "start": [
+        0,
+        5
+      ],
+      "end": [
+        0,
+        0
+      ],
+      "frontSide": "interior",
+      "backSide": "exterior"
+    },
+    "slab_ml0yinv0445zy6c4": {
+      "object": "node",
+      "id": "slab_ml0yinv0445zy6c4",
+      "type": "slab",
+      "name": "บ้าน Slab",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "story-slab"
+      },
+      "polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          12.79,
+          5
+        ],
+        [
+          12.79,
+          9.38
+        ],
+        [
+          11,
+          9.38
+        ],
+        [
+          11,
+          12.88
+        ],
+        [
+          2.5,
+          12.88
+        ],
+        [
+          2.5,
+          5
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "holes": [],
+      "holeMetadata": [],
+      "elevation": 0,
+      "thickness": 0.5,
+      "recessed": false,
+      "autoFromWalls": false
+    },
+    "ceiling_0kifjhpi9gpo4kaa": {
+      "object": "node",
+      "id": "ceiling_0kifjhpi9gpo4kaa",
+      "type": "ceiling",
+      "name": "ฝ้าบ้าน เสมอแนวผนัง",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "story-ceiling"
+      },
+      "children": [],
+      "polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          12.79,
+          5
+        ],
+        [
+          12.79,
+          9.38
+        ],
+        [
+          11,
+          9.38
+        ],
+        [
+          11,
+          12.88
+        ],
+        [
+          5.5,
+          12.88
+        ],
+        [
+          5.5,
+          5
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "holes": [],
+      "holeMetadata": [],
+      "height": 3,
+      "autoFromWalls": false
+    },
+    "wall_2h4q4v0x568q7nw9": {
+      "object": "node",
+      "id": "wall_2h4q4v0x568q7nw9",
+      "type": "wall",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.12,
+      "height": 3,
+      "start": [
+        3.5,
+        0
+      ],
+      "end": [
+        3.5,
+        2.94
+      ],
+      "frontSide": "unknown",
+      "backSide": "unknown"
+    },
+    "wall_fxcreud0x3ab96s3": {
+      "object": "node",
+      "id": "wall_fxcreud0x3ab96s3",
+      "type": "wall",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "door_lkeebf09vol0lyzi"
+      ],
+      "thickness": 0.12,
+      "height": 3,
+      "start": [
+        3.5,
+        2.94
+      ],
+      "end": [
+        5.5,
+        2.94
+      ],
+      "frontSide": "unknown",
+      "backSide": "unknown"
+    },
+    "wall_ofp9tiiqyxezjl65": {
+      "object": "node",
+      "id": "wall_ofp9tiiqyxezjl65",
+      "type": "wall",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "door_8173pfiuvzrteap0"
+      ],
+      "thickness": 0.12,
+      "height": 3,
+      "start": [
+        5.5,
+        2.94
+      ],
+      "end": [
+        7.5,
+        2.94
+      ],
+      "frontSide": "exterior",
+      "backSide": "interior"
+    },
+    "wall_uxuikuwg8pqokoi9": {
+      "object": "node",
+      "id": "wall_uxuikuwg8pqokoi9",
+      "type": "wall",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.12,
+      "height": 3,
+      "start": [
+        5.5,
+        0
+      ],
+      "end": [
+        5.5,
+        2.94
+      ],
+      "frontSide": "unknown",
+      "backSide": "unknown"
+    },
+    "wall_n6neuozj4yz8khtz": {
+      "object": "node",
+      "id": "wall_n6neuozj4yz8khtz",
+      "type": "wall",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "door_bo5tj7ymarotgmw5"
+      ],
+      "thickness": 0.12,
+      "height": 3,
+      "start": [
+        5.5,
+        2.94
+      ],
+      "end": [
+        5.5,
+        5
+      ],
+      "frontSide": "interior",
+      "backSide": "exterior"
+    },
+    "wall_ve2tnrjrjlenn9z8": {
+      "object": "node",
+      "id": "wall_ve2tnrjrjlenn9z8",
+      "type": "wall",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "door_6xc1hcmw57rbvqo3",
+        "door_mo3ae6e2mm32opox",
+        "window_cu6wedyewylfhofj"
+      ],
+      "thickness": 0.12,
+      "height": 3,
+      "start": [
+        5.5,
+        5
+      ],
+      "end": [
+        5.5,
+        12.88
+      ],
+      "frontSide": "exterior",
+      "backSide": "interior"
+    },
+    "wall_2r987d72wpmr9ia6": {
+      "object": "node",
+      "id": "wall_2r987d72wpmr9ia6",
+      "type": "wall",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.12,
+      "height": 3,
+      "start": [
+        2.5,
+        5
+      ],
+      "end": [
+        5.5,
+        5
+      ],
+      "frontSide": "exterior",
+      "backSide": "interior"
+    },
+    "wall_wb0qhdsa1ttphomw": {
+      "object": "node",
+      "id": "wall_wb0qhdsa1ttphomw",
+      "type": "wall",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "door_tro6927o2xi7a88k"
+      ],
+      "thickness": 0.12,
+      "height": 3,
+      "start": [
+        7.5,
+        0
+      ],
+      "end": [
+        7.5,
+        2.94
+      ],
+      "frontSide": "unknown",
+      "backSide": "unknown"
+    },
+    "wall_epq1c0sezvs7n83y": {
+      "object": "node",
+      "id": "wall_epq1c0sezvs7n83y",
+      "type": "wall",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "door_9h8gyvuts59zg08t"
+      ],
+      "thickness": 0.12,
+      "height": 3,
+      "start": [
+        7.5,
+        2.94
+      ],
+      "end": [
+        7.5,
+        5
+      ],
+      "frontSide": "exterior",
+      "backSide": "interior"
+    },
+    "wall_vu6gexc6vrxki44h": {
+      "object": "node",
+      "id": "wall_vu6gexc6vrxki44h",
+      "type": "wall",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.12,
+      "height": 3,
+      "start": [
+        7.5,
+        5
+      ],
+      "end": [
+        11,
+        5
+      ],
+      "frontSide": "exterior",
+      "backSide": "interior"
+    },
+    "wall_rdq8y4fzcv74e3rj": {
+      "object": "node",
+      "id": "wall_rdq8y4fzcv74e3rj",
+      "type": "wall",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "door_l54vd4bwg8l8glt4"
+      ],
+      "thickness": 0.12,
+      "height": 3,
+      "start": [
+        11,
+        7.44
+      ],
+      "end": [
+        12.79,
+        7.44
+      ],
+      "frontSide": "interior",
+      "backSide": "exterior"
+    },
+    "wall_3vylv7i7g8ks0j59": {
+      "object": "node",
+      "id": "wall_3vylv7i7g8ks0j59",
+      "type": "wall",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.12,
+      "height": 3,
+      "start": [
+        11,
+        7.44
+      ],
+      "end": [
+        11,
+        9.38
+      ],
+      "frontSide": "exterior",
+      "backSide": "interior"
+    },
+    "door_ade3baoke3xnd34x": {
+      "object": "node",
+      "id": "door_ade3baoke3xnd34x",
+      "type": "door",
+      "parentId": "wall_xu0956t2s2a9vy7e",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        0.5101500000000002,
+        1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_xu0956t2s2a9vy7e",
+      "width": 0.8,
+      "height": 2,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "doorCategory": "interior",
+      "doorType": "hinged",
+      "leafCount": 1,
+      "operationState": 0,
+      "slideDirection": "left",
+      "trackStyle": "none",
+      "garagePanelCount": 4,
+      "openingKind": "door",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingTopRadii": [
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.45,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "threshold": true,
+      "thresholdHeight": 0.02,
+      "hingesSide": "left",
+      "swingDirection": "outward",
+      "swingAngle": 0,
+      "segments": [
+        {
+          "type": "panel",
+          "heightRatio": 0.4,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        },
+        {
+          "type": "panel",
+          "heightRatio": 0.6,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        }
+      ],
+      "handle": true,
+      "handleHeight": 1.05,
+      "handleSide": "right",
+      "contentPadding": [
+        0.04,
+        0.04
+      ],
+      "doorCloser": false,
+      "panicBar": false,
+      "panicBarHeight": 1
+    },
+    "door_bo5tj7ymarotgmw5": {
+      "object": "node",
+      "id": "door_bo5tj7ymarotgmw5",
+      "type": "door",
+      "parentId": "wall_n6neuozj4yz8khtz",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        1.0100000000000002,
+        1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_n6neuozj4yz8khtz",
+      "width": 0.8,
+      "height": 2,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "doorCategory": "interior",
+      "doorType": "hinged",
+      "leafCount": 1,
+      "operationState": 0,
+      "slideDirection": "left",
+      "trackStyle": "none",
+      "garagePanelCount": 4,
+      "openingKind": "door",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingTopRadii": [
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.45,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "threshold": true,
+      "thresholdHeight": 0.02,
+      "hingesSide": "right",
+      "swingDirection": "inward",
+      "swingAngle": 0,
+      "segments": [
+        {
+          "type": "panel",
+          "heightRatio": 0.4,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        },
+        {
+          "type": "panel",
+          "heightRatio": 0.6,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        }
+      ],
+      "handle": true,
+      "handleHeight": 1.05,
+      "handleSide": "right",
+      "contentPadding": [
+        0.04,
+        0.04
+      ],
+      "doorCloser": false,
+      "panicBar": false,
+      "panicBarHeight": 1
+    },
+    "door_9h8gyvuts59zg08t": {
+      "object": "node",
+      "id": "door_9h8gyvuts59zg08t",
+      "type": "door",
+      "parentId": "wall_epq1c0sezvs7n83y",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        1.0100000000000002,
+        1,
+        0
+      ],
+      "rotation": [
+        0,
+        3.141592653589793,
+        0
+      ],
+      "side": "front",
+      "wallId": "wall_epq1c0sezvs7n83y",
+      "width": 0.8,
+      "height": 2,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "doorCategory": "interior",
+      "doorType": "hinged",
+      "leafCount": 1,
+      "operationState": 0,
+      "slideDirection": "left",
+      "trackStyle": "none",
+      "garagePanelCount": 4,
+      "openingKind": "door",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingTopRadii": [
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.45,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "threshold": true,
+      "thresholdHeight": 0.02,
+      "hingesSide": "left",
+      "swingDirection": "inward",
+      "swingAngle": 0,
+      "segments": [
+        {
+          "type": "panel",
+          "heightRatio": 0.4,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        },
+        {
+          "type": "panel",
+          "heightRatio": 0.6,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        }
+      ],
+      "handle": true,
+      "handleHeight": 1.05,
+      "handleSide": "right",
+      "contentPadding": [
+        0.04,
+        0.04
+      ],
+      "doorCloser": false,
+      "panicBar": false,
+      "panicBarHeight": 1
+    },
+    "door_lkeebf09vol0lyzi": {
+      "object": "node",
+      "id": "door_lkeebf09vol0lyzi",
+      "type": "door",
+      "parentId": "wall_fxcreud0x3ab96s3",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        0.6000000000000001,
+        1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_fxcreud0x3ab96s3",
+      "width": 0.7,
+      "height": 2,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "doorCategory": "interior",
+      "doorType": "hinged",
+      "leafCount": 1,
+      "operationState": 0,
+      "slideDirection": "left",
+      "trackStyle": "none",
+      "garagePanelCount": 4,
+      "openingKind": "door",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingTopRadii": [
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.45,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "threshold": true,
+      "thresholdHeight": 0.02,
+      "hingesSide": "left",
+      "swingDirection": "outward",
+      "swingAngle": 0,
+      "segments": [
+        {
+          "type": "panel",
+          "heightRatio": 0.4,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        },
+        {
+          "type": "panel",
+          "heightRatio": 0.6,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        }
+      ],
+      "handle": true,
+      "handleHeight": 1.05,
+      "handleSide": "right",
+      "contentPadding": [
+        0.04,
+        0.04
+      ],
+      "doorCloser": false,
+      "panicBar": false,
+      "panicBarHeight": 1
+    },
+    "door_8173pfiuvzrteap0": {
+      "object": "node",
+      "id": "door_8173pfiuvzrteap0",
+      "type": "door",
+      "parentId": "wall_ofp9tiiqyxezjl65",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        1.46,
+        1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_ofp9tiiqyxezjl65",
+      "width": 0.7,
+      "height": 2,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "doorCategory": "interior",
+      "doorType": "hinged",
+      "leafCount": 1,
+      "operationState": 0,
+      "slideDirection": "left",
+      "trackStyle": "none",
+      "garagePanelCount": 4,
+      "openingKind": "door",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingTopRadii": [
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.45,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "threshold": true,
+      "thresholdHeight": 0.02,
+      "hingesSide": "right",
+      "swingDirection": "outward",
+      "swingAngle": 0,
+      "segments": [
+        {
+          "type": "panel",
+          "heightRatio": 0.4,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        },
+        {
+          "type": "panel",
+          "heightRatio": 0.6,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        }
+      ],
+      "handle": true,
+      "handleHeight": 1.05,
+      "handleSide": "right",
+      "contentPadding": [
+        0.04,
+        0.04
+      ],
+      "doorCloser": false,
+      "panicBar": false,
+      "panicBarHeight": 1
+    },
+    "door_6xc1hcmw57rbvqo3": {
+      "object": "node",
+      "id": "door_6xc1hcmw57rbvqo3",
+      "type": "door",
+      "parentId": "wall_ve2tnrjrjlenn9z8",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        1.5108200000000003,
+        1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_ve2tnrjrjlenn9z8",
+      "width": 1,
+      "height": 2,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "doorCategory": "interior",
+      "doorType": "hinged",
+      "leafCount": 1,
+      "operationState": 0,
+      "slideDirection": "left",
+      "trackStyle": "none",
+      "garagePanelCount": 4,
+      "openingKind": "door",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingTopRadii": [
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.45,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "threshold": true,
+      "thresholdHeight": 0.02,
+      "hingesSide": "left",
+      "swingDirection": "inward",
+      "swingAngle": 0,
+      "segments": [
+        {
+          "type": "panel",
+          "heightRatio": 0.4,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        },
+        {
+          "type": "panel",
+          "heightRatio": 0.6,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        }
+      ],
+      "handle": true,
+      "handleHeight": 1.05,
+      "handleSide": "right",
+      "contentPadding": [
+        0.04,
+        0.04
+      ],
+      "doorCloser": false,
+      "panicBar": false,
+      "panicBarHeight": 1
+    },
+    "door_mo3ae6e2mm32opox": {
+      "object": "node",
+      "id": "door_mo3ae6e2mm32opox",
+      "type": "door",
+      "parentId": "wall_ve2tnrjrjlenn9z8",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        2.5107900000000005,
+        1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_ve2tnrjrjlenn9z8",
+      "width": 1,
+      "height": 2,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "doorCategory": "interior",
+      "doorType": "hinged",
+      "leafCount": 1,
+      "operationState": 0,
+      "slideDirection": "left",
+      "trackStyle": "none",
+      "garagePanelCount": 4,
+      "openingKind": "door",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingTopRadii": [
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.45,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "threshold": true,
+      "thresholdHeight": 0.02,
+      "hingesSide": "right",
+      "swingDirection": "inward",
+      "swingAngle": 0,
+      "segments": [
+        {
+          "type": "panel",
+          "heightRatio": 0.4,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        },
+        {
+          "type": "panel",
+          "heightRatio": 0.6,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        }
+      ],
+      "handle": true,
+      "handleHeight": 1.05,
+      "handleSide": "right",
+      "contentPadding": [
+        0.04,
+        0.04
+      ],
+      "doorCloser": false,
+      "panicBar": false,
+      "panicBarHeight": 1
+    },
+    "door_l54vd4bwg8l8glt4": {
+      "object": "node",
+      "id": "door_l54vd4bwg8l8glt4",
+      "type": "door",
+      "parentId": "wall_rdq8y4fzcv74e3rj",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        0.5602700000000003,
+        1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_rdq8y4fzcv74e3rj",
+      "width": 0.7,
+      "height": 2,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "doorCategory": "interior",
+      "doorType": "hinged",
+      "leafCount": 1,
+      "operationState": 0,
+      "slideDirection": "left",
+      "trackStyle": "none",
+      "garagePanelCount": 4,
+      "openingKind": "door",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingTopRadii": [
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.45,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "threshold": true,
+      "thresholdHeight": 0.02,
+      "hingesSide": "left",
+      "swingDirection": "inward",
+      "swingAngle": 0,
+      "segments": [
+        {
+          "type": "panel",
+          "heightRatio": 0.4,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        },
+        {
+          "type": "panel",
+          "heightRatio": 0.6,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        }
+      ],
+      "handle": true,
+      "handleHeight": 1.05,
+      "handleSide": "right",
+      "contentPadding": [
+        0.04,
+        0.04
+      ],
+      "doorCloser": false,
+      "panicBar": false,
+      "panicBarHeight": 1
+    },
+    "window_kvyeycp9yqhipobu": {
+      "object": "node",
+      "id": "window_kvyeycp9yqhipobu",
+      "type": "window",
+      "parentId": "wall_5dh0mmwncgea7toa",
+      "visible": true,
+      "metadata": {},
+      "slots": {
+        "frame": "library:preset-nearblack"
+      },
+      "position": [
+        2.91004,
+        1.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_5dh0mmwncgea7toa",
+      "width": 0.5,
+      "height": 1.5,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "single-hung",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "columnRatios": [
+        1
+      ],
+      "rowRatios": [
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03
+    },
+    "window_ydv8zsi12a9i57oh": {
+      "object": "node",
+      "id": "window_ydv8zsi12a9i57oh",
+      "type": "window",
+      "parentId": "wall_5dh0mmwncgea7toa",
+      "visible": true,
+      "metadata": {
+        "role": "glass-block",
+        "note": "กระจกบล็อกแก้ว 4x2 สำหรับห้องน้ำ 1"
+      },
+      "slots": {
+        "frame": "library:preset-nearblack"
+      },
+      "position": [
+        4.5,
+        2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_5dh0mmwncgea7toa",
+      "width": 0.8,
+      "height": 0.5,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "fixed",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "columnRatios": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "rowRatios": [
+        1,
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03
+    },
+    "window_yz066zj3zg1e07r2": {
+      "object": "node",
+      "id": "window_yz066zj3zg1e07r2",
+      "type": "window",
+      "parentId": "wall_5dh0mmwncgea7toa",
+      "visible": true,
+      "metadata": {
+        "role": "glass-block",
+        "note": "กระจกบล็อกแก้ว 4x2 สำหรับห้องน้ำ 2"
+      },
+      "slots": {
+        "frame": "library:preset-nearblack"
+      },
+      "position": [
+        6.5,
+        2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_5dh0mmwncgea7toa",
+      "width": 0.8,
+      "height": 0.5,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "fixed",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "columnRatios": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "rowRatios": [
+        1,
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03
+    },
+    "window_qinbhwcndk0ge5s8": {
+      "object": "node",
+      "id": "window_qinbhwcndk0ge5s8",
+      "type": "window",
+      "parentId": "wall_5dh0mmwncgea7toa",
+      "visible": true,
+      "metadata": {},
+      "slots": {
+        "frame": "library:preset-nearblack"
+      },
+      "position": [
+        8.30876,
+        1.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_5dh0mmwncgea7toa",
+      "width": 0.5,
+      "height": 1.5,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "single-hung",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "columnRatios": [
+        1
+      ],
+      "rowRatios": [
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03
+    },
+    "window_fkcgv43dnzoa73tl": {
+      "object": "node",
+      "id": "window_fkcgv43dnzoa73tl",
+      "type": "window",
+      "parentId": "wall_5dh0mmwncgea7toa",
+      "visible": true,
+      "metadata": {},
+      "slots": {
+        "frame": "library:preset-nearblack"
+      },
+      "position": [
+        10.14668,
+        1.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_5dh0mmwncgea7toa",
+      "width": 0.5,
+      "height": 1.5,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "single-hung",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "columnRatios": [
+        1
+      ],
+      "rowRatios": [
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03
+    },
+    "window_0pmya5ei9vxpbhb9": {
+      "object": "node",
+      "id": "window_0pmya5ei9vxpbhb9",
+      "type": "window",
+      "parentId": "wall_1uz3tefepftn9u3n",
+      "visible": true,
+      "metadata": {},
+      "slots": {
+        "frame": "library:preset-nearblack"
+      },
+      "position": [
+        2.4996400000000003,
+        1.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_1uz3tefepftn9u3n",
+      "width": 2,
+      "height": 1.2,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "sliding",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "columnRatios": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "rowRatios": [
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03
+    },
+    "window_41c9dxhk04hm1fmy": {
+      "object": "node",
+      "id": "window_41c9dxhk04hm1fmy",
+      "type": "window",
+      "parentId": "wall_6kr84fh5bo1o40v0",
+      "visible": true,
+      "metadata": {},
+      "slots": {
+        "frame": "library:preset-nearblack"
+      },
+      "position": [
+        2.44036,
+        1.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_6kr84fh5bo1o40v0",
+      "width": 2,
+      "height": 1.2,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "sliding",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "columnRatios": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "rowRatios": [
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03
+    },
+    "window_aafaqoeo7798gd4p": {
+      "object": "node",
+      "id": "window_aafaqoeo7798gd4p",
+      "type": "window",
+      "parentId": "wall_miptmv55wya4jitz",
+      "visible": true,
+      "metadata": {},
+      "slots": {
+        "frame": "library:preset-nearblack"
+      },
+      "position": [
+        1.80992,
+        1.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_miptmv55wya4jitz",
+      "width": 0.5,
+      "height": 1.5,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "single-hung",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "columnRatios": [
+        1
+      ],
+      "rowRatios": [
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03
+    },
+    "window_t8ksge8cbfdnxkd1": {
+      "object": "node",
+      "id": "window_t8ksge8cbfdnxkd1",
+      "type": "window",
+      "parentId": "wall_zl9a4kpbcno5bpet",
+      "visible": true,
+      "metadata": {},
+      "slots": {
+        "frame": "library:preset-nearblack"
+      },
+      "position": [
+        1.251,
+        1.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_zl9a4kpbcno5bpet",
+      "width": 1.2,
+      "height": 1.2,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "sliding",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "columnRatios": [
+        1
+      ],
+      "rowRatios": [
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03
+    },
+    "window_n0hx9tzz4krac6fa": {
+      "object": "node",
+      "id": "window_n0hx9tzz4krac6fa",
+      "type": "window",
+      "parentId": "wall_hdqxsgto0fqjxl2z",
+      "visible": true,
+      "metadata": {},
+      "slots": {
+        "frame": "library:preset-nearblack"
+      },
+      "position": [
+        4.220168,
+        1.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_hdqxsgto0fqjxl2z",
+      "width": 0.5,
+      "height": 1.5,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "single-hung",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "columnRatios": [
+        1
+      ],
+      "rowRatios": [
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03
+    },
+    "window_sgpy37kec4uj4t3b": {
+      "object": "node",
+      "id": "window_sgpy37kec4uj4t3b",
+      "type": "window",
+      "parentId": "wall_hdqxsgto0fqjxl2z",
+      "visible": true,
+      "metadata": {},
+      "slots": {
+        "frame": "library:preset-nearblack"
+      },
+      "position": [
+        1.2653799999999997,
+        1.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_hdqxsgto0fqjxl2z",
+      "width": 0.5,
+      "height": 1.5,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "single-hung",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "columnRatios": [
+        1
+      ],
+      "rowRatios": [
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03
+    },
+    "window_i9rojivie4p2ypo3": {
+      "object": "node",
+      "id": "window_i9rojivie4p2ypo3",
+      "type": "window",
+      "parentId": "wall_artjok5c0g0s4orl",
+      "visible": true,
+      "metadata": {},
+      "slots": {
+        "frame": "library:preset-nearblack"
+      },
+      "position": [
+        1.4413600000000004,
+        1.1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_artjok5c0g0s4orl",
+      "width": 2,
+      "height": 1.8,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "sliding",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "columnRatios": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "rowRatios": [
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03
+    },
+    "window_8vqprtxdnoj15iun": {
+      "object": "node",
+      "id": "window_8vqprtxdnoj15iun",
+      "type": "window",
+      "parentId": "wall_fw8w01jq7o649wkp",
+      "visible": true,
+      "metadata": {},
+      "slots": {
+        "frame": "library:preset-nearblack"
+      },
+      "position": [
+        0.895,
+        1.8,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_fw8w01jq7o649wkp",
+      "width": 0.8,
+      "height": 0.5,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "sliding",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "columnRatios": [
+        1
+      ],
+      "rowRatios": [
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03
+    },
+    "window_cu6wedyewylfhofj": {
+      "object": "node",
+      "id": "window_cu6wedyewylfhofj",
+      "type": "window",
+      "parentId": "wall_ve2tnrjrjlenn9z8",
+      "visible": true,
+      "metadata": {},
+      "slots": {
+        "frame": "library:preset-nearblack"
+      },
+      "position": [
+        5.89942,
+        1.1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_ve2tnrjrjlenn9z8",
+      "width": 2,
+      "height": 1.8,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "sliding",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "columnRatios": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "rowRatios": [
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03
+    },
+    "zone_gw8pvsu7dkq7flbj": {
+      "object": "node",
+      "id": "zone_gw8pvsu7dkq7flbj",
+      "type": "zone",
+      "name": "นอน1",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {},
+      "polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          3.5,
+          0
+        ],
+        [
+          3.5,
+          2.94
+        ],
+        [
+          5.5,
+          2.94
+        ],
+        [
+          5.5,
+          5
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "autoFromWalls": false,
+      "boundaryWallIds": [],
+      "spaceRole": "generic",
+      "roomNumber": "",
+      "enclosureStatus": "auto",
+      "floorFinish": "",
+      "wallFinish": "",
+      "ceilingFinish": "",
+      "ceilingHeight": 2.7,
+      "occupancy": "",
+      "clearDimensionPolicy": "none",
+      "color": "#3b82f6"
+    },
+    "zone_6oa0bgh6pk3atuz2": {
+      "object": "node",
+      "id": "zone_6oa0bgh6pk3atuz2",
+      "type": "zone",
+      "name": "น้ำ1",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {},
+      "polygon": [
+        [
+          3.5,
+          0
+        ],
+        [
+          5.5,
+          0
+        ],
+        [
+          5.5,
+          2.94
+        ],
+        [
+          3.5,
+          2.94
+        ]
+      ],
+      "autoFromWalls": true,
+      "boundaryWallIds": [
+        "wall_5dh0mmwncgea7toa",
+        "wall_uxuikuwg8pqokoi9",
+        "wall_fxcreud0x3ab96s3",
+        "wall_2h4q4v0x568q7nw9"
+      ],
+      "spaceRole": "generic",
+      "roomNumber": "",
+      "enclosureStatus": "auto",
+      "floorFinish": "",
+      "wallFinish": "",
+      "ceilingFinish": "",
+      "ceilingHeight": 2.7,
+      "occupancy": "",
+      "clearDimensionPolicy": "none",
+      "color": "#3b82f6"
+    },
+    "zone_8bofs81kryv0wqdo": {
+      "object": "node",
+      "id": "zone_8bofs81kryv0wqdo",
+      "type": "zone",
+      "name": "น้ำ2",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {},
+      "polygon": [
+        [
+          5.5,
+          0
+        ],
+        [
+          7.5,
+          0
+        ],
+        [
+          7.5,
+          2.94
+        ],
+        [
+          5.5,
+          2.94
+        ]
+      ],
+      "autoFromWalls": true,
+      "boundaryWallIds": [
+        "wall_5dh0mmwncgea7toa",
+        "wall_wb0qhdsa1ttphomw",
+        "wall_ofp9tiiqyxezjl65",
+        "wall_uxuikuwg8pqokoi9"
+      ],
+      "spaceRole": "generic",
+      "roomNumber": "",
+      "enclosureStatus": "auto",
+      "floorFinish": "",
+      "wallFinish": "",
+      "ceilingFinish": "",
+      "ceilingHeight": 2.7,
+      "occupancy": "",
+      "clearDimensionPolicy": "none",
+      "color": "#3b82f6"
+    },
+    "zone_sl0luhtskwpmbyed": {
+      "object": "node",
+      "id": "zone_sl0luhtskwpmbyed",
+      "type": "zone",
+      "name": "นอน2",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {},
+      "polygon": [
+        [
+          7.5,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          7.5,
+          5
+        ]
+      ],
+      "autoFromWalls": false,
+      "boundaryWallIds": [],
+      "spaceRole": "generic",
+      "roomNumber": "",
+      "enclosureStatus": "auto",
+      "floorFinish": "",
+      "wallFinish": "",
+      "ceilingFinish": "",
+      "ceilingHeight": 2.7,
+      "occupancy": "",
+      "clearDimensionPolicy": "none",
+      "color": "#3b82f6"
+    },
+    "zone_l8gcc6ykp9pu5dnj": {
+      "object": "node",
+      "id": "zone_l8gcc6ykp9pu5dnj",
+      "type": "zone",
+      "name": "ลานหน้าบ้าน",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {},
+      "polygon": [
+        [
+          5.5,
+          12.88
+        ],
+        [
+          2.5,
+          12.88
+        ],
+        [
+          2.5,
+          5
+        ],
+        [
+          5.5,
+          5
+        ]
+      ],
+      "autoFromWalls": true,
+      "boundaryWallIds": [
+        "wall_hdqxsgto0fqjxl2z",
+        "wall_ufiy1exrm8e87b64",
+        "wall_2r987d72wpmr9ia6",
+        "wall_ve2tnrjrjlenn9z8"
+      ],
+      "spaceRole": "generic",
+      "roomNumber": "",
+      "enclosureStatus": "auto",
+      "floorFinish": "",
+      "wallFinish": "",
+      "ceilingFinish": "",
+      "ceilingHeight": 2.7,
+      "occupancy": "",
+      "clearDimensionPolicy": "none",
+      "color": "#3b82f6"
+    },
+    "zone_prvpjabdjtmos2xx": {
+      "object": "node",
+      "id": "zone_prvpjabdjtmos2xx",
+      "type": "zone",
+      "name": "นั่งเล่น",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {},
+      "polygon": [
+        [
+          5.5,
+          2.94
+        ],
+        [
+          7.5,
+          2.94
+        ],
+        [
+          7.5,
+          5
+        ],
+        [
+          12.79,
+          5
+        ],
+        [
+          12.79,
+          7.44
+        ],
+        [
+          11,
+          7.44
+        ],
+        [
+          11,
+          12.88
+        ],
+        [
+          5.5,
+          12.88
+        ]
+      ],
+      "autoFromWalls": false,
+      "boundaryWallIds": [],
+      "spaceRole": "generic",
+      "roomNumber": "",
+      "enclosureStatus": "auto",
+      "floorFinish": "",
+      "wallFinish": "",
+      "ceilingFinish": "",
+      "ceilingHeight": 2.7,
+      "occupancy": "",
+      "clearDimensionPolicy": "none",
+      "color": "#3b82f6"
+    },
+    "zone_6y2ndude8gc4jfwg": {
+      "object": "node",
+      "id": "zone_6y2ndude8gc4jfwg",
+      "type": "zone",
+      "name": "เก็บของ",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {},
+      "polygon": [
+        [
+          12.79,
+          7.44
+        ],
+        [
+          12.79,
+          9.38
+        ],
+        [
+          11,
+          9.38
+        ],
+        [
+          11,
+          7.44
+        ]
+      ],
+      "autoFromWalls": true,
+      "boundaryWallIds": [
+        "wall_zl9a4kpbcno5bpet",
+        "wall_fw8w01jq7o649wkp",
+        "wall_3vylv7i7g8ks0j59",
+        "wall_rdq8y4fzcv74e3rj"
+      ],
+      "spaceRole": "generic",
+      "roomNumber": "",
+      "enclosureStatus": "auto",
+      "floorFinish": "",
+      "wallFinish": "",
+      "ceilingFinish": "",
+      "ceilingHeight": 2.7,
+      "occupancy": "",
+      "clearDimensionPolicy": "none",
+      "color": "#3b82f6"
+    },
+    "zone_dsw3aased9qk8jec": {
+      "object": "node",
+      "id": "zone_dsw3aased9qk8jec",
+      "type": "zone",
+      "name": "Zone 8",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {},
+      "polygon": [
+        [
+          10,
+          10.600000000000001
+        ],
+        [
+          10.4,
+          17.6
+        ],
+        [
+          10.4,
+          17.6
+        ]
+      ],
+      "autoFromWalls": false,
+      "boundaryWallIds": [],
+      "spaceRole": "generic",
+      "roomNumber": "",
+      "enclosureStatus": "auto",
+      "floorFinish": "",
+      "wallFinish": "",
+      "ceilingFinish": "",
+      "ceilingHeight": 2.7,
+      "occupancy": "",
+      "clearDimensionPolicy": "none",
+      "color": "#3b82f6"
+    },
+    "door_tro6927o2xi7a88k": {
+      "object": "node",
+      "id": "door_tro6927o2xi7a88k",
+      "type": "door",
+      "parentId": "wall_wb0qhdsa1ttphomw",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        2.5,
+        1.05,
+        0
+      ],
+      "rotation": [
+        0,
+        12.566370614359172,
+        0
+      ],
+      "side": "front",
+      "wallId": "wall_wb0qhdsa1ttphomw",
+      "width": 0.9,
+      "height": 2.1,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "doorCategory": "interior",
+      "doorType": "hinged",
+      "leafCount": 1,
+      "operationState": 0,
+      "slideDirection": "left",
+      "trackStyle": "none",
+      "garagePanelCount": 4,
+      "openingKind": "door",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingTopRadii": [
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.45,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "threshold": true,
+      "thresholdHeight": 0.02,
+      "hingesSide": "right",
+      "swingDirection": "inward",
+      "swingAngle": 0,
+      "segments": [
+        {
+          "type": "panel",
+          "heightRatio": 0.4,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        },
+        {
+          "type": "panel",
+          "heightRatio": 0.6,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        }
+      ],
+      "handle": true,
+      "handleHeight": 1.05,
+      "handleSide": "right",
+      "contentPadding": [
+        0.04,
+        0.04
+      ],
+      "doorCloser": false,
+      "panicBar": false,
+      "panicBarHeight": 1
+    },
+    "window_qsv6r0m40cfybtxy": {
+      "object": "node",
+      "id": "window_qsv6r0m40cfybtxy",
+      "type": "window",
+      "parentId": "wall_zl9a4kpbcno5bpet",
+      "visible": true,
+      "metadata": {
+        "role": "glass-block",
+        "note": "กระจกบล็อกแก้ว 4x2 สำหรับห้องเก็บของ"
+      },
+      "slots": {
+        "frame": "library:preset-nearblack"
+      },
+      "position": [
+        3.5,
+        2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_zl9a4kpbcno5bpet",
+      "width": 0.8,
+      "height": 0.5,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "fixed",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "columnRatios": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "rowRatios": [
+        1,
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03
+    },
+    "window_h64feo6zvzb80665": {
+      "object": "node",
+      "id": "window_h64feo6zvzb80665",
+      "type": "window",
+      "parentId": "wall_5dh0mmwncgea7toa",
+      "visible": true,
+      "metadata": {
+        "role": "sliding-above-glassblock",
+        "note": "บานเลื่อน 80x50 เหนือบล็อกแก้ว น้ำ 1"
+      },
+      "slots": {
+        "frame": "library:preset-nearblack"
+      },
+      "position": [
+        4.500546,
+        2.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_5dh0mmwncgea7toa",
+      "width": 0.8,
+      "height": 0.5,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "sliding",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "columnRatios": [
+        1
+      ],
+      "rowRatios": [
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03
+    },
+    "window_71miziafmc4855cy": {
+      "object": "node",
+      "id": "window_71miziafmc4855cy",
+      "type": "window",
+      "parentId": "wall_5dh0mmwncgea7toa",
+      "visible": true,
+      "metadata": {
+        "role": "sliding-above-glassblock",
+        "note": "บานเลื่อน 80x50 เหนือบล็อกแก้ว น้ำ 2"
+      },
+      "slots": {
+        "frame": "library:preset-nearblack"
+      },
+      "position": [
+        6.500378,
+        2.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_5dh0mmwncgea7toa",
+      "width": 0.8,
+      "height": 0.5,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "sliding",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "columnRatios": [
+        1
+      ],
+      "rowRatios": [
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03
+    },
+    "stair_j3239g1jh0h3h3kt": {
+      "object": "node",
+      "id": "stair_j3239g1jh0h3h3kt",
+      "type": "stair",
+      "name": "บันไดหลังบ้าน",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "openingManaged": "manual-rectangular"
+      },
+      "position": [
+        11.45,
+        -0.5,
+        4
+      ],
+      "rotation": -0.004835535413018288,
+      "stairType": "straight",
+      "fromLevelId": "level_ytncss7hqafwphlf",
+      "toLevelId": "level_ytncss7hqafwphlf",
+      "slabOpeningMode": "none",
+      "openingOffset": 0,
+      "width": 1,
+      "totalRise": 0.5,
+      "stepCount": 3,
+      "thickness": 0.25,
+      "fillToFloor": true,
+      "innerRadius": 0.9,
+      "sweepAngle": 1.5707963267948966,
+      "topLandingMode": "none",
+      "topLandingDepth": 0.9,
+      "showCenterColumn": true,
+      "showStepSupports": true,
+      "railingMode": "none",
+      "railingHeight": 0.92,
+      "children": [
+        "sseg_qlgcvu7zpkenpt5r"
+      ]
+    },
+    "sseg_qlgcvu7zpkenpt5r": {
+      "object": "node",
+      "id": "sseg_qlgcvu7zpkenpt5r",
+      "type": "stair-segment",
+      "parentId": "stair_j3239g1jh0h3h3kt",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "segmentType": "stair",
+      "width": 1,
+      "length": 0.84,
+      "height": 0.5,
+      "stepCount": 3,
+      "attachmentSide": "front",
+      "fillToFloor": true,
+      "thickness": 0.25
+    },
+    "stair_m08oyqjz2ul6f323": {
+      "object": "node",
+      "id": "stair_m08oyqjz2ul6f323",
+      "type": "stair",
+      "name": "บันไดหน้าบ้าน",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "openingManaged": "manual-rectangular"
+      },
+      "position": [
+        1.5,
+        -0.5,
+        7
+      ],
+      "rotation": 1.5725809311021837,
+      "stairType": "straight",
+      "fromLevelId": "level_ytncss7hqafwphlf",
+      "toLevelId": "level_ytncss7hqafwphlf",
+      "slabOpeningMode": "none",
+      "openingOffset": 0,
+      "width": 4,
+      "totalRise": 0.5,
+      "stepCount": 3,
+      "thickness": 0.25,
+      "fillToFloor": true,
+      "innerRadius": 0.9,
+      "sweepAngle": 1.5707963267948966,
+      "topLandingMode": "none",
+      "topLandingDepth": 0.9,
+      "showCenterColumn": true,
+      "showStepSupports": true,
+      "railingMode": "none",
+      "railingHeight": 0.92,
+      "children": [
+        "sseg_5t8ig5h878d9u5x5"
+      ]
+    },
+    "sseg_5t8ig5h878d9u5x5": {
+      "object": "node",
+      "id": "sseg_5t8ig5h878d9u5x5",
+      "type": "stair-segment",
+      "parentId": "stair_m08oyqjz2ul6f323",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "segmentType": "stair",
+      "width": 4,
+      "length": 1.0471227041152877,
+      "height": 0.5,
+      "stepCount": 3,
+      "attachmentSide": "front",
+      "fillToFloor": true,
+      "thickness": 0.25
+    },
+    "level_vuis3trpnb8fbtql": {
+      "object": "node",
+      "id": "level_vuis3trpnb8fbtql",
+      "type": "level",
+      "name": "Roof",
+      "parentId": "building_gzbrplsp2443oiqt",
+      "visible": true,
+      "metadata": {
+        "role": "roof",
+        "label": "Roof",
+        "referenceLevelId": "level_ytncss7hqafwphlf"
+      },
+      "children": [
+        "roof_baxw9x28xmr7wlxi",
+        "roof_0lmstdtjz14vdo75"
+      ],
+      "level": 1,
+      "baseElevation": 0,
+      "height": 2.5
+    },
+    "window_lyrijengw7pt234w": {
+      "object": "node",
+      "id": "window_lyrijengw7pt234w",
+      "type": "window",
+      "parentId": "wall_5dh0mmwncgea7toa",
+      "visible": true,
+      "metadata": {},
+      "material": {},
+      "slots": {
+        "frame": "library:preset-nearblack"
+      },
+      "position": [
+        0.7505934,
+        1.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_5dh0mmwncgea7toa",
+      "width": 0.5,
+      "height": 1.5,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "single-hung",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "columnRatios": [
+        1
+      ],
+      "rowRatios": [
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03
+    },
+    "roof_baxw9x28xmr7wlxi": {
+      "object": "node",
+      "id": "roof_baxw9x28xmr7wlxi",
+      "type": "roof",
+      "name": "หลังคาจั่วตัว L คลุมฝ้าเดิม",
+      "parentId": "level_vuis3trpnb8fbtql",
+      "visible": true,
+      "camera": {
+        "position": [
+          4.822559758295945,
+          7.459570298385109,
+          74.19031058096859
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "mode": "perspective"
+      },
+      "metadata": {
+        "referenceLevelId": "level_ytncss7hqafwphlf",
+        "roofLevelId": "level_vuis3trpnb8fbtql"
+      },
+      "position": [
+        6.115,
+        0.5,
+        2.47
+      ],
+      "rotation": 0,
+      "children": [
+        "rseg_zsmjblxzh9ogv1om",
+        "rseg_lr_symcenter",
+        "rseg_lr_asym_right",
+        "rseg_main_right_halfhip"
+      ]
+    },
+    "rseg_zsmjblxzh9ogv1om": {
+      "object": "node",
+      "id": "rseg_zsmjblxzh9ogv1om",
+      "type": "roof-segment",
+      "name": "จั่วหลัก เชื่อมปลายปั้นหยาขวา",
+      "parentId": "roof_baxw9x28xmr7wlxi",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "roofType": "gable",
+      "width": 14.23,
+      "depth": 6.94,
+      "trim": {
+        "left": 0,
+        "right": 3.47,
+        "front": 0,
+        "back": 0,
+        "frontLeft": 0,
+        "frontRight": 0,
+        "backLeft": 0,
+        "backRight": 0,
+        "frontLeftX": 0,
+        "frontLeftZ": 0,
+        "frontRightX": 0,
+        "frontRightZ": 0,
+        "backLeftX": 0,
+        "backLeftZ": 0,
+        "backRightX": 0,
+        "backRightZ": 0
+      },
+      "wallHeight": 0,
+      "pitch": 25,
+      "wallThickness": 0.16,
+      "deckThickness": 0.1,
+      "overhang": 0.15,
+      "shingleThickness": 0.05,
+      "gambrelLowerWidthRatio": 0.5,
+      "gambrelLowerHeightRatio": 0.6,
+      "mansardSteepWidthRatio": 0.15,
+      "mansardSteepHeightRatio": 0.7,
+      "dutchHipWidthRatio": 0.25,
+      "dutchHipHeightRatio": 0.5,
+      "dutchWaistLengthRatio": 0.98,
+      "dutchGabletRake": 0.48,
+      "dutchTopRakeThickness": 0.21,
+      "children": []
+    },
+    "roof_0lmstdtjz14vdo75": {
+      "object": "node",
+      "id": "roof_0lmstdtjz14vdo75",
+      "type": "roof",
+      "name": "เพิงหมาแหงน 7° ลานนั่งเล่นหน้าบ้าน",
+      "parentId": "level_vuis3trpnb8fbtql",
+      "visible": true,
+      "metadata": {
+        "referenceLevelId": "level_ytncss7hqafwphlf",
+        "roofLevelId": "level_vuis3trpnb8fbtql"
+      },
+      "position": [
+        3.575,
+        0.45,
+        9.835
+      ],
+      "rotation": 0,
+      "children": [
+        "rseg_5p4qqr3ln07wj1q1"
+      ]
+    },
+    "rseg_5p4qqr3ln07wj1q1": {
+      "object": "node",
+      "id": "rseg_5p4qqr3ln07wj1q1",
+      "type": "roof-segment",
+      "parentId": "roof_0lmstdtjz14vdo75",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 4.71238898038469,
+      "roofType": "shed",
+      "width": 8.09,
+      "depth": 4.03,
+      "trim": {
+        "left": 0,
+        "right": 0,
+        "front": 0,
+        "back": 0,
+        "frontLeft": 0,
+        "frontRight": 0,
+        "backLeft": 0,
+        "backRight": 0,
+        "frontLeftX": 0,
+        "frontLeftZ": 0,
+        "frontRightX": 0,
+        "frontRightZ": 0,
+        "backLeftX": 0,
+        "backLeftZ": 0,
+        "backRightX": 0,
+        "backRightZ": 0
+      },
+      "wallHeight": 0,
+      "pitch": 5,
+      "wallThickness": 0.16,
+      "deckThickness": 0.1,
+      "overhang": 0.15,
+      "shingleThickness": 0.05,
+      "gambrelLowerWidthRatio": 0.5,
+      "gambrelLowerHeightRatio": 0.6,
+      "mansardSteepWidthRatio": 0.15,
+      "mansardSteepHeightRatio": 0.7,
+      "dutchHipWidthRatio": 0.25,
+      "dutchHipHeightRatio": 0.5,
+      "dutchWaistLengthRatio": 0.98,
+      "dutchGabletRake": 0.48,
+      "dutchTopRakeThickness": 0.21,
+      "children": []
+    },
+    "rseg_lr_symcenter": {
+      "object": "node",
+      "id": "rseg_lr_symcenter",
+      "type": "roof-segment",
+      "name": "จั่วห้องนั่งเล่น ฝั่งซ้ายระยะเดิม",
+      "parentId": "roof_baxw9x28xmr7wlxi",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        0.5810960460720933,
+        -0.0005415634551148434,
+        5.705
+      ],
+      "rotation": 4.71238898038469,
+      "roofType": "shed",
+      "width": 11.850155156370038,
+      "depth": 2.9898079078558117,
+      "trim": {
+        "left": 0.001,
+        "right": 0.001,
+        "front": 0.001,
+        "back": 0.001,
+        "frontLeft": 0,
+        "frontRight": 0,
+        "backLeft": 0,
+        "backRight": 0,
+        "frontLeftX": 0,
+        "frontLeftZ": 0,
+        "frontRightX": 0,
+        "frontRightZ": 0,
+        "backLeftX": 0,
+        "backLeftZ": 0,
+        "backRightX": 0,
+        "backRightZ": 0
+      },
+      "wallHeight": 0,
+      "pitch": 28.438356311680547,
+      "wallThickness": 0.16,
+      "deckThickness": 0.1,
+      "overhang": 0,
+      "shingleThickness": 0.05,
+      "gambrelLowerWidthRatio": 0.5,
+      "gambrelLowerHeightRatio": 0.6,
+      "mansardSteepWidthRatio": 0.15,
+      "mansardSteepHeightRatio": 0.7,
+      "dutchHipWidthRatio": 0.25,
+      "dutchHipHeightRatio": 0.5,
+      "dutchWaistLengthRatio": 0.98,
+      "dutchGabletRake": 0.48,
+      "dutchTopRakeThickness": 0.21,
+      "children": []
+    },
+    "rseg_lr_asym_right": {
+      "object": "node",
+      "id": "rseg_lr_asym_right",
+      "type": "roof-segment",
+      "name": "จั่วห้องนั่งเล่น ฝั่งขวาคลุมห้องเก็บของ",
+      "parentId": "roof_baxw9x28xmr7wlxi",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        4.713903953927906,
+        -0.0003065832637427717,
+        5.705
+      ],
+      "rotation": 1.5707963267948966,
+      "roofType": "shed",
+      "width": 11.850155156370038,
+      "depth": 5.279807907855814,
+      "trim": {
+        "left": 0.001,
+        "right": 0.001,
+        "front": 0.001,
+        "back": 0.001,
+        "frontLeft": 0,
+        "frontRight": 0,
+        "backLeft": 0,
+        "backRight": 0,
+        "frontLeftX": 0,
+        "frontLeftZ": 0,
+        "frontRightX": 0,
+        "frontRightZ": 0,
+        "backLeftX": 0,
+        "backLeftZ": 0,
+        "backRightX": 0,
+        "backRightZ": 0
+      },
+      "wallHeight": 0,
+      "pitch": 17.0446630076526,
+      "wallThickness": 0.16,
+      "deckThickness": 0.1,
+      "overhang": 0,
+      "shingleThickness": 0.05,
+      "gambrelLowerWidthRatio": 0.5,
+      "gambrelLowerHeightRatio": 0.6,
+      "mansardSteepWidthRatio": 0.15,
+      "mansardSteepHeightRatio": 0.7,
+      "dutchHipWidthRatio": 0.25,
+      "dutchHipHeightRatio": 0.5,
+      "dutchWaistLengthRatio": 0.98,
+      "dutchGabletRake": 0.48,
+      "dutchTopRakeThickness": 0.21,
+      "children": []
+    },
+    "column_c1_layout": {
+      "object": "node",
+      "id": "column_c1_layout",
+      "type": "column",
+      "name": "C1 เสาหลัก",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "structural-column",
+        "columnLabel": "C1"
+      },
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "supportSlabId": "slab_ml0yinv0445zy6c4",
+      "style": "plain",
+      "crossSection": "square",
+      "height": 3,
+      "radius": 0.1,
+      "width": 0.2,
+      "depth": 0.2,
+      "edgeSoftness": 0.01,
+      "baseHeight": 0,
+      "capitalHeight": 0,
+      "shaftProfile": "straight",
+      "shaftTaper": 0,
+      "shaftBulge": 0,
+      "shaftStartScale": 0.72,
+      "shaftEndScale": 0.72,
+      "shaftSegmentCount": 24,
+      "shaftTwistStep": 0,
+      "shaftCornerRadius": 0.035,
+      "shaftDetail": "none",
+      "baseStyle": "none",
+      "baseWidthScale": 1.24,
+      "baseDepthScale": 1.24,
+      "baseTierCount": 3,
+      "baseStepSpread": 0.42,
+      "basePlinthHeightRatio": 0.44,
+      "baseRoundBandScale": 0.92,
+      "baseNeckScale": 0.72,
+      "baseRoundBandCount": 3,
+      "baseRibCount": 0,
+      "baseCarvingLevel": 0,
+      "basePanelInset": 0.02,
+      "capitalStyle": "none",
+      "capitalWidthScale": 1.46,
+      "capitalDepthScale": 1.46,
+      "capitalTierCount": 3,
+      "capitalStepSpread": 0.42,
+      "capitalBandCount": 2,
+      "voluteSize": 0.08,
+      "voluteCount": 4,
+      "leafCount": 18,
+      "leafRows": 2,
+      "bracketDepth": 0.35,
+      "bracketTierCount": 3,
+      "pendantCount": 0,
+      "capitalCarvingLevel": 0,
+      "ringCount": 0,
+      "ringPlacement": "ends",
+      "ringThickness": 0.055,
+      "ringSpread": 0.16,
+      "fluteCount": 0,
+      "fluteDepth": 0.02,
+      "fluteWidth": 0.02,
+      "spiralTwist": 0,
+      "spiralRibCount": 0,
+      "panelCount": 0,
+      "panelInsetDepth": 0.02,
+      "panelShape": "rectangle",
+      "latheRingCount": 0,
+      "latheRingSpacing": "ends",
+      "carvingLevel": 0,
+      "carvingPlacement": "capital",
+      "lowerBandEnabled": false,
+      "lowerBandHeight": 0.24,
+      "lowerBandCarvingLevel": 0,
+      "dentilCount": 0,
+      "beadCount": 0,
+      "supportStyle": "vertical",
+      "braceWidth": 0.16,
+      "braceDepth": 0.16,
+      "braceBottomSpread": 1.2,
+      "braceTopSpread": 0.12,
+      "bracePlateEnabled": true
+    },
+    "column_c2_layout": {
+      "object": "node",
+      "id": "column_c2_layout",
+      "type": "column",
+      "name": "C2 เสาหลัก",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "structural-column",
+        "columnLabel": "C2"
+      },
+      "position": [
+        5.5,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "supportSlabId": "slab_ml0yinv0445zy6c4",
+      "style": "plain",
+      "crossSection": "square",
+      "height": 3,
+      "radius": 0.1,
+      "width": 0.2,
+      "depth": 0.2,
+      "edgeSoftness": 0.01,
+      "baseHeight": 0,
+      "capitalHeight": 0,
+      "shaftProfile": "straight",
+      "shaftTaper": 0,
+      "shaftBulge": 0,
+      "shaftStartScale": 0.72,
+      "shaftEndScale": 0.72,
+      "shaftSegmentCount": 24,
+      "shaftTwistStep": 0,
+      "shaftCornerRadius": 0.035,
+      "shaftDetail": "none",
+      "baseStyle": "none",
+      "baseWidthScale": 1.24,
+      "baseDepthScale": 1.24,
+      "baseTierCount": 3,
+      "baseStepSpread": 0.42,
+      "basePlinthHeightRatio": 0.44,
+      "baseRoundBandScale": 0.92,
+      "baseNeckScale": 0.72,
+      "baseRoundBandCount": 3,
+      "baseRibCount": 0,
+      "baseCarvingLevel": 0,
+      "basePanelInset": 0.02,
+      "capitalStyle": "none",
+      "capitalWidthScale": 1.46,
+      "capitalDepthScale": 1.46,
+      "capitalTierCount": 3,
+      "capitalStepSpread": 0.42,
+      "capitalBandCount": 2,
+      "voluteSize": 0.08,
+      "voluteCount": 4,
+      "leafCount": 18,
+      "leafRows": 2,
+      "bracketDepth": 0.35,
+      "bracketTierCount": 3,
+      "pendantCount": 0,
+      "capitalCarvingLevel": 0,
+      "ringCount": 0,
+      "ringPlacement": "ends",
+      "ringThickness": 0.055,
+      "ringSpread": 0.16,
+      "fluteCount": 0,
+      "fluteDepth": 0.02,
+      "fluteWidth": 0.02,
+      "spiralTwist": 0,
+      "spiralRibCount": 0,
+      "panelCount": 0,
+      "panelInsetDepth": 0.02,
+      "panelShape": "rectangle",
+      "latheRingCount": 0,
+      "latheRingSpacing": "ends",
+      "carvingLevel": 0,
+      "carvingPlacement": "capital",
+      "lowerBandEnabled": false,
+      "lowerBandHeight": 0.24,
+      "lowerBandCarvingLevel": 0,
+      "dentilCount": 0,
+      "beadCount": 0,
+      "supportStyle": "vertical",
+      "braceWidth": 0.16,
+      "braceDepth": 0.16,
+      "braceBottomSpread": 1.2,
+      "braceTopSpread": 0.12,
+      "bracePlateEnabled": true
+    },
+    "column_c3_layout": {
+      "object": "node",
+      "id": "column_c3_layout",
+      "type": "column",
+      "name": "C3 เสาหลัก",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "structural-column",
+        "columnLabel": "C3"
+      },
+      "position": [
+        11,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "supportSlabId": "slab_ml0yinv0445zy6c4",
+      "style": "plain",
+      "crossSection": "square",
+      "height": 3,
+      "radius": 0.1,
+      "width": 0.2,
+      "depth": 0.2,
+      "edgeSoftness": 0.01,
+      "baseHeight": 0,
+      "capitalHeight": 0,
+      "shaftProfile": "straight",
+      "shaftTaper": 0,
+      "shaftBulge": 0,
+      "shaftStartScale": 0.72,
+      "shaftEndScale": 0.72,
+      "shaftSegmentCount": 24,
+      "shaftTwistStep": 0,
+      "shaftCornerRadius": 0.035,
+      "shaftDetail": "none",
+      "baseStyle": "none",
+      "baseWidthScale": 1.24,
+      "baseDepthScale": 1.24,
+      "baseTierCount": 3,
+      "baseStepSpread": 0.42,
+      "basePlinthHeightRatio": 0.44,
+      "baseRoundBandScale": 0.92,
+      "baseNeckScale": 0.72,
+      "baseRoundBandCount": 3,
+      "baseRibCount": 0,
+      "baseCarvingLevel": 0,
+      "basePanelInset": 0.02,
+      "capitalStyle": "none",
+      "capitalWidthScale": 1.46,
+      "capitalDepthScale": 1.46,
+      "capitalTierCount": 3,
+      "capitalStepSpread": 0.42,
+      "capitalBandCount": 2,
+      "voluteSize": 0.08,
+      "voluteCount": 4,
+      "leafCount": 18,
+      "leafRows": 2,
+      "bracketDepth": 0.35,
+      "bracketTierCount": 3,
+      "pendantCount": 0,
+      "capitalCarvingLevel": 0,
+      "ringCount": 0,
+      "ringPlacement": "ends",
+      "ringThickness": 0.055,
+      "ringSpread": 0.16,
+      "fluteCount": 0,
+      "fluteDepth": 0.02,
+      "fluteWidth": 0.02,
+      "spiralTwist": 0,
+      "spiralRibCount": 0,
+      "panelCount": 0,
+      "panelInsetDepth": 0.02,
+      "panelShape": "rectangle",
+      "latheRingCount": 0,
+      "latheRingSpacing": "ends",
+      "carvingLevel": 0,
+      "carvingPlacement": "capital",
+      "lowerBandEnabled": false,
+      "lowerBandHeight": 0.24,
+      "lowerBandCarvingLevel": 0,
+      "dentilCount": 0,
+      "beadCount": 0,
+      "supportStyle": "vertical",
+      "braceWidth": 0.16,
+      "braceDepth": 0.16,
+      "braceBottomSpread": 1.2,
+      "braceTopSpread": 0.12,
+      "bracePlateEnabled": true
+    },
+    "column_c4_layout": {
+      "object": "node",
+      "id": "column_c4_layout",
+      "type": "column",
+      "name": "C4 เสาหลัก",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "structural-column",
+        "columnLabel": "C4"
+      },
+      "position": [
+        5.5,
+        0,
+        2.94
+      ],
+      "rotation": 0,
+      "supportSlabId": "slab_ml0yinv0445zy6c4",
+      "style": "plain",
+      "crossSection": "square",
+      "height": 3,
+      "radius": 0.1,
+      "width": 0.2,
+      "depth": 0.2,
+      "edgeSoftness": 0.01,
+      "baseHeight": 0,
+      "capitalHeight": 0,
+      "shaftProfile": "straight",
+      "shaftTaper": 0,
+      "shaftBulge": 0,
+      "shaftStartScale": 0.72,
+      "shaftEndScale": 0.72,
+      "shaftSegmentCount": 24,
+      "shaftTwistStep": 0,
+      "shaftCornerRadius": 0.035,
+      "shaftDetail": "none",
+      "baseStyle": "none",
+      "baseWidthScale": 1.24,
+      "baseDepthScale": 1.24,
+      "baseTierCount": 3,
+      "baseStepSpread": 0.42,
+      "basePlinthHeightRatio": 0.44,
+      "baseRoundBandScale": 0.92,
+      "baseNeckScale": 0.72,
+      "baseRoundBandCount": 3,
+      "baseRibCount": 0,
+      "baseCarvingLevel": 0,
+      "basePanelInset": 0.02,
+      "capitalStyle": "none",
+      "capitalWidthScale": 1.46,
+      "capitalDepthScale": 1.46,
+      "capitalTierCount": 3,
+      "capitalStepSpread": 0.42,
+      "capitalBandCount": 2,
+      "voluteSize": 0.08,
+      "voluteCount": 4,
+      "leafCount": 18,
+      "leafRows": 2,
+      "bracketDepth": 0.35,
+      "bracketTierCount": 3,
+      "pendantCount": 0,
+      "capitalCarvingLevel": 0,
+      "ringCount": 0,
+      "ringPlacement": "ends",
+      "ringThickness": 0.055,
+      "ringSpread": 0.16,
+      "fluteCount": 0,
+      "fluteDepth": 0.02,
+      "fluteWidth": 0.02,
+      "spiralTwist": 0,
+      "spiralRibCount": 0,
+      "panelCount": 0,
+      "panelInsetDepth": 0.02,
+      "panelShape": "rectangle",
+      "latheRingCount": 0,
+      "latheRingSpacing": "ends",
+      "carvingLevel": 0,
+      "carvingPlacement": "capital",
+      "lowerBandEnabled": false,
+      "lowerBandHeight": 0.24,
+      "lowerBandCarvingLevel": 0,
+      "dentilCount": 0,
+      "beadCount": 0,
+      "supportStyle": "vertical",
+      "braceWidth": 0.16,
+      "braceDepth": 0.16,
+      "braceBottomSpread": 1.2,
+      "braceTopSpread": 0.12,
+      "bracePlateEnabled": true
+    },
+    "column_c5_layout": {
+      "object": "node",
+      "id": "column_c5_layout",
+      "type": "column",
+      "name": "C5 เสาหลัก",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "structural-column",
+        "columnLabel": "C5"
+      },
+      "position": [
+        7.5,
+        0,
+        2.94
+      ],
+      "rotation": 0,
+      "supportSlabId": "slab_ml0yinv0445zy6c4",
+      "style": "plain",
+      "crossSection": "square",
+      "height": 3,
+      "radius": 0.1,
+      "width": 0.2,
+      "depth": 0.2,
+      "edgeSoftness": 0.01,
+      "baseHeight": 0,
+      "capitalHeight": 0,
+      "shaftProfile": "straight",
+      "shaftTaper": 0,
+      "shaftBulge": 0,
+      "shaftStartScale": 0.72,
+      "shaftEndScale": 0.72,
+      "shaftSegmentCount": 24,
+      "shaftTwistStep": 0,
+      "shaftCornerRadius": 0.035,
+      "shaftDetail": "none",
+      "baseStyle": "none",
+      "baseWidthScale": 1.24,
+      "baseDepthScale": 1.24,
+      "baseTierCount": 3,
+      "baseStepSpread": 0.42,
+      "basePlinthHeightRatio": 0.44,
+      "baseRoundBandScale": 0.92,
+      "baseNeckScale": 0.72,
+      "baseRoundBandCount": 3,
+      "baseRibCount": 0,
+      "baseCarvingLevel": 0,
+      "basePanelInset": 0.02,
+      "capitalStyle": "none",
+      "capitalWidthScale": 1.46,
+      "capitalDepthScale": 1.46,
+      "capitalTierCount": 3,
+      "capitalStepSpread": 0.42,
+      "capitalBandCount": 2,
+      "voluteSize": 0.08,
+      "voluteCount": 4,
+      "leafCount": 18,
+      "leafRows": 2,
+      "bracketDepth": 0.35,
+      "bracketTierCount": 3,
+      "pendantCount": 0,
+      "capitalCarvingLevel": 0,
+      "ringCount": 0,
+      "ringPlacement": "ends",
+      "ringThickness": 0.055,
+      "ringSpread": 0.16,
+      "fluteCount": 0,
+      "fluteDepth": 0.02,
+      "fluteWidth": 0.02,
+      "spiralTwist": 0,
+      "spiralRibCount": 0,
+      "panelCount": 0,
+      "panelInsetDepth": 0.02,
+      "panelShape": "rectangle",
+      "latheRingCount": 0,
+      "latheRingSpacing": "ends",
+      "carvingLevel": 0,
+      "carvingPlacement": "capital",
+      "lowerBandEnabled": false,
+      "lowerBandHeight": 0.24,
+      "lowerBandCarvingLevel": 0,
+      "dentilCount": 0,
+      "beadCount": 0,
+      "supportStyle": "vertical",
+      "braceWidth": 0.16,
+      "braceDepth": 0.16,
+      "braceBottomSpread": 1.2,
+      "braceTopSpread": 0.12,
+      "bracePlateEnabled": true
+    },
+    "column_c6_layout": {
+      "object": "node",
+      "id": "column_c6_layout",
+      "type": "column",
+      "name": "C6 เสาหลัก",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "structural-column",
+        "columnLabel": "C6"
+      },
+      "position": [
+        0,
+        0,
+        5
+      ],
+      "rotation": 0,
+      "supportSlabId": "slab_ml0yinv0445zy6c4",
+      "style": "plain",
+      "crossSection": "square",
+      "height": 3,
+      "radius": 0.1,
+      "width": 0.2,
+      "depth": 0.2,
+      "edgeSoftness": 0.01,
+      "baseHeight": 0,
+      "capitalHeight": 0,
+      "shaftProfile": "straight",
+      "shaftTaper": 0,
+      "shaftBulge": 0,
+      "shaftStartScale": 0.72,
+      "shaftEndScale": 0.72,
+      "shaftSegmentCount": 24,
+      "shaftTwistStep": 0,
+      "shaftCornerRadius": 0.035,
+      "shaftDetail": "none",
+      "baseStyle": "none",
+      "baseWidthScale": 1.24,
+      "baseDepthScale": 1.24,
+      "baseTierCount": 3,
+      "baseStepSpread": 0.42,
+      "basePlinthHeightRatio": 0.44,
+      "baseRoundBandScale": 0.92,
+      "baseNeckScale": 0.72,
+      "baseRoundBandCount": 3,
+      "baseRibCount": 0,
+      "baseCarvingLevel": 0,
+      "basePanelInset": 0.02,
+      "capitalStyle": "none",
+      "capitalWidthScale": 1.46,
+      "capitalDepthScale": 1.46,
+      "capitalTierCount": 3,
+      "capitalStepSpread": 0.42,
+      "capitalBandCount": 2,
+      "voluteSize": 0.08,
+      "voluteCount": 4,
+      "leafCount": 18,
+      "leafRows": 2,
+      "bracketDepth": 0.35,
+      "bracketTierCount": 3,
+      "pendantCount": 0,
+      "capitalCarvingLevel": 0,
+      "ringCount": 0,
+      "ringPlacement": "ends",
+      "ringThickness": 0.055,
+      "ringSpread": 0.16,
+      "fluteCount": 0,
+      "fluteDepth": 0.02,
+      "fluteWidth": 0.02,
+      "spiralTwist": 0,
+      "spiralRibCount": 0,
+      "panelCount": 0,
+      "panelInsetDepth": 0.02,
+      "panelShape": "rectangle",
+      "latheRingCount": 0,
+      "latheRingSpacing": "ends",
+      "carvingLevel": 0,
+      "carvingPlacement": "capital",
+      "lowerBandEnabled": false,
+      "lowerBandHeight": 0.24,
+      "lowerBandCarvingLevel": 0,
+      "dentilCount": 0,
+      "beadCount": 0,
+      "supportStyle": "vertical",
+      "braceWidth": 0.16,
+      "braceDepth": 0.16,
+      "braceBottomSpread": 1.2,
+      "braceTopSpread": 0.12,
+      "bracePlateEnabled": true
+    },
+    "column_c7_layout": {
+      "object": "node",
+      "id": "column_c7_layout",
+      "type": "column",
+      "name": "C7 เสาหลัก",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "structural-column",
+        "columnLabel": "C7"
+      },
+      "position": [
+        5.5,
+        0,
+        5
+      ],
+      "rotation": 0,
+      "supportSlabId": "slab_ml0yinv0445zy6c4",
+      "style": "plain",
+      "crossSection": "square",
+      "height": 3,
+      "radius": 0.1,
+      "width": 0.2,
+      "depth": 0.2,
+      "edgeSoftness": 0.01,
+      "baseHeight": 0,
+      "capitalHeight": 0,
+      "shaftProfile": "straight",
+      "shaftTaper": 0,
+      "shaftBulge": 0,
+      "shaftStartScale": 0.72,
+      "shaftEndScale": 0.72,
+      "shaftSegmentCount": 24,
+      "shaftTwistStep": 0,
+      "shaftCornerRadius": 0.035,
+      "shaftDetail": "none",
+      "baseStyle": "none",
+      "baseWidthScale": 1.24,
+      "baseDepthScale": 1.24,
+      "baseTierCount": 3,
+      "baseStepSpread": 0.42,
+      "basePlinthHeightRatio": 0.44,
+      "baseRoundBandScale": 0.92,
+      "baseNeckScale": 0.72,
+      "baseRoundBandCount": 3,
+      "baseRibCount": 0,
+      "baseCarvingLevel": 0,
+      "basePanelInset": 0.02,
+      "capitalStyle": "none",
+      "capitalWidthScale": 1.46,
+      "capitalDepthScale": 1.46,
+      "capitalTierCount": 3,
+      "capitalStepSpread": 0.42,
+      "capitalBandCount": 2,
+      "voluteSize": 0.08,
+      "voluteCount": 4,
+      "leafCount": 18,
+      "leafRows": 2,
+      "bracketDepth": 0.35,
+      "bracketTierCount": 3,
+      "pendantCount": 0,
+      "capitalCarvingLevel": 0,
+      "ringCount": 0,
+      "ringPlacement": "ends",
+      "ringThickness": 0.055,
+      "ringSpread": 0.16,
+      "fluteCount": 0,
+      "fluteDepth": 0.02,
+      "fluteWidth": 0.02,
+      "spiralTwist": 0,
+      "spiralRibCount": 0,
+      "panelCount": 0,
+      "panelInsetDepth": 0.02,
+      "panelShape": "rectangle",
+      "latheRingCount": 0,
+      "latheRingSpacing": "ends",
+      "carvingLevel": 0,
+      "carvingPlacement": "capital",
+      "lowerBandEnabled": false,
+      "lowerBandHeight": 0.24,
+      "lowerBandCarvingLevel": 0,
+      "dentilCount": 0,
+      "beadCount": 0,
+      "supportStyle": "vertical",
+      "braceWidth": 0.16,
+      "braceDepth": 0.16,
+      "braceBottomSpread": 1.2,
+      "braceTopSpread": 0.12,
+      "bracePlateEnabled": true
+    },
+    "column_c8_layout": {
+      "object": "node",
+      "id": "column_c8_layout",
+      "type": "column",
+      "name": "C8 เสาหลัก",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "structural-column",
+        "columnLabel": "C8"
+      },
+      "position": [
+        7.5,
+        0,
+        5
+      ],
+      "rotation": 0,
+      "supportSlabId": "slab_ml0yinv0445zy6c4",
+      "style": "plain",
+      "crossSection": "square",
+      "height": 3,
+      "radius": 0.1,
+      "width": 0.2,
+      "depth": 0.2,
+      "edgeSoftness": 0.01,
+      "baseHeight": 0,
+      "capitalHeight": 0,
+      "shaftProfile": "straight",
+      "shaftTaper": 0,
+      "shaftBulge": 0,
+      "shaftStartScale": 0.72,
+      "shaftEndScale": 0.72,
+      "shaftSegmentCount": 24,
+      "shaftTwistStep": 0,
+      "shaftCornerRadius": 0.035,
+      "shaftDetail": "none",
+      "baseStyle": "none",
+      "baseWidthScale": 1.24,
+      "baseDepthScale": 1.24,
+      "baseTierCount": 3,
+      "baseStepSpread": 0.42,
+      "basePlinthHeightRatio": 0.44,
+      "baseRoundBandScale": 0.92,
+      "baseNeckScale": 0.72,
+      "baseRoundBandCount": 3,
+      "baseRibCount": 0,
+      "baseCarvingLevel": 0,
+      "basePanelInset": 0.02,
+      "capitalStyle": "none",
+      "capitalWidthScale": 1.46,
+      "capitalDepthScale": 1.46,
+      "capitalTierCount": 3,
+      "capitalStepSpread": 0.42,
+      "capitalBandCount": 2,
+      "voluteSize": 0.08,
+      "voluteCount": 4,
+      "leafCount": 18,
+      "leafRows": 2,
+      "bracketDepth": 0.35,
+      "bracketTierCount": 3,
+      "pendantCount": 0,
+      "capitalCarvingLevel": 0,
+      "ringCount": 0,
+      "ringPlacement": "ends",
+      "ringThickness": 0.055,
+      "ringSpread": 0.16,
+      "fluteCount": 0,
+      "fluteDepth": 0.02,
+      "fluteWidth": 0.02,
+      "spiralTwist": 0,
+      "spiralRibCount": 0,
+      "panelCount": 0,
+      "panelInsetDepth": 0.02,
+      "panelShape": "rectangle",
+      "latheRingCount": 0,
+      "latheRingSpacing": "ends",
+      "carvingLevel": 0,
+      "carvingPlacement": "capital",
+      "lowerBandEnabled": false,
+      "lowerBandHeight": 0.24,
+      "lowerBandCarvingLevel": 0,
+      "dentilCount": 0,
+      "beadCount": 0,
+      "supportStyle": "vertical",
+      "braceWidth": 0.16,
+      "braceDepth": 0.16,
+      "braceBottomSpread": 1.2,
+      "braceTopSpread": 0.12,
+      "bracePlateEnabled": true
+    },
+    "column_c9_layout": {
+      "object": "node",
+      "id": "column_c9_layout",
+      "type": "column",
+      "name": "C9 เสาหลัก",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "structural-column",
+        "columnLabel": "C9"
+      },
+      "position": [
+        11,
+        0,
+        5
+      ],
+      "rotation": 0,
+      "supportSlabId": "slab_ml0yinv0445zy6c4",
+      "style": "plain",
+      "crossSection": "square",
+      "height": 3,
+      "radius": 0.1,
+      "width": 0.2,
+      "depth": 0.2,
+      "edgeSoftness": 0.01,
+      "baseHeight": 0,
+      "capitalHeight": 0,
+      "shaftProfile": "straight",
+      "shaftTaper": 0,
+      "shaftBulge": 0,
+      "shaftStartScale": 0.72,
+      "shaftEndScale": 0.72,
+      "shaftSegmentCount": 24,
+      "shaftTwistStep": 0,
+      "shaftCornerRadius": 0.035,
+      "shaftDetail": "none",
+      "baseStyle": "none",
+      "baseWidthScale": 1.24,
+      "baseDepthScale": 1.24,
+      "baseTierCount": 3,
+      "baseStepSpread": 0.42,
+      "basePlinthHeightRatio": 0.44,
+      "baseRoundBandScale": 0.92,
+      "baseNeckScale": 0.72,
+      "baseRoundBandCount": 3,
+      "baseRibCount": 0,
+      "baseCarvingLevel": 0,
+      "basePanelInset": 0.02,
+      "capitalStyle": "none",
+      "capitalWidthScale": 1.46,
+      "capitalDepthScale": 1.46,
+      "capitalTierCount": 3,
+      "capitalStepSpread": 0.42,
+      "capitalBandCount": 2,
+      "voluteSize": 0.08,
+      "voluteCount": 4,
+      "leafCount": 18,
+      "leafRows": 2,
+      "bracketDepth": 0.35,
+      "bracketTierCount": 3,
+      "pendantCount": 0,
+      "capitalCarvingLevel": 0,
+      "ringCount": 0,
+      "ringPlacement": "ends",
+      "ringThickness": 0.055,
+      "ringSpread": 0.16,
+      "fluteCount": 0,
+      "fluteDepth": 0.02,
+      "fluteWidth": 0.02,
+      "spiralTwist": 0,
+      "spiralRibCount": 0,
+      "panelCount": 0,
+      "panelInsetDepth": 0.02,
+      "panelShape": "rectangle",
+      "latheRingCount": 0,
+      "latheRingSpacing": "ends",
+      "carvingLevel": 0,
+      "carvingPlacement": "capital",
+      "lowerBandEnabled": false,
+      "lowerBandHeight": 0.24,
+      "lowerBandCarvingLevel": 0,
+      "dentilCount": 0,
+      "beadCount": 0,
+      "supportStyle": "vertical",
+      "braceWidth": 0.16,
+      "braceDepth": 0.16,
+      "braceBottomSpread": 1.2,
+      "braceTopSpread": 0.12,
+      "bracePlateEnabled": true
+    },
+    "column_c10_layout": {
+      "object": "node",
+      "id": "column_c10_layout",
+      "type": "column",
+      "name": "C10 เสาหลัก",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "structural-column",
+        "columnLabel": "C10"
+      },
+      "position": [
+        12.79,
+        0,
+        5
+      ],
+      "rotation": 0,
+      "supportSlabId": "slab_ml0yinv0445zy6c4",
+      "style": "plain",
+      "crossSection": "square",
+      "height": 3,
+      "radius": 0.1,
+      "width": 0.2,
+      "depth": 0.2,
+      "edgeSoftness": 0.01,
+      "baseHeight": 0,
+      "capitalHeight": 0,
+      "shaftProfile": "straight",
+      "shaftTaper": 0,
+      "shaftBulge": 0,
+      "shaftStartScale": 0.72,
+      "shaftEndScale": 0.72,
+      "shaftSegmentCount": 24,
+      "shaftTwistStep": 0,
+      "shaftCornerRadius": 0.035,
+      "shaftDetail": "none",
+      "baseStyle": "none",
+      "baseWidthScale": 1.24,
+      "baseDepthScale": 1.24,
+      "baseTierCount": 3,
+      "baseStepSpread": 0.42,
+      "basePlinthHeightRatio": 0.44,
+      "baseRoundBandScale": 0.92,
+      "baseNeckScale": 0.72,
+      "baseRoundBandCount": 3,
+      "baseRibCount": 0,
+      "baseCarvingLevel": 0,
+      "basePanelInset": 0.02,
+      "capitalStyle": "none",
+      "capitalWidthScale": 1.46,
+      "capitalDepthScale": 1.46,
+      "capitalTierCount": 3,
+      "capitalStepSpread": 0.42,
+      "capitalBandCount": 2,
+      "voluteSize": 0.08,
+      "voluteCount": 4,
+      "leafCount": 18,
+      "leafRows": 2,
+      "bracketDepth": 0.35,
+      "bracketTierCount": 3,
+      "pendantCount": 0,
+      "capitalCarvingLevel": 0,
+      "ringCount": 0,
+      "ringPlacement": "ends",
+      "ringThickness": 0.055,
+      "ringSpread": 0.16,
+      "fluteCount": 0,
+      "fluteDepth": 0.02,
+      "fluteWidth": 0.02,
+      "spiralTwist": 0,
+      "spiralRibCount": 0,
+      "panelCount": 0,
+      "panelInsetDepth": 0.02,
+      "panelShape": "rectangle",
+      "latheRingCount": 0,
+      "latheRingSpacing": "ends",
+      "carvingLevel": 0,
+      "carvingPlacement": "capital",
+      "lowerBandEnabled": false,
+      "lowerBandHeight": 0.24,
+      "lowerBandCarvingLevel": 0,
+      "dentilCount": 0,
+      "beadCount": 0,
+      "supportStyle": "vertical",
+      "braceWidth": 0.16,
+      "braceDepth": 0.16,
+      "braceBottomSpread": 1.2,
+      "braceTopSpread": 0.12,
+      "bracePlateEnabled": true
+    },
+    "column_c11_layout": {
+      "object": "node",
+      "id": "column_c11_layout",
+      "type": "column",
+      "name": "C11 เสาหลัก",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "structural-column",
+        "columnLabel": "C11"
+      },
+      "position": [
+        11,
+        0,
+        9.38
+      ],
+      "rotation": 0,
+      "supportSlabId": "slab_ml0yinv0445zy6c4",
+      "style": "plain",
+      "crossSection": "square",
+      "height": 3,
+      "radius": 0.1,
+      "width": 0.2,
+      "depth": 0.2,
+      "edgeSoftness": 0.01,
+      "baseHeight": 0,
+      "capitalHeight": 0,
+      "shaftProfile": "straight",
+      "shaftTaper": 0,
+      "shaftBulge": 0,
+      "shaftStartScale": 0.72,
+      "shaftEndScale": 0.72,
+      "shaftSegmentCount": 24,
+      "shaftTwistStep": 0,
+      "shaftCornerRadius": 0.035,
+      "shaftDetail": "none",
+      "baseStyle": "none",
+      "baseWidthScale": 1.24,
+      "baseDepthScale": 1.24,
+      "baseTierCount": 3,
+      "baseStepSpread": 0.42,
+      "basePlinthHeightRatio": 0.44,
+      "baseRoundBandScale": 0.92,
+      "baseNeckScale": 0.72,
+      "baseRoundBandCount": 3,
+      "baseRibCount": 0,
+      "baseCarvingLevel": 0,
+      "basePanelInset": 0.02,
+      "capitalStyle": "none",
+      "capitalWidthScale": 1.46,
+      "capitalDepthScale": 1.46,
+      "capitalTierCount": 3,
+      "capitalStepSpread": 0.42,
+      "capitalBandCount": 2,
+      "voluteSize": 0.08,
+      "voluteCount": 4,
+      "leafCount": 18,
+      "leafRows": 2,
+      "bracketDepth": 0.35,
+      "bracketTierCount": 3,
+      "pendantCount": 0,
+      "capitalCarvingLevel": 0,
+      "ringCount": 0,
+      "ringPlacement": "ends",
+      "ringThickness": 0.055,
+      "ringSpread": 0.16,
+      "fluteCount": 0,
+      "fluteDepth": 0.02,
+      "fluteWidth": 0.02,
+      "spiralTwist": 0,
+      "spiralRibCount": 0,
+      "panelCount": 0,
+      "panelInsetDepth": 0.02,
+      "panelShape": "rectangle",
+      "latheRingCount": 0,
+      "latheRingSpacing": "ends",
+      "carvingLevel": 0,
+      "carvingPlacement": "capital",
+      "lowerBandEnabled": false,
+      "lowerBandHeight": 0.24,
+      "lowerBandCarvingLevel": 0,
+      "dentilCount": 0,
+      "beadCount": 0,
+      "supportStyle": "vertical",
+      "braceWidth": 0.16,
+      "braceDepth": 0.16,
+      "braceBottomSpread": 1.2,
+      "braceTopSpread": 0.12,
+      "bracePlateEnabled": true
+    },
+    "column_c12_layout": {
+      "object": "node",
+      "id": "column_c12_layout",
+      "type": "column",
+      "name": "C12 เสาหลัก",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "structural-column",
+        "columnLabel": "C12"
+      },
+      "position": [
+        12.79,
+        0,
+        9.38
+      ],
+      "rotation": 0,
+      "supportSlabId": "slab_ml0yinv0445zy6c4",
+      "style": "plain",
+      "crossSection": "square",
+      "height": 3,
+      "radius": 0.1,
+      "width": 0.2,
+      "depth": 0.2,
+      "edgeSoftness": 0.01,
+      "baseHeight": 0,
+      "capitalHeight": 0,
+      "shaftProfile": "straight",
+      "shaftTaper": 0,
+      "shaftBulge": 0,
+      "shaftStartScale": 0.72,
+      "shaftEndScale": 0.72,
+      "shaftSegmentCount": 24,
+      "shaftTwistStep": 0,
+      "shaftCornerRadius": 0.035,
+      "shaftDetail": "none",
+      "baseStyle": "none",
+      "baseWidthScale": 1.24,
+      "baseDepthScale": 1.24,
+      "baseTierCount": 3,
+      "baseStepSpread": 0.42,
+      "basePlinthHeightRatio": 0.44,
+      "baseRoundBandScale": 0.92,
+      "baseNeckScale": 0.72,
+      "baseRoundBandCount": 3,
+      "baseRibCount": 0,
+      "baseCarvingLevel": 0,
+      "basePanelInset": 0.02,
+      "capitalStyle": "none",
+      "capitalWidthScale": 1.46,
+      "capitalDepthScale": 1.46,
+      "capitalTierCount": 3,
+      "capitalStepSpread": 0.42,
+      "capitalBandCount": 2,
+      "voluteSize": 0.08,
+      "voluteCount": 4,
+      "leafCount": 18,
+      "leafRows": 2,
+      "bracketDepth": 0.35,
+      "bracketTierCount": 3,
+      "pendantCount": 0,
+      "capitalCarvingLevel": 0,
+      "ringCount": 0,
+      "ringPlacement": "ends",
+      "ringThickness": 0.055,
+      "ringSpread": 0.16,
+      "fluteCount": 0,
+      "fluteDepth": 0.02,
+      "fluteWidth": 0.02,
+      "spiralTwist": 0,
+      "spiralRibCount": 0,
+      "panelCount": 0,
+      "panelInsetDepth": 0.02,
+      "panelShape": "rectangle",
+      "latheRingCount": 0,
+      "latheRingSpacing": "ends",
+      "carvingLevel": 0,
+      "carvingPlacement": "capital",
+      "lowerBandEnabled": false,
+      "lowerBandHeight": 0.24,
+      "lowerBandCarvingLevel": 0,
+      "dentilCount": 0,
+      "beadCount": 0,
+      "supportStyle": "vertical",
+      "braceWidth": 0.16,
+      "braceDepth": 0.16,
+      "braceBottomSpread": 1.2,
+      "braceTopSpread": 0.12,
+      "bracePlateEnabled": true
+    },
+    "column_c13_layout": {
+      "object": "node",
+      "id": "column_c13_layout",
+      "type": "column",
+      "name": "C13 เสาหลัก",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "structural-column",
+        "columnLabel": "C13"
+      },
+      "position": [
+        5.5,
+        0,
+        12.88
+      ],
+      "rotation": 0,
+      "supportSlabId": "slab_ml0yinv0445zy6c4",
+      "style": "plain",
+      "crossSection": "square",
+      "height": 3,
+      "radius": 0.1,
+      "width": 0.2,
+      "depth": 0.2,
+      "edgeSoftness": 0.01,
+      "baseHeight": 0,
+      "capitalHeight": 0,
+      "shaftProfile": "straight",
+      "shaftTaper": 0,
+      "shaftBulge": 0,
+      "shaftStartScale": 0.72,
+      "shaftEndScale": 0.72,
+      "shaftSegmentCount": 24,
+      "shaftTwistStep": 0,
+      "shaftCornerRadius": 0.035,
+      "shaftDetail": "none",
+      "baseStyle": "none",
+      "baseWidthScale": 1.24,
+      "baseDepthScale": 1.24,
+      "baseTierCount": 3,
+      "baseStepSpread": 0.42,
+      "basePlinthHeightRatio": 0.44,
+      "baseRoundBandScale": 0.92,
+      "baseNeckScale": 0.72,
+      "baseRoundBandCount": 3,
+      "baseRibCount": 0,
+      "baseCarvingLevel": 0,
+      "basePanelInset": 0.02,
+      "capitalStyle": "none",
+      "capitalWidthScale": 1.46,
+      "capitalDepthScale": 1.46,
+      "capitalTierCount": 3,
+      "capitalStepSpread": 0.42,
+      "capitalBandCount": 2,
+      "voluteSize": 0.08,
+      "voluteCount": 4,
+      "leafCount": 18,
+      "leafRows": 2,
+      "bracketDepth": 0.35,
+      "bracketTierCount": 3,
+      "pendantCount": 0,
+      "capitalCarvingLevel": 0,
+      "ringCount": 0,
+      "ringPlacement": "ends",
+      "ringThickness": 0.055,
+      "ringSpread": 0.16,
+      "fluteCount": 0,
+      "fluteDepth": 0.02,
+      "fluteWidth": 0.02,
+      "spiralTwist": 0,
+      "spiralRibCount": 0,
+      "panelCount": 0,
+      "panelInsetDepth": 0.02,
+      "panelShape": "rectangle",
+      "latheRingCount": 0,
+      "latheRingSpacing": "ends",
+      "carvingLevel": 0,
+      "carvingPlacement": "capital",
+      "lowerBandEnabled": false,
+      "lowerBandHeight": 0.24,
+      "lowerBandCarvingLevel": 0,
+      "dentilCount": 0,
+      "beadCount": 0,
+      "supportStyle": "vertical",
+      "braceWidth": 0.16,
+      "braceDepth": 0.16,
+      "braceBottomSpread": 1.2,
+      "braceTopSpread": 0.12,
+      "bracePlateEnabled": true
+    },
+    "column_c14_layout": {
+      "object": "node",
+      "id": "column_c14_layout",
+      "type": "column",
+      "name": "C14 เสาหลัก",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "structural-column",
+        "columnLabel": "C14"
+      },
+      "position": [
+        11,
+        0,
+        12.88
+      ],
+      "rotation": 0,
+      "supportSlabId": "slab_ml0yinv0445zy6c4",
+      "style": "plain",
+      "crossSection": "square",
+      "height": 3,
+      "radius": 0.1,
+      "width": 0.2,
+      "depth": 0.2,
+      "edgeSoftness": 0.01,
+      "baseHeight": 0,
+      "capitalHeight": 0,
+      "shaftProfile": "straight",
+      "shaftTaper": 0,
+      "shaftBulge": 0,
+      "shaftStartScale": 0.72,
+      "shaftEndScale": 0.72,
+      "shaftSegmentCount": 24,
+      "shaftTwistStep": 0,
+      "shaftCornerRadius": 0.035,
+      "shaftDetail": "none",
+      "baseStyle": "none",
+      "baseWidthScale": 1.24,
+      "baseDepthScale": 1.24,
+      "baseTierCount": 3,
+      "baseStepSpread": 0.42,
+      "basePlinthHeightRatio": 0.44,
+      "baseRoundBandScale": 0.92,
+      "baseNeckScale": 0.72,
+      "baseRoundBandCount": 3,
+      "baseRibCount": 0,
+      "baseCarvingLevel": 0,
+      "basePanelInset": 0.02,
+      "capitalStyle": "none",
+      "capitalWidthScale": 1.46,
+      "capitalDepthScale": 1.46,
+      "capitalTierCount": 3,
+      "capitalStepSpread": 0.42,
+      "capitalBandCount": 2,
+      "voluteSize": 0.08,
+      "voluteCount": 4,
+      "leafCount": 18,
+      "leafRows": 2,
+      "bracketDepth": 0.35,
+      "bracketTierCount": 3,
+      "pendantCount": 0,
+      "capitalCarvingLevel": 0,
+      "ringCount": 0,
+      "ringPlacement": "ends",
+      "ringThickness": 0.055,
+      "ringSpread": 0.16,
+      "fluteCount": 0,
+      "fluteDepth": 0.02,
+      "fluteWidth": 0.02,
+      "spiralTwist": 0,
+      "spiralRibCount": 0,
+      "panelCount": 0,
+      "panelInsetDepth": 0.02,
+      "panelShape": "rectangle",
+      "latheRingCount": 0,
+      "latheRingSpacing": "ends",
+      "carvingLevel": 0,
+      "carvingPlacement": "capital",
+      "lowerBandEnabled": false,
+      "lowerBandHeight": 0.24,
+      "lowerBandCarvingLevel": 0,
+      "dentilCount": 0,
+      "beadCount": 0,
+      "supportStyle": "vertical",
+      "braceWidth": 0.16,
+      "braceDepth": 0.16,
+      "braceBottomSpread": 1.2,
+      "braceTopSpread": 0.12,
+      "bracePlateEnabled": true
+    },
+    "column_c15_layout": {
+      "object": "node",
+      "id": "column_c15_layout",
+      "type": "column",
+      "name": "C15 เสาหลัก",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "structural-column",
+        "columnLabel": "C15"
+      },
+      "position": [
+        5.5,
+        0,
+        8.91
+      ],
+      "rotation": 0,
+      "supportSlabId": "slab_ml0yinv0445zy6c4",
+      "style": "plain",
+      "crossSection": "square",
+      "height": 3,
+      "radius": 0.1,
+      "width": 0.2,
+      "depth": 0.2,
+      "edgeSoftness": 0.01,
+      "baseHeight": 0,
+      "capitalHeight": 0,
+      "shaftProfile": "straight",
+      "shaftTaper": 0,
+      "shaftBulge": 0,
+      "shaftStartScale": 0.72,
+      "shaftEndScale": 0.72,
+      "shaftSegmentCount": 24,
+      "shaftTwistStep": 0,
+      "shaftCornerRadius": 0.035,
+      "shaftDetail": "none",
+      "baseStyle": "none",
+      "baseWidthScale": 1.24,
+      "baseDepthScale": 1.24,
+      "baseTierCount": 3,
+      "baseStepSpread": 0.42,
+      "basePlinthHeightRatio": 0.44,
+      "baseRoundBandScale": 0.92,
+      "baseNeckScale": 0.72,
+      "baseRoundBandCount": 3,
+      "baseRibCount": 0,
+      "baseCarvingLevel": 0,
+      "basePanelInset": 0.02,
+      "capitalStyle": "none",
+      "capitalWidthScale": 1.46,
+      "capitalDepthScale": 1.46,
+      "capitalTierCount": 3,
+      "capitalStepSpread": 0.42,
+      "capitalBandCount": 2,
+      "voluteSize": 0.08,
+      "voluteCount": 4,
+      "leafCount": 18,
+      "leafRows": 2,
+      "bracketDepth": 0.35,
+      "bracketTierCount": 3,
+      "pendantCount": 0,
+      "capitalCarvingLevel": 0,
+      "ringCount": 0,
+      "ringPlacement": "ends",
+      "ringThickness": 0.055,
+      "ringSpread": 0.16,
+      "fluteCount": 0,
+      "fluteDepth": 0.02,
+      "fluteWidth": 0.02,
+      "spiralTwist": 0,
+      "spiralRibCount": 0,
+      "panelCount": 0,
+      "panelInsetDepth": 0.02,
+      "panelShape": "rectangle",
+      "latheRingCount": 0,
+      "latheRingSpacing": "ends",
+      "carvingLevel": 0,
+      "carvingPlacement": "capital",
+      "lowerBandEnabled": false,
+      "lowerBandHeight": 0.24,
+      "lowerBandCarvingLevel": 0,
+      "dentilCount": 0,
+      "beadCount": 0,
+      "supportStyle": "vertical",
+      "braceWidth": 0.16,
+      "braceDepth": 0.16,
+      "braceBottomSpread": 1.2,
+      "braceTopSpread": 0.12,
+      "bracePlateEnabled": true
+    },
+    "column_p1_layout": {
+      "object": "node",
+      "id": "column_p1_layout",
+      "type": "column",
+      "name": "P1 เสารับแนวลาน",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "porch-roof-support",
+        "columnLabel": "P1"
+      },
+      "position": [
+        2.5,
+        0,
+        8.91
+      ],
+      "rotation": 0,
+      "supportSlabId": "slab_ml0yinv0445zy6c4",
+      "style": "plain",
+      "crossSection": "square",
+      "height": 3,
+      "radius": 0.1,
+      "width": 0.2,
+      "depth": 0.2,
+      "edgeSoftness": 0.01,
+      "baseHeight": 0,
+      "capitalHeight": 0,
+      "shaftProfile": "straight",
+      "shaftTaper": 0,
+      "shaftBulge": 0,
+      "shaftStartScale": 0.72,
+      "shaftEndScale": 0.72,
+      "shaftSegmentCount": 24,
+      "shaftTwistStep": 0,
+      "shaftCornerRadius": 0.035,
+      "shaftDetail": "none",
+      "baseStyle": "none",
+      "baseWidthScale": 1.24,
+      "baseDepthScale": 1.24,
+      "baseTierCount": 3,
+      "baseStepSpread": 0.42,
+      "basePlinthHeightRatio": 0.44,
+      "baseRoundBandScale": 0.92,
+      "baseNeckScale": 0.72,
+      "baseRoundBandCount": 3,
+      "baseRibCount": 0,
+      "baseCarvingLevel": 0,
+      "basePanelInset": 0.02,
+      "capitalStyle": "none",
+      "capitalWidthScale": 1.46,
+      "capitalDepthScale": 1.46,
+      "capitalTierCount": 3,
+      "capitalStepSpread": 0.42,
+      "capitalBandCount": 2,
+      "voluteSize": 0.08,
+      "voluteCount": 4,
+      "leafCount": 18,
+      "leafRows": 2,
+      "bracketDepth": 0.35,
+      "bracketTierCount": 3,
+      "pendantCount": 0,
+      "capitalCarvingLevel": 0,
+      "ringCount": 0,
+      "ringPlacement": "ends",
+      "ringThickness": 0.055,
+      "ringSpread": 0.16,
+      "fluteCount": 0,
+      "fluteDepth": 0.02,
+      "fluteWidth": 0.02,
+      "spiralTwist": 0,
+      "spiralRibCount": 0,
+      "panelCount": 0,
+      "panelInsetDepth": 0.02,
+      "panelShape": "rectangle",
+      "latheRingCount": 0,
+      "latheRingSpacing": "ends",
+      "carvingLevel": 0,
+      "carvingPlacement": "capital",
+      "lowerBandEnabled": false,
+      "lowerBandHeight": 0.24,
+      "lowerBandCarvingLevel": 0,
+      "dentilCount": 0,
+      "beadCount": 0,
+      "supportStyle": "vertical",
+      "braceWidth": 0.16,
+      "braceDepth": 0.16,
+      "braceBottomSpread": 1.2,
+      "braceTopSpread": 0.12,
+      "bracePlateEnabled": true
+    },
+    "column_p2_layout": {
+      "object": "node",
+      "id": "column_p2_layout",
+      "type": "column",
+      "name": "P2 เสารับแนวลาน",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "porch-roof-support",
+        "columnLabel": "P2"
+      },
+      "position": [
+        2.5,
+        0,
+        12.88
+      ],
+      "rotation": 0,
+      "supportSlabId": "slab_ml0yinv0445zy6c4",
+      "style": "plain",
+      "crossSection": "square",
+      "height": 3,
+      "radius": 0.1,
+      "width": 0.2,
+      "depth": 0.2,
+      "edgeSoftness": 0.01,
+      "baseHeight": 0,
+      "capitalHeight": 0,
+      "shaftProfile": "straight",
+      "shaftTaper": 0,
+      "shaftBulge": 0,
+      "shaftStartScale": 0.72,
+      "shaftEndScale": 0.72,
+      "shaftSegmentCount": 24,
+      "shaftTwistStep": 0,
+      "shaftCornerRadius": 0.035,
+      "shaftDetail": "none",
+      "baseStyle": "none",
+      "baseWidthScale": 1.24,
+      "baseDepthScale": 1.24,
+      "baseTierCount": 3,
+      "baseStepSpread": 0.42,
+      "basePlinthHeightRatio": 0.44,
+      "baseRoundBandScale": 0.92,
+      "baseNeckScale": 0.72,
+      "baseRoundBandCount": 3,
+      "baseRibCount": 0,
+      "baseCarvingLevel": 0,
+      "basePanelInset": 0.02,
+      "capitalStyle": "none",
+      "capitalWidthScale": 1.46,
+      "capitalDepthScale": 1.46,
+      "capitalTierCount": 3,
+      "capitalStepSpread": 0.42,
+      "capitalBandCount": 2,
+      "voluteSize": 0.08,
+      "voluteCount": 4,
+      "leafCount": 18,
+      "leafRows": 2,
+      "bracketDepth": 0.35,
+      "bracketTierCount": 3,
+      "pendantCount": 0,
+      "capitalCarvingLevel": 0,
+      "ringCount": 0,
+      "ringPlacement": "ends",
+      "ringThickness": 0.055,
+      "ringSpread": 0.16,
+      "fluteCount": 0,
+      "fluteDepth": 0.02,
+      "fluteWidth": 0.02,
+      "spiralTwist": 0,
+      "spiralRibCount": 0,
+      "panelCount": 0,
+      "panelInsetDepth": 0.02,
+      "panelShape": "rectangle",
+      "latheRingCount": 0,
+      "latheRingSpacing": "ends",
+      "carvingLevel": 0,
+      "carvingPlacement": "capital",
+      "lowerBandEnabled": false,
+      "lowerBandHeight": 0.24,
+      "lowerBandCarvingLevel": 0,
+      "dentilCount": 0,
+      "beadCount": 0,
+      "supportStyle": "vertical",
+      "braceWidth": 0.16,
+      "braceDepth": 0.16,
+      "braceBottomSpread": 1.2,
+      "braceTopSpread": 0.12,
+      "bracePlateEnabled": true
+    },
+    "column_p3_layout": {
+      "object": "node",
+      "id": "column_p3_layout",
+      "type": "column",
+      "name": "P3 เสารับแนวลาน",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "porch-roof-support",
+        "columnLabel": "P3"
+      },
+      "position": [
+        12.73,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "supportSlabId": "slab_ml0yinv0445zy6c4",
+      "style": "plain",
+      "crossSection": "square",
+      "height": 3,
+      "radius": 0.1,
+      "width": 0.2,
+      "depth": 0.2,
+      "edgeSoftness": 0.01,
+      "baseHeight": 0,
+      "capitalHeight": 0,
+      "shaftProfile": "straight",
+      "shaftTaper": 0,
+      "shaftBulge": 0,
+      "shaftStartScale": 0.72,
+      "shaftEndScale": 0.72,
+      "shaftSegmentCount": 24,
+      "shaftTwistStep": 0,
+      "shaftCornerRadius": 0.035,
+      "shaftDetail": "none",
+      "baseStyle": "none",
+      "baseWidthScale": 1.24,
+      "baseDepthScale": 1.24,
+      "baseTierCount": 3,
+      "baseStepSpread": 0.42,
+      "basePlinthHeightRatio": 0.44,
+      "baseRoundBandScale": 0.92,
+      "baseNeckScale": 0.72,
+      "baseRoundBandCount": 3,
+      "baseRibCount": 0,
+      "baseCarvingLevel": 0,
+      "basePanelInset": 0.02,
+      "capitalStyle": "none",
+      "capitalWidthScale": 1.46,
+      "capitalDepthScale": 1.46,
+      "capitalTierCount": 3,
+      "capitalStepSpread": 0.42,
+      "capitalBandCount": 2,
+      "voluteSize": 0.08,
+      "voluteCount": 4,
+      "leafCount": 18,
+      "leafRows": 2,
+      "bracketDepth": 0.35,
+      "bracketTierCount": 3,
+      "pendantCount": 0,
+      "capitalCarvingLevel": 0,
+      "ringCount": 0,
+      "ringPlacement": "ends",
+      "ringThickness": 0.055,
+      "ringSpread": 0.16,
+      "fluteCount": 0,
+      "fluteDepth": 0.02,
+      "fluteWidth": 0.02,
+      "spiralTwist": 0,
+      "spiralRibCount": 0,
+      "panelCount": 0,
+      "panelInsetDepth": 0.02,
+      "panelShape": "rectangle",
+      "latheRingCount": 0,
+      "latheRingSpacing": "ends",
+      "carvingLevel": 0,
+      "carvingPlacement": "capital",
+      "lowerBandEnabled": false,
+      "lowerBandHeight": 0.24,
+      "lowerBandCarvingLevel": 0,
+      "dentilCount": 0,
+      "beadCount": 0,
+      "supportStyle": "vertical",
+      "braceWidth": 0.16,
+      "braceDepth": 0.16,
+      "braceBottomSpread": 1.2,
+      "braceTopSpread": 0.12,
+      "bracePlateEnabled": true
+    },
+    "column_p4_layout": {
+      "object": "node",
+      "id": "column_p4_layout",
+      "type": "column",
+      "name": "P4 เสารับแนวลาน",
+      "parentId": "level_ytncss7hqafwphlf",
+      "visible": true,
+      "metadata": {
+        "role": "porch-roof-support",
+        "columnLabel": "P4"
+      },
+      "position": [
+        12.73,
+        0,
+        12.88
+      ],
+      "rotation": 0,
+      "supportSlabId": "slab_ml0yinv0445zy6c4",
+      "style": "plain",
+      "crossSection": "square",
+      "height": 3,
+      "radius": 0.1,
+      "width": 0.2,
+      "depth": 0.2,
+      "edgeSoftness": 0.01,
+      "baseHeight": 0,
+      "capitalHeight": 0,
+      "shaftProfile": "straight",
+      "shaftTaper": 0,
+      "shaftBulge": 0,
+      "shaftStartScale": 0.72,
+      "shaftEndScale": 0.72,
+      "shaftSegmentCount": 24,
+      "shaftTwistStep": 0,
+      "shaftCornerRadius": 0.035,
+      "shaftDetail": "none",
+      "baseStyle": "none",
+      "baseWidthScale": 1.24,
+      "baseDepthScale": 1.24,
+      "baseTierCount": 3,
+      "baseStepSpread": 0.42,
+      "basePlinthHeightRatio": 0.44,
+      "baseRoundBandScale": 0.92,
+      "baseNeckScale": 0.72,
+      "baseRoundBandCount": 3,
+      "baseRibCount": 0,
+      "baseCarvingLevel": 0,
+      "basePanelInset": 0.02,
+      "capitalStyle": "none",
+      "capitalWidthScale": 1.46,
+      "capitalDepthScale": 1.46,
+      "capitalTierCount": 3,
+      "capitalStepSpread": 0.42,
+      "capitalBandCount": 2,
+      "voluteSize": 0.08,
+      "voluteCount": 4,
+      "leafCount": 18,
+      "leafRows": 2,
+      "bracketDepth": 0.35,
+      "bracketTierCount": 3,
+      "pendantCount": 0,
+      "capitalCarvingLevel": 0,
+      "ringCount": 0,
+      "ringPlacement": "ends",
+      "ringThickness": 0.055,
+      "ringSpread": 0.16,
+      "fluteCount": 0,
+      "fluteDepth": 0.02,
+      "fluteWidth": 0.02,
+      "spiralTwist": 0,
+      "spiralRibCount": 0,
+      "panelCount": 0,
+      "panelInsetDepth": 0.02,
+      "panelShape": "rectangle",
+      "latheRingCount": 0,
+      "latheRingSpacing": "ends",
+      "carvingLevel": 0,
+      "carvingPlacement": "capital",
+      "lowerBandEnabled": false,
+      "lowerBandHeight": 0.24,
+      "lowerBandCarvingLevel": 0,
+      "dentilCount": 0,
+      "beadCount": 0,
+      "supportStyle": "vertical",
+      "braceWidth": 0.16,
+      "braceDepth": 0.16,
+      "braceBottomSpread": 1.2,
+      "braceTopSpread": 0.12,
+      "bracePlateEnabled": true
+    },
+    "rseg_main_right_halfhip": {
+      "object": "node",
+      "id": "rseg_main_right_halfhip",
+      "type": "roof-segment",
+      "name": "ปั้นหยาครึ่งผืน ปิดปลายขวา",
+      "parentId": "roof_baxw9x28xmr7wlxi",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        3.6449999999999996,
+        0,
+        0
+      ],
+      "rotation": 0,
+      "roofType": "hip",
+      "width": 6.94,
+      "depth": 6.94,
+      "trim": {
+        "left": 3.47,
+        "right": 0,
+        "front": 0,
+        "back": 0,
+        "frontLeft": 0,
+        "frontRight": 0,
+        "backLeft": 0,
+        "backRight": 0,
+        "frontLeftX": 0,
+        "frontLeftZ": 0,
+        "frontRightX": 0,
+        "frontRightZ": 0,
+        "backLeftX": 0,
+        "backLeftZ": 0,
+        "backRightX": 0,
+        "backRightZ": 0
+      },
+      "wallHeight": 0,
+      "pitch": 25,
+      "wallThickness": 0.16,
+      "deckThickness": 0.1,
+      "overhang": 0.15,
+      "shingleThickness": 0.05,
+      "gambrelLowerWidthRatio": 0.5,
+      "gambrelLowerHeightRatio": 0.6,
+      "mansardSteepWidthRatio": 0.15,
+      "mansardSteepHeightRatio": 0.7,
+      "dutchHipWidthRatio": 0.25,
+      "dutchHipHeightRatio": 0.5,
+      "dutchWaistLengthRatio": 0.98,
+      "dutchGabletRake": 0.48,
+      "dutchTopRakeThickness": 0.21,
+      "children": []
+    }
+  },
+  "rootNodeIds": [
+    "site_xcqfx3ldie6e0lfq"
+  ],
+  "collections": {}
+}

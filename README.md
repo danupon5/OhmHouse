@@ -1,16 +1,43 @@
-# บ้าน / SITEBOOK
+# OhmHouse — เว็บดูแบบบ้านสำหรับช่าง
 
-Static 3D architectural reference viewer using Pascal scene snapshot V384.
-Serve `dist` with a local HTTP server. All 3D library assets are bundled locally; the optional Thai font falls back to system fonts.
+เว็บสามมิติและผังบ้านจาก Pascal พร้อมตารางระยะประตู หน้าต่าง ผนัง และเสา
 
-## Measurements
+## เปิดใช้งานในเครื่อง
 
-- Wall coordinates are original X/Z endpoints; opening X is measured along the wall from A to B.
-- Opening lower/upper levels are center Y minus/plus half the nominal height, relative to the wall's floor datum.
-- Dimensions are nominal and not approved rough-opening allowances.
-- D09 extends 0.010 m beyond its wall endpoint in the source and is flagged.
-- Zone 8 is degenerate and is excluded from mapped room areas.
-- Roof surfaces are indicative and are not approved junction or construction geometry.
-- The viewer does not modify the Pascal project. Source IDs remain in scene.json.
+จากโฟลเดอร์นี้ รัน:
 
-The UI includes orbit controls, selectable openings, plan, wall/column/room schedules, CSV export, and printable measurement sheets.
+```bash
+python3 -m http.server 5178 --directory dist
+```
+
+เปิด http://localhost:5178 ไม่ควรเปิด index.html ด้วย file:// เพราะเว็บต้องอ่าน JSON และ JavaScript modules
+
+## ไฟล์หลัก
+
+- `dist/index.html` — โครงหน้าเว็บ
+- `dist/style.css` — รูปแบบและหน้าพิมพ์
+- `dist/app.js` — โมเดลสามมิติ ผัง และการคำนวณระยะ
+- `dist/scene.json` — ข้อมูลแบบที่เว็บใช้ พร้อมข้อมูลเวอร์ชัน
+- `dist/vendor/` — Three.js และตัวควบคุมกล้อง พร้อมใบอนุญาต
+- `pascal/house-v384.json` — สำเนา SceneGraph ของ Pascal สำหรับเก็บแบบต้นฉบับ (ไม่ใช่ไฟล์ GLB)
+- `.openai/hosting.json` — ข้อมูลเชื่อมเว็บ Sites เดิม เก็บไว้เพื่อทำงานต่อกับเว็บเดิม
+
+## ทำงานต่อกับ GitHub
+
+Repository: https://github.com/danupon5/OhmHouse
+
+โฟลเดอร์นี้เชื่อมกับ remote `origin` แล้ว ใช้ `git add`, `git commit` และ `git push` เพื่อส่งการแก้ไข
+เว็บเป็น static site สามารถตั้งระบบเผยแพร่ให้ใช้โฟลเดอร์ `dist` ได้ ไม่ต้องติดตั้ง npm dependencies
+
+## ขอบเขตความถูกต้อง
+
+- ใช้แบบ Pascal V384 ณ 11 กันยายน 2026 ไม่ได้ซิงก์กับ Pascal อัตโนมัติ
+- ระยะช่องเปิดวัดตามแนวผนังจาก A ไป B; ระดับธรณี/หัวช่องคำนวณจากกึ่งกลาง Y และความสูง
+- หน่วยเมตร ขนาดเป็น nominal ยังไม่มีค่าเผื่อช่องก่อและวงกบที่อนุมัติ
+- D09 เกินปลายผนัง 0.010 เมตรในไฟล์ต้นทาง มีคำเตือนในเว็บ
+- Zone 8 มีรูปหลายเหลี่ยมไม่สมบูรณ์ จึงไม่นำมาคำนวณพื้นที่ห้อง
+- หลังคาสามมิติเป็นรูปทรงประกอบ รอยต่อหลังคายังไม่ใช่รายละเอียดก่อสร้างที่ยุติแล้ว
+- พื้นที่ห้องคำนวณจาก polygon ในไฟล์ ไม่ใช่พื้นที่สุทธิหลังฉาบ
+- เว็บไม่แก้ไขแบบ Pascal ต้นทาง
+
+เว็บเดิม: https://baan-sitebook.danupon5.chatgpt.site
