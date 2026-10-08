@@ -58,7 +58,7 @@ for(const directory of ['dist','docs'])test(`${directory}: selection, all-house 
   const source=await readFile(new URL(`${directory}/app.js`,root),'utf8');
   const elements=new Map(),filterInputs=Object.keys(all).map(key=>({dataset:{dimFilter:key},checked:true}));
   const $=selector=>{if(!elements.has(selector))elements.set(selector,{hidden:false,checked:false,innerHTML:'',textContent:'',classList:{toggle(){}},setAttribute(k,v){this[k]=v;},querySelectorAll(){return filterInputs;}});return elements.get(selector);};
-  const context=vm.createContext({...model,cols:of('column'),selected:openings[0],showDimensions:false,mode:'2d',data:scene,$,houseDimensions,annotatePlan,
+  const context=vm.createContext({...model,cols:of('column'),selected:openings[0],showDimensions:false,mode:'2d',data:scene,$,houseDimensions,annotatePlan,deviceLayers:[],document:{querySelectorAll:()=>[]},
     createPlanViewport:()=>({mount(markup){$('#plan').innerHTML=markup;},fit(){},resize(){}}),
     roofView:{sync(){}},select(){},reset(){},table(){},esc:s=>String(s??'').replaceAll('&','&amp;').replaceAll('<','&lt;'),
     f:n=>Number(n).toFixed(3),short:n=>Number(n).toFixed(2),area:p=>Math.abs(p.reduce((s,a,i)=>{let b=p[(i+1)%p.length];return s+a[0]*b[1]-b[0]*a[1]},0)/2),
