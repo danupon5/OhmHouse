@@ -156,7 +156,7 @@ export function setupRoofView({scene,camera,renderer,controls,groups,grid,highli
       const width=aspect>=1?2400:Math.round(2400*aspect), height=aspect>=1?Math.round(2400/aspect):2400;
       output=new T.WebGLRenderer({antialias:true,alpha:false});
       output.setPixelRatio(1);output.setSize(width,height);
-      output.outputColorSpace=renderer.outputColorSpace;output.toneMapping=renderer.toneMapping;output.toneMappingExposure=renderer.toneMappingExposure;
+      output.outputColorSpace=renderer.outputColorSpace;
       output.shadowMap.enabled=true;output.shadowMap.type=renderer.shadowMap.type;
       groups.labels.visible=grid.visible=highlight.visible=false;scene.background=new T.Color('#f5f7f8');
       const exportCamera=camera.clone();exportCamera.aspect=width/height;exportCamera.updateProjectionMatrix();

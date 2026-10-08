@@ -1,0 +1,1286 @@
+<title>บ้านชั้นเดียว 3 ห้องนอน — แบบก่อสร้าง</title>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f4f5f1; --paper-alt:#eaece6; --card:#ffffff;
+  --ink:#14181c; --ink-soft:#57606b; --ink-faint:#98a0a8;
+  --accent:#1d5fae; --accent-soft:#dbe7f6; --warn:#c04a24; --warn-soft:#f6e4dc;
+  --wall:#191d21; --room:#e6e9e2; --room-wet:#d5e2ea; --room-out:#eceadf;
+  --line:#c6cbc2; --grid:#d9dcd4;
+  --shadow:0 1px 2px rgba(20,24,28,.05), 0 8px 28px rgba(20,24,28,.07);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#121517; --paper-alt:#1a1e21; --card:#181c1f;
+    --ink:#e8eae5; --ink-soft:#a3aaaf; --ink-faint:#6a7176;
+    --accent:#74acea; --accent-soft:#1c2b3a; --warn:#e08154; --warn-soft:#2e211a;
+    --wall:#e8eae5; --room:#22261f; --room-wet:#1b2930; --room-out:#262419;
+    --line:#333831; --grid:#282c26;
+    --shadow:0 1px 2px rgba(0,0,0,.5), 0 10px 30px rgba(0,0,0,.4);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#121517; --paper-alt:#1a1e21; --card:#181c1f;
+  --ink:#e8eae5; --ink-soft:#a3aaaf; --ink-faint:#6a7176;
+  --accent:#74acea; --accent-soft:#1c2b3a; --warn:#e08154; --warn-soft:#2e211a;
+  --wall:#e8eae5; --room:#22261f; --room-wet:#1b2930; --room-out:#262419;
+  --line:#333831; --grid:#282c26;
+  --shadow:0 1px 2px rgba(0,0,0,.5), 0 10px 30px rgba(0,0,0,.4);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"IBM Plex Sans Thai","IBM Plex Sans",sans-serif;font-size:14px;line-height:1.55}
+.shell{max-width:1240px;margin:0 auto;padding:26px 20px 90px}
+.masthead{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;
+  padding-bottom:16px;border-bottom:3px solid var(--ink);margin-bottom:16px;flex-wrap:wrap}
+.masthead h1{font-family:"Big Shoulders Display",sans-serif;font-weight:800;font-size:36px;
+  letter-spacing:.005em;margin:0 0 3px;text-wrap:balance;line-height:1}
+.masthead .sub{color:var(--ink-soft);font-size:13px}
+.masthead .meta{text-align:right;font-family:"IBM Plex Mono",monospace;font-size:11.5px;
+  color:var(--ink-soft);display:flex;flex-direction:column;gap:1px}
+.masthead .meta b{color:var(--ink);font-size:12.5px;letter-spacing:.03em}
+.banner{font-size:12.5px;background:var(--warn-soft);border-left:3px solid var(--warn);
+  padding:9px 13px;margin:0 0 16px;border-radius:0 4px 4px 0;color:var(--ink)}
+.tabbar{display:flex;gap:0;flex-wrap:wrap;margin-bottom:18px;border-bottom:1px solid var(--line)}
+.tabbar button{font:inherit;font-weight:500;font-size:13px;background:none;border:none;
+  color:var(--ink-soft);cursor:pointer;padding:9px 15px;border-bottom:2.5px solid transparent;margin-bottom:-1px;
+  font-family:"IBM Plex Mono",monospace;letter-spacing:.01em}
+.tabbar button:hover{color:var(--ink);background:var(--paper-alt)}
+.tabbar button.active{color:var(--accent);border-bottom-color:var(--accent);font-weight:600}
+.tabbar button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.sheet{display:none} .sheet.active{display:block}
+.sheet-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;gap:14px;flex-wrap:wrap}
+.sheet-head h2{font-family:"Big Shoulders Display",sans-serif;font-weight:700;font-size:24px;margin:0;letter-spacing:.01em}
+.tagline{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-soft);
+  background:var(--paper-alt);padding:4px 10px;border-radius:3px;border:1px solid var(--line)}
+.note{font-size:12.5px;color:var(--ink-soft);background:var(--accent-soft);border-left:3px solid var(--accent);
+  padding:9px 13px;margin:0 0 14px;border-radius:0 4px 4px 0}
+.note.warn{background:var(--warn-soft);border-left-color:var(--warn)}
+.canvas{background:var(--card);border:1px solid var(--line);border-radius:6px;box-shadow:var(--shadow);
+  overflow:auto;padding:14px}
+.canvas svg{display:block;margin:0 auto;max-width:100%;height:auto}
+.stack{display:grid;gap:20px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media (max-width:900px){.grid2{grid-template-columns:1fr}}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;color:var(--ink-soft);margin-top:12px;
+  padding:10px 13px;background:var(--paper-alt);border-radius:5px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:15px;height:15px;border-radius:3px;display:inline-block;border:1px solid var(--line);flex:none}
+footer.sf{margin-top:12px;font-size:11px;color:var(--ink-faint);display:flex;justify-content:space-between;
+  font-family:"IBM Plex Mono",monospace;border-top:1px solid var(--line);padding-top:8px}
+table.sched{width:100%;border-collapse:collapse;font-size:13px}
+table.sched caption{text-align:left;font-weight:600;margin-bottom:8px;font-size:14.5px}
+table.sched th{text-align:left;font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.05em;
+  color:var(--ink-soft);border-bottom:1.5px solid var(--ink);padding:8px 10px;white-space:nowrap}
+table.sched td{padding:7px 10px;border-bottom:1px solid var(--line);
+  font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-variant-numeric:tabular-nums;vertical-align:top}
+table.sched td.th-txt{font-family:"IBM Plex Sans Thai",sans-serif;font-size:13px}
+table.sched tr.grouphead td{background:var(--paper-alt);font-family:"IBM Plex Sans Thai",sans-serif;
+  font-weight:700;font-size:12.5px;letter-spacing:.02em;border-bottom:1.5px solid var(--ink)}
+table.sched tbody tr:hover td{background:var(--paper-alt)}
+.pill{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:600;
+  padding:2px 9px;border-radius:20px;background:var(--warn-soft);color:var(--warn)}
+.pill.alt{background:var(--accent-soft);color:var(--accent)}
+
+svg text{font-family:"IBM Plex Sans Thai","IBM Plex Sans",sans-serif;fill:var(--ink)}
+.wall-fill{fill:var(--wall)}
+.jamb{stroke:var(--ink);stroke-width:1.2}
+.window-band{fill:var(--card);stroke:var(--ink);stroke-width:1}
+.glass-line{stroke:var(--accent);stroke-width:1.4}
+.door-leaf{stroke:var(--ink);stroke-width:1.5}
+.door-arc{fill:none;stroke:var(--ink-faint);stroke-width:1;stroke-dasharray:3.5 2.5}
+.door-tag-bg{fill:var(--warn-soft);stroke:var(--warn);stroke-width:.8}
+.door-tag{font-family:"IBM Plex Mono",monospace;font-size:10.5px;font-weight:600;fill:var(--warn);text-anchor:middle}
+.tag-circle{fill:var(--card);stroke:var(--accent);stroke-width:1.3}
+.tag-num{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;fill:var(--accent);text-anchor:middle}
+.room-fill{fill:var(--room);stroke:var(--line);stroke-width:1}
+.room-fill.wet{fill:var(--room-wet)}
+.room-fill.outdoor{fill:var(--room-out)}
+.room-name{font-size:15px;font-weight:600;text-anchor:middle}
+.room-area{font-size:11.5px;fill:var(--ink-soft);text-anchor:middle;font-family:"IBM Plex Mono",monospace}
+.room-finish{font-size:10.5px;fill:var(--ink-faint);text-anchor:middle}
+.stair-body{fill:var(--paper-alt);stroke:var(--ink);stroke-width:1.2}
+.stair-line{stroke:var(--ink);stroke-width:1}
+.stair-arrow{stroke:var(--warn);stroke-width:1.6;marker-end:url(#ah2)}
+.stair-label{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;fill:var(--warn);text-anchor:middle}
+.stair-name{font-size:11.5px;font-weight:600;fill:var(--ink-soft)}
+.dim-line{stroke:var(--accent);stroke-width:.9}
+.dim-tick{stroke:var(--accent);stroke-width:1.1}
+.ext-line{stroke:var(--ink-faint);stroke-width:.6}
+.dim-text{font-family:"IBM Plex Mono",monospace;font-size:11px;fill:var(--accent);font-variant-numeric:tabular-nums}
+.note-txt{font-size:12px;fill:var(--ink-soft)}
+.note-txt-sm{font-size:10.5px;fill:var(--ink-faint)}
+.cut-line{stroke:var(--warn);stroke-width:1.4;stroke-dasharray:12 4 3 4}
+.cut-bubble{fill:var(--card);stroke:var(--warn);stroke-width:1.5}
+.cut-txt{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:700;fill:var(--warn);text-anchor:middle}
+.cut-arrow{fill:none;stroke:var(--warn);stroke-width:1.5}
+.north-ring{fill:none;stroke:var(--ink);stroke-width:1.3}
+.north-needle{fill:var(--ink)}
+.north-txt{font-family:"Big Shoulders Display",sans-serif;font-size:15px;font-weight:700;text-anchor:middle}
+.sb-dark{fill:var(--ink);stroke:var(--ink);stroke-width:.7}
+.sb-light{fill:var(--card);stroke:var(--ink);stroke-width:.7}
+.sb-txt{font-family:"IBM Plex Mono",monospace;font-size:10px;fill:var(--ink-soft);text-anchor:middle}
+.bldg-ghost{fill:none;stroke:var(--ink-faint);stroke-width:1;stroke-dasharray:7 4}
+.roof-fill-a{fill:var(--accent);opacity:.10}
+.roof-fill-b{fill:var(--warn);opacity:.10}
+.roof-fill-b2{fill:var(--warn);opacity:.20}
+.roof-fill-c{fill:var(--ink);opacity:.07}
+.eave-rect{fill:none;stroke:var(--ink-soft);stroke-width:1;stroke-dasharray:5 3}
+.ridge-line{stroke:var(--ink);stroke-width:2.4}
+.valley-line{stroke:var(--warn);stroke-width:1.4;stroke-dasharray:3 2.5}
+.valley-txt{font-size:10.5px;fill:var(--warn)}
+.slope-arrow{stroke:var(--accent);stroke-width:1.5}
+.ah{fill:var(--accent)}
+.pitch-label{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;fill:var(--accent)}
+.beam-line{stroke:var(--warn);stroke-width:4;stroke-linecap:round;opacity:.9}
+.col-corner{fill:var(--ink);stroke:var(--card);stroke-width:1.4}
+.col-mid{fill:var(--accent);stroke:var(--card);stroke-width:1.4}
+.elev-ground{stroke:var(--ink);stroke-width:2}
+.ground-hatch{stroke:var(--ink-faint);stroke-width:.9}
+.elev-wall{fill:var(--paper-alt);stroke:var(--ink);stroke-width:1.3}
+.elev-plinth{fill:var(--room-out);stroke:var(--ink);stroke-width:1.2}
+.elev-roof{fill:var(--wall);stroke:var(--ink);stroke-width:1.2}
+.elev-window{fill:var(--room-wet);stroke:var(--ink);stroke-width:1}
+.elev-block{fill:var(--accent-soft);stroke:var(--ink);stroke-width:1}
+.elev-door{fill:var(--card);stroke:var(--ink);stroke-width:1.2}
+.mullion{stroke:var(--ink-soft);stroke-width:.8}
+.elev-tag{font-family:"IBM Plex Mono",monospace;font-size:10px;fill:var(--accent);text-anchor:middle}
+.elev-sill{font-family:"IBM Plex Mono",monospace;font-size:8.5px;fill:var(--ink-faint);text-anchor:middle}
+.level-line{stroke:var(--accent);stroke-width:.6;stroke-dasharray:9 4;opacity:.75}
+.level-txt{font-family:"IBM Plex Mono",monospace;font-size:9.5px;fill:var(--accent)}
+.elev-title{font-family:"Big Shoulders Display",sans-serif;font-size:17px;font-weight:700;fill:var(--ink)}
+.slab{fill:var(--ink-faint);stroke:var(--ink);stroke-width:1}
+.fill-hatch{fill:var(--paper-alt);stroke:var(--ink-faint);stroke-width:.8}
+.beam-sec{fill:var(--warn);stroke:var(--ink);stroke-width:1;opacity:.85}
+.wall-sec{fill:var(--wall);stroke:var(--ink);stroke-width:1}
+.roof-sec{fill:none;stroke:var(--ink);stroke-width:2.4}
+.ceiling-line{stroke:var(--ink-soft);stroke-width:1.2;stroke-dasharray:8 4}
+@media print{
+  .tabbar,.banner{display:none}
+  .sheet{display:block!important;page-break-after:always}
+  body{background:#fff}
+}
+</style>
+<div class="shell">
+  <div class="masthead">
+    <div>
+      <h1>บ้านชั้นเดียว 3 ห้องนอน</h1>
+      <div class="sub">ชุดแบบก่อสร้างร่าง · ผังรวม 12.79 × 12.88 ม. · พื้นที่ใช้สอย 129.82 ตร.ม. · ถอดจากแบบจำลอง Pascal 3D (อัปเดตตามผังล่าสุด + ตำแหน่งเสา C1–C15, P1–P4)</div>
+    </div>
+    <div class="meta">
+      <b>PROJECT HOME-102</b><span>REV. C — ผังพื้น A-01 อัปเดตตามการขยายห้อง + ตำแหน่งเสาจริง (แผ่นอื่นยังเป็น REV.B รอปรับ)</span><span id="d">—</span>
+    </div>
+  </div>
+  <div class="banner">
+    <b>แบบร่างเพื่อใช้สื่อสารกับช่างหน้างานเท่านั้น</b> — ยังไม่ผ่านการตรวจสอบและลงนามรับรองโดยวิศวกรโยธา/สถาปนิกผู้ได้รับใบอนุญาต
+    จึงใช้ยื่นขออนุญาตก่อสร้างตาม พ.ร.บ. ควบคุมอาคารไม่ได้ · ขนาดคาน เหล็กเสริม และฐานราก เป็นค่าประมาณเบื้องต้น ต้องให้วิศวกรคำนวณตรวจสอบก่อนก่อสร้างจริง
+  </div>
+  <div class="tabbar" role="tablist">
+    <button class="active" data-t="plan">A-01 ผังพื้น</button>
+    <button data-t="sched">A-02 ประตู-หน้าต่าง</button>
+    <button data-t="roof">A-03 ผังหลังคา</button>
+    <button data-t="elev">A-04 รูปด้าน</button>
+    <button data-t="sec">A-05 รูปตัด</button>
+    <button data-t="beam">S-01 ผังคาน-ฐานราก</button>
+    <button data-t="mat">A-06 วัสดุ &amp; หมายเหตุ</button>
+  </div>
+
+  <section class="sheet active" id="t-plan">
+    <div class="sheet-head"><h2>ผังพื้นชั้น 1 · Ground Floor Plan</h2>
+      <span class="tagline">FFL +0.50 · ผนัง 0.12 ม. · สูง 3.00 ม.</span></div>
+    <div class="note">ตัวเลขบอกระยะทั้งหมดเป็นเมตร วัดถึงศูนย์กลางผนัง · วงกลมสีน้ำเงิน = เลขหน้าต่าง · ป้ายสี่เหลี่ยมส้ม = เลขประตู (ดูตาราง A-02) · เส้นประส้ม A-A / B-B = แนวตัดของรูปตัดในแผ่น A-05</div>
+    <div class="canvas"><svg viewBox="0 -70 900 1060" width="900" height="1060">
+<polygon points="152.0,132.0 313.0,132.0 313.0,267.2 405.0,267.2 405.0,362.0 152.0,362.0" class="room-fill"/>
+<polygon points="313.0,132.0 405.0,132.0 405.0,267.2 313.0,267.2" class="room-fill wet"/>
+<polygon points="405.0,132.0 497.0,132.0 497.0,267.2 405.0,267.2" class="room-fill wet"/>
+<polygon points="497.0,132.0 658.0,132.0 658.0,362.0 497.0,362.0" class="room-fill"/>
+<polygon points="405.0,724.5 267.0,724.5 267.0,362.0 405.0,362.0" class="room-fill outdoor"/>
+<polygon points="405.0,267.2 497.0,267.2 497.0,362.0 740.3,362.0 740.3,474.2 658.0,474.2 658.0,724.5 405.0,724.5" class="room-fill"/>
+<polygon points="740.3,474.2 740.3,563.5 658.0,563.5 658.0,474.2" class="room-fill"/>
+<text x="232.5" y="237.6" class="room-name">นอน1</text>
+<text x="232.5" y="252.6" class="room-area">21.62 ตร.ม.</text>
+<text x="232.5" y="265.6" class="room-finish">แกรนิโต 60×60</text>
+<text x="359.0" y="191.6" class="room-name">น้ำ1</text>
+<text x="359.0" y="206.6" class="room-area">5.88 ตร.ม.</text>
+<text x="359.0" y="219.6" class="room-finish">กระเบื้องกันลื่น</text>
+<text x="451.0" y="191.6" class="room-name">น้ำ2</text>
+<text x="451.0" y="206.6" class="room-area">5.88 ตร.ม.</text>
+<text x="451.0" y="219.6" class="room-finish">กระเบื้องกันลื่น</text>
+<text x="577.5" y="239.0" class="room-name">นอน2</text>
+<text x="577.5" y="254.0" class="room-area">17.50 ตร.ม.</text>
+<text x="577.5" y="267.0" class="room-finish">แกรนิโต 60×60</text>
+<text x="336.0" y="535.2" class="room-name">ลานหน้าบ้าน</text>
+<text x="336.0" y="550.2" class="room-area">23.64 ตร.ม.</text>
+<text x="336.0" y="563.2" class="room-finish">แกรนิโต 60×60</text>
+<text x="539.2" y="506.5" class="room-name">นั่งเล่น</text>
+<text x="539.2" y="521.5" class="room-area">51.83 ตร.ม.</text>
+<text x="539.2" y="534.5" class="room-finish">แกรนิโต 60×60</text>
+<text x="699.2" y="510.9" class="room-name">เก็บของ</text>
+<text x="699.2" y="525.9" class="room-area">3.47 ตร.ม.</text>
+<text x="699.2" y="538.9" class="room-finish">แกรนิโต 60×60</text>
+<path d="M 152.0,129.2 L 152.0,134.8 L 175.0,134.8 L 175.0,129.2 Z" class="wall-fill"/>
+<path d="M 175.0,129.2 L 175.0,134.8 L 198.0,134.8 L 198.0,129.2 Z" class="window-band"/>
+<line x1="175.0" y1="130.6" x2="198.0" y2="130.6" class="glass-line"/>
+<line x1="175.0" y1="133.4" x2="198.0" y2="133.4" class="glass-line"/>
+<path d="M 198.0,129.2 L 198.0,134.8 L 274.4,134.8 L 274.4,129.2 Z" class="wall-fill"/>
+<path d="M 274.4,129.2 L 274.4,134.8 L 297.4,134.8 L 297.4,129.2 Z" class="window-band"/>
+<line x1="274.4" y1="130.6" x2="297.4" y2="130.6" class="glass-line"/>
+<line x1="274.4" y1="133.4" x2="297.4" y2="133.4" class="glass-line"/>
+<path d="M 297.4,129.2 L 297.4,134.8 L 340.6,134.8 L 340.6,129.2 Z" class="wall-fill"/>
+<path d="M 340.6,129.2 L 340.6,134.8 L 377.4,134.8 L 377.4,129.2 Z" class="window-band"/>
+<line x1="340.6" y1="130.6" x2="377.4" y2="130.6" class="glass-line"/>
+<line x1="340.6" y1="133.4" x2="377.4" y2="133.4" class="glass-line"/>
+<path d="M 340.6,129.2 L 340.6,134.8 L 377.4,134.8 L 377.4,129.2 Z" class="window-band"/>
+<line x1="340.6" y1="130.6" x2="377.4" y2="130.6" class="glass-line"/>
+<line x1="340.6" y1="133.4" x2="377.4" y2="133.4" class="glass-line"/>
+<path d="M 377.4,129.2 L 377.4,134.8 L 432.6,134.8 L 432.6,129.2 Z" class="wall-fill"/>
+<path d="M 432.6,129.2 L 432.6,134.8 L 469.4,134.8 L 469.4,129.2 Z" class="window-band"/>
+<line x1="432.6" y1="130.6" x2="469.4" y2="130.6" class="glass-line"/>
+<line x1="432.6" y1="133.4" x2="469.4" y2="133.4" class="glass-line"/>
+<path d="M 432.6,129.2 L 432.6,134.8 L 469.4,134.8 L 469.4,129.2 Z" class="window-band"/>
+<line x1="432.6" y1="130.6" x2="469.4" y2="130.6" class="glass-line"/>
+<line x1="432.6" y1="133.4" x2="469.4" y2="133.4" class="glass-line"/>
+<path d="M 469.4,129.2 L 469.4,134.8 L 522.7,134.8 L 522.7,129.2 Z" class="wall-fill"/>
+<path d="M 522.7,129.2 L 522.7,134.8 L 545.7,134.8 L 545.7,129.2 Z" class="window-band"/>
+<line x1="522.7" y1="130.6" x2="545.7" y2="130.6" class="glass-line"/>
+<line x1="522.7" y1="133.4" x2="545.7" y2="133.4" class="glass-line"/>
+<path d="M 545.7,129.2 L 545.7,134.8 L 607.2,134.8 L 607.2,129.2 Z" class="wall-fill"/>
+<path d="M 607.2,129.2 L 607.2,134.8 L 630.2,134.8 L 630.2,129.2 Z" class="window-band"/>
+<line x1="607.2" y1="130.6" x2="630.2" y2="130.6" class="glass-line"/>
+<line x1="607.2" y1="133.4" x2="630.2" y2="133.4" class="glass-line"/>
+<path d="M 630.2,129.2 L 630.2,134.8 L 658.0,134.8 L 658.0,129.2 Z" class="wall-fill"/>
+<path d="M 660.8,132.0 L 655.2,132.0 L 655.2,198.3 L 660.8,198.3 Z" class="wall-fill"/>
+<path d="M 660.8,198.3 L 655.2,198.3 L 655.2,290.3 L 660.8,290.3 Z" class="window-band"/>
+<line x1="659.4" y1="198.3" x2="659.4" y2="290.3" class="glass-line"/>
+<line x1="656.6" y1="198.3" x2="656.6" y2="290.3" class="glass-line"/>
+<path d="M 660.8,290.3 L 655.2,290.3 L 655.2,362.0 L 660.8,362.0 Z" class="wall-fill"/>
+<path d="M 658.0,359.2 L 658.0,364.8 L 663.1,364.8 L 663.1,359.2 Z" class="wall-fill"/>
+<line x1="663.1" y1="362.0" x2="663.1" y2="362.0"/>
+<path d="M 699.9,362.0 A 36.8,36.8 0 0 0 663.1,398.8" class="door-arc"/>
+<line x1="663.1" y1="362.0" x2="663.1" y2="398.8" class="door-leaf"/>
+<g data-door="door_ade3baoke3xnd34x"><rect x="667.5" y="378.3" width="28" height="15" rx="3" class="door-tag-bg"/><text x="681.5" y="390.8" class="door-tag">D</text></g>
+<path d="M 699.9,359.2 L 699.9,364.8 L 740.3,364.8 L 740.3,359.2 Z" class="wall-fill"/>
+<path d="M 743.1,362.0 L 737.6,362.0 L 737.6,391.9 L 743.1,391.9 Z" class="wall-fill"/>
+<path d="M 743.1,391.9 L 737.6,391.9 L 737.6,447.1 L 743.1,447.1 Z" class="window-band"/>
+<line x1="741.7" y1="391.9" x2="741.7" y2="447.1" class="glass-line"/>
+<line x1="739.0" y1="391.9" x2="739.0" y2="447.1" class="glass-line"/>
+<path d="M 743.1,447.1 L 737.6,447.1 L 737.6,504.6 L 743.1,504.6 Z" class="wall-fill"/>
+<path d="M 743.1,504.6 L 737.6,504.6 L 737.6,541.4 L 743.1,541.4 Z" class="window-band"/>
+<line x1="741.7" y1="504.6" x2="741.7" y2="541.4" class="glass-line"/>
+<line x1="739.0" y1="504.6" x2="739.0" y2="541.4" class="glass-line"/>
+<path d="M 743.1,541.4 L 737.6,541.4 L 737.6,563.5 L 743.1,563.5 Z" class="wall-fill"/>
+<path d="M 740.3,566.2 L 740.3,560.7 L 717.6,560.7 L 717.6,566.2 Z" class="wall-fill"/>
+<path d="M 717.6,566.2 L 717.6,560.7 L 680.8,560.7 L 680.8,566.2 Z" class="window-band"/>
+<line x1="717.6" y1="564.9" x2="680.8" y2="564.9" class="glass-line"/>
+<line x1="717.6" y1="562.1" x2="680.8" y2="562.1" class="glass-line"/>
+<path d="M 680.8,566.2 L 680.8,560.7 L 658.0,560.7 L 658.0,566.2 Z" class="wall-fill"/>
+<path d="M 660.8,563.5 L 655.2,563.5 L 655.2,583.8 L 660.8,583.8 Z" class="wall-fill"/>
+<path d="M 660.8,583.8 L 655.2,583.8 L 655.2,675.8 L 660.8,675.8 Z" class="window-band"/>
+<line x1="659.4" y1="583.8" x2="659.4" y2="675.8" class="glass-line"/>
+<line x1="656.6" y1="583.8" x2="656.6" y2="675.8" class="glass-line"/>
+<path d="M 660.8,675.8 L 655.2,675.8 L 655.2,724.5 L 660.8,724.5 Z" class="wall-fill"/>
+<path d="M 658.0,727.2 L 658.0,721.7 L 611.3,721.7 L 611.3,727.2 Z" class="wall-fill"/>
+<path d="M 611.3,727.2 L 611.3,721.7 L 588.3,721.7 L 588.3,727.2 Z" class="window-band"/>
+<line x1="611.3" y1="725.9" x2="588.3" y2="725.9" class="glass-line"/>
+<line x1="611.3" y1="723.1" x2="588.3" y2="723.1" class="glass-line"/>
+<path d="M 588.3,727.2 L 588.3,721.7 L 475.4,721.7 L 475.4,727.2 Z" class="wall-fill"/>
+<path d="M 475.4,727.2 L 475.4,721.7 L 452.4,721.7 L 452.4,727.2 Z" class="window-band"/>
+<line x1="475.4" y1="725.9" x2="452.4" y2="725.9" class="glass-line"/>
+<line x1="475.4" y1="723.1" x2="452.4" y2="723.1" class="glass-line"/>
+<path d="M 452.4,727.2 L 452.4,721.7 L 405.0,721.7 L 405.0,727.2 Z" class="wall-fill"/>
+<path d="M 267.0,364.8 L 267.0,359.2 L 195.2,359.2 L 195.2,364.8 Z" class="wall-fill"/>
+<path d="M 195.2,364.8 L 195.2,359.2 L 172.2,359.2 L 172.2,364.8 Z" class="window-band"/>
+<line x1="195.2" y1="363.4" x2="172.2" y2="363.4" class="glass-line"/>
+<line x1="195.2" y1="360.6" x2="172.2" y2="360.6" class="glass-line"/>
+<path d="M 172.2,364.8 L 172.2,359.2 L 152.0,359.2 L 152.0,364.8 Z" class="wall-fill"/>
+<path d="M 149.2,362.0 L 154.8,362.0 L 154.8,293.0 L 149.2,293.0 Z" class="wall-fill"/>
+<path d="M 149.2,293.0 L 154.8,293.0 L 154.8,201.0 L 149.2,201.0 Z" class="window-band"/>
+<line x1="150.6" y1="293.0" x2="150.6" y2="201.0" class="glass-line"/>
+<line x1="153.4" y1="293.0" x2="153.4" y2="201.0" class="glass-line"/>
+<path d="M 149.2,201.0 L 154.8,201.0 L 154.8,132.0 L 149.2,132.0 Z" class="wall-fill"/>
+<path d="M 315.8,132.0 L 310.2,132.0 L 310.2,267.2 L 315.8,267.2 Z" class="wall-fill"/>
+<path d="M 313.0,264.5 L 313.0,270.0 L 324.5,270.0 L 324.5,264.5 Z" class="wall-fill"/>
+<line x1="324.5" y1="267.2" x2="324.5" y2="267.2"/>
+<path d="M 356.7,267.2 A 32.2,32.2 0 0 1 324.5,235.0" class="door-arc"/>
+<line x1="324.5" y1="267.2" x2="324.5" y2="235.0" class="door-leaf"/>
+<g data-door="door_lkeebf09vol0lyzi"><rect x="326.6" y="232.9" width="28" height="15" rx="3" class="door-tag-bg"/><text x="340.6" y="245.4" class="door-tag">D</text></g>
+<path d="M 356.7,264.5 L 356.7,270.0 L 405.0,270.0 L 405.0,264.5 Z" class="wall-fill"/>
+<path d="M 405.0,264.5 L 405.0,270.0 L 456.1,270.0 L 456.1,264.5 Z" class="wall-fill"/>
+<line x1="456.1" y1="267.2" x2="456.1" y2="267.2"/>
+<path d="M 456.1,267.2 A 32.2,32.2 0 0 0 488.3,235.0" class="door-arc"/>
+<line x1="488.3" y1="267.2" x2="488.3" y2="235.0" class="door-leaf"/>
+<g data-door="door_8173pfiuvzrteap0"><rect x="458.2" y="232.9" width="28" height="15" rx="3" class="door-tag-bg"/><text x="472.2" y="245.4" class="door-tag">D</text></g>
+<path d="M 488.3,264.5 L 488.3,270.0 L 497.0,270.0 L 497.0,264.5 Z" class="wall-fill"/>
+<path d="M 407.8,132.0 L 402.2,132.0 L 402.2,267.2 L 407.8,267.2 Z" class="wall-fill"/>
+<path d="M 407.8,267.2 L 402.2,267.2 L 402.2,295.3 L 407.8,295.3 Z" class="wall-fill"/>
+<line x1="405.0" y1="295.3" x2="405.0" y2="295.3"/>
+<path d="M 405.0,295.3 A 36.8,36.8 0 0 0 441.8,332.1" class="door-arc"/>
+<line x1="405.0" y1="332.1" x2="441.8" y2="332.1" class="door-leaf"/>
+<g data-door="door_bo5tj7ymarotgmw5"><rect x="416.3" y="304.7" width="28" height="15" rx="3" class="door-tag-bg"/><text x="430.3" y="317.2" class="door-tag">D</text></g>
+<path d="M 407.8,332.1 L 402.2,332.1 L 402.2,362.0 L 407.8,362.0 Z" class="wall-fill"/>
+<path d="M 407.8,362.0 L 402.2,362.0 L 402.2,408.5 L 407.8,408.5 Z" class="wall-fill"/>
+<line x1="405.0" y1="408.5" x2="405.0" y2="408.5"/>
+<path d="M 405.0,454.5 A 46.0,46.0 0 0 1 451.0,408.5" class="door-arc"/>
+<line x1="405.0" y1="408.5" x2="451.0" y2="408.5" class="door-leaf"/>
+<g data-door="door_6xc1hcmw57rbvqo3"><rect x="416.3" y="422.5" width="28" height="15" rx="3" class="door-tag-bg"/><text x="430.3" y="435.0" class="door-tag">D</text></g>
+<line x1="405.0" y1="454.5" x2="405.0" y2="454.5"/>
+<path d="M 405.0,454.5 A 46.0,46.0 0 0 0 451.0,500.5" class="door-arc"/>
+<line x1="405.0" y1="500.5" x2="451.0" y2="500.5" class="door-leaf"/>
+<g data-door="door_mo3ae6e2mm32opox"><rect x="416.3" y="468.5" width="28" height="15" rx="3" class="door-tag-bg"/><text x="430.3" y="481.0" class="door-tag">D</text></g>
+<path d="M 407.8,500.5 L 402.2,500.5 L 402.2,587.4 L 407.8,587.4 Z" class="wall-fill"/>
+<path d="M 407.8,587.4 L 402.2,587.4 L 402.2,679.4 L 407.8,679.4 Z" class="window-band"/>
+<line x1="406.4" y1="587.4" x2="406.4" y2="679.4" class="glass-line"/>
+<line x1="403.6" y1="587.4" x2="403.6" y2="679.4" class="glass-line"/>
+<path d="M 407.8,679.4 L 402.2,679.4 L 402.2,724.5 L 407.8,724.5 Z" class="wall-fill"/>
+<path d="M 267.0,359.2 L 267.0,364.8 L 405.0,364.8 L 405.0,359.2 Z" class="wall-fill"/>
+<path d="M 499.8,132.0 L 494.2,132.0 L 494.2,226.3 L 499.8,226.3 Z" class="wall-fill"/>
+<line x1="497.0" y1="226.3" x2="497.0" y2="226.3"/>
+<path d="M 497.0,226.3 A 41.4,41.4 0 0 0 538.4,267.7" class="door-arc"/>
+<line x1="497.0" y1="267.7" x2="538.4" y2="267.7" class="door-leaf"/>
+<g data-door="door_tro6927o2xi7a88k"><rect x="508.3" y="238.0" width="28" height="15" rx="3" class="door-tag-bg"/><text x="522.3" y="250.5" class="door-tag">D</text></g>
+<path d="M 499.8,267.2 L 494.2,267.2 L 494.2,295.3 L 499.8,295.3 Z" class="wall-fill"/>
+<line x1="497.0" y1="295.3" x2="497.0" y2="295.3"/>
+<path d="M 497.0,332.1 A 36.8,36.8 0 0 1 533.8,295.3" class="door-arc"/>
+<line x1="497.0" y1="295.3" x2="533.8" y2="295.3" class="door-leaf"/>
+<g data-door="door_9h8gyvuts59zg08t"><rect x="508.3" y="304.7" width="28" height="15" rx="3" class="door-tag-bg"/><text x="522.3" y="317.2" class="door-tag">D</text></g>
+<path d="M 499.8,332.1 L 494.2,332.1 L 494.2,362.0 L 499.8,362.0 Z" class="wall-fill"/>
+<path d="M 497.0,359.2 L 497.0,364.8 L 658.0,364.8 L 658.0,359.2 Z" class="wall-fill"/>
+<path d="M 658.0,471.5 L 658.0,477.0 L 667.7,477.0 L 667.7,471.5 Z" class="wall-fill"/>
+<line x1="667.7" y1="474.2" x2="667.7" y2="474.2"/>
+<path d="M 699.9,474.2 A 32.2,32.2 0 0 1 667.7,442.0" class="door-arc"/>
+<line x1="667.7" y1="474.2" x2="667.7" y2="442.0" class="door-leaf"/>
+<g data-door="door_l54vd4bwg8l8glt4"><rect x="669.8" y="439.9" width="28" height="15" rx="3" class="door-tag-bg"/><text x="683.8" y="452.4" class="door-tag">D</text></g>
+<path d="M 699.9,471.5 L 699.9,477.0 L 740.3,477.0 L 740.3,471.5 Z" class="wall-fill"/>
+<path d="M 660.8,474.2 L 655.2,474.2 L 655.2,563.5 L 660.8,563.5 Z" class="wall-fill"/>
+<rect x="147.5" y="127.5" width="9" height="9" class="col-corner"/>
+<text x="152.0" y="124.0" style="font-size:8.5px;fill:var(--ink-soft);text-anchor:middle;font-family:'IBM Plex Mono',monospace">C1</text>
+<rect x="400.5" y="127.5" width="9" height="9" class="col-corner"/>
+<text x="405.0" y="124.0" style="font-size:8.5px;fill:var(--ink-soft);text-anchor:middle;font-family:'IBM Plex Mono',monospace">C2</text>
+<rect x="653.5" y="127.5" width="9" height="9" class="col-corner"/>
+<text x="658.0" y="124.0" style="font-size:8.5px;fill:var(--ink-soft);text-anchor:middle;font-family:'IBM Plex Mono',monospace">C3</text>
+<rect x="400.5" y="262.7" width="9" height="9" class="col-corner"/>
+<text x="405.0" y="259.2" style="font-size:8.5px;fill:var(--ink-soft);text-anchor:middle;font-family:'IBM Plex Mono',monospace">C4</text>
+<rect x="492.5" y="262.7" width="9" height="9" class="col-corner"/>
+<text x="497.0" y="259.2" style="font-size:8.5px;fill:var(--ink-soft);text-anchor:middle;font-family:'IBM Plex Mono',monospace">C5</text>
+<rect x="147.5" y="357.5" width="9" height="9" class="col-corner"/>
+<text x="152.0" y="354.0" style="font-size:8.5px;fill:var(--ink-soft);text-anchor:middle;font-family:'IBM Plex Mono',monospace">C6</text>
+<rect x="400.5" y="357.5" width="9" height="9" class="col-corner"/>
+<text x="405.0" y="354.0" style="font-size:8.5px;fill:var(--ink-soft);text-anchor:middle;font-family:'IBM Plex Mono',monospace">C7</text>
+<rect x="492.5" y="357.5" width="9" height="9" class="col-corner"/>
+<text x="497.0" y="354.0" style="font-size:8.5px;fill:var(--ink-soft);text-anchor:middle;font-family:'IBM Plex Mono',monospace">C8</text>
+<rect x="653.5" y="357.5" width="9" height="9" class="col-corner"/>
+<text x="658.0" y="354.0" style="font-size:8.5px;fill:var(--ink-soft);text-anchor:middle;font-family:'IBM Plex Mono',monospace">C9</text>
+<rect x="735.8" y="357.5" width="9" height="9" class="col-corner"/>
+<text x="740.3" y="354.0" style="font-size:8.5px;fill:var(--ink-soft);text-anchor:middle;font-family:'IBM Plex Mono',monospace">C10</text>
+<rect x="653.5" y="559.0" width="9" height="9" class="col-corner"/>
+<text x="658.0" y="555.5" style="font-size:8.5px;fill:var(--ink-soft);text-anchor:middle;font-family:'IBM Plex Mono',monospace">C11</text>
+<rect x="735.8" y="559.0" width="9" height="9" class="col-corner"/>
+<text x="740.3" y="555.5" style="font-size:8.5px;fill:var(--ink-soft);text-anchor:middle;font-family:'IBM Plex Mono',monospace">C12</text>
+<rect x="400.5" y="720.0" width="9" height="9" class="col-corner"/>
+<text x="405.0" y="716.5" style="font-size:8.5px;fill:var(--ink-soft);text-anchor:middle;font-family:'IBM Plex Mono',monospace">C13</text>
+<rect x="653.5" y="720.0" width="9" height="9" class="col-corner"/>
+<text x="658.0" y="716.5" style="font-size:8.5px;fill:var(--ink-soft);text-anchor:middle;font-family:'IBM Plex Mono',monospace">C14</text>
+<rect x="400.5" y="537.4" width="9" height="9" class="col-corner"/>
+<text x="405.0" y="533.9" style="font-size:8.5px;fill:var(--ink-soft);text-anchor:middle;font-family:'IBM Plex Mono',monospace">C15</text>
+<rect x="262.5" y="537.4" width="9" height="9" class="col-corner"/>
+<text x="267.0" y="533.9" style="font-size:8.5px;fill:var(--ink-soft);text-anchor:middle;font-family:'IBM Plex Mono',monospace">P1</text>
+<rect x="262.5" y="720.0" width="9" height="9" class="col-corner"/>
+<text x="267.0" y="716.5" style="font-size:8.5px;fill:var(--ink-soft);text-anchor:middle;font-family:'IBM Plex Mono',monospace">P2</text>
+<rect x="733.1" y="127.5" width="9" height="9" class="col-corner"/>
+<text x="737.6" y="124.0" style="font-size:8.5px;fill:var(--ink-soft);text-anchor:middle;font-family:'IBM Plex Mono',monospace">P3</text>
+<rect x="733.1" y="720.0" width="9" height="9" class="col-corner"/>
+<text x="737.6" y="716.5" style="font-size:8.5px;fill:var(--ink-soft);text-anchor:middle;font-family:'IBM Plex Mono',monospace">P4</text>
+<line x1="152.0" y1="96.0" x2="313.0" y2="96.0" class="dim-line"/>
+<line x1="148.5" y1="99.5" x2="155.5" y2="92.5" class="dim-tick"/>
+<line x1="309.5" y1="99.5" x2="316.5" y2="92.5" class="dim-tick"/>
+<text x="232.5" y="90.0" class="dim-text" text-anchor="middle">3.50</text>
+<line x1="152.0" y1="132.0" x2="152.0" y2="96.0" class="ext-line"/>
+<line x1="313.0" y1="96.0" x2="405.0" y2="96.0" class="dim-line"/>
+<line x1="309.5" y1="99.5" x2="316.5" y2="92.5" class="dim-tick"/>
+<line x1="401.5" y1="99.5" x2="408.5" y2="92.5" class="dim-tick"/>
+<text x="359.0" y="90.0" class="dim-text" text-anchor="middle">2.00</text>
+<line x1="313.0" y1="132.0" x2="313.0" y2="96.0" class="ext-line"/>
+<line x1="405.0" y1="96.0" x2="497.0" y2="96.0" class="dim-line"/>
+<line x1="401.5" y1="99.5" x2="408.5" y2="92.5" class="dim-tick"/>
+<line x1="493.5" y1="99.5" x2="500.5" y2="92.5" class="dim-tick"/>
+<text x="451.0" y="90.0" class="dim-text" text-anchor="middle">2.00</text>
+<line x1="405.0" y1="132.0" x2="405.0" y2="96.0" class="ext-line"/>
+<line x1="497.0" y1="96.0" x2="658.0" y2="96.0" class="dim-line"/>
+<line x1="493.5" y1="99.5" x2="500.5" y2="92.5" class="dim-tick"/>
+<line x1="654.5" y1="99.5" x2="661.5" y2="92.5" class="dim-tick"/>
+<text x="577.5" y="90.0" class="dim-text" text-anchor="middle">3.50</text>
+<line x1="497.0" y1="132.0" x2="497.0" y2="96.0" class="ext-line"/>
+<line x1="658.0" y1="132.0" x2="658.0" y2="96.0" class="ext-line"/>
+<line x1="152.0" y1="66.0" x2="658.0" y2="66.0" class="dim-line"/>
+<line x1="148.5" y1="69.5" x2="155.5" y2="62.5" class="dim-tick"/>
+<line x1="654.5" y1="69.5" x2="661.5" y2="62.5" class="dim-tick"/>
+<text x="405.0" y="60.0" class="dim-text" text-anchor="middle">11.00</text>
+<line x1="152.0" y1="132.0" x2="152.0" y2="66.0" class="ext-line"/>
+<line x1="658.0" y1="132.0" x2="658.0" y2="66.0" class="ext-line"/>
+<line x1="658.0" y1="543.5" x2="740.3" y2="543.5" class="dim-line"/>
+<line x1="654.5" y1="547.0" x2="661.5" y2="540.0" class="dim-tick"/>
+<line x1="736.8" y1="547.0" x2="743.8" y2="540.0" class="dim-tick"/>
+<text x="699.2" y="537.5" class="dim-text" text-anchor="middle">1.79</text>
+<line x1="658.0" y1="563.5" x2="658.0" y2="543.5" class="ext-line"/>
+<line x1="740.3" y1="563.5" x2="740.3" y2="543.5" class="ext-line"/>
+<line x1="122.0" y1="132.0" x2="122.0" y2="362.0" class="dim-line"/>
+<line x1="118.5" y1="135.5" x2="125.5" y2="128.5" class="dim-tick"/>
+<line x1="118.5" y1="365.5" x2="125.5" y2="358.5" class="dim-tick"/>
+<text x="114.0" y="250.5" class="dim-text" text-anchor="end">5.00</text>
+<line x1="152.0" y1="132.0" x2="122.0" y2="132.0" class="ext-line"/>
+<line x1="152.0" y1="362.0" x2="122.0" y2="362.0" class="ext-line"/>
+<line x1="241.0" y1="362.0" x2="241.0" y2="724.5" class="dim-line"/>
+<line x1="237.5" y1="365.5" x2="244.5" y2="358.5" class="dim-tick"/>
+<line x1="237.5" y1="728.0" x2="244.5" y2="721.0" class="dim-tick"/>
+<text x="233.0" y="546.7" class="dim-text" text-anchor="end">7.88</text>
+<line x1="267.0" y1="362.0" x2="241.0" y2="362.0" class="ext-line"/>
+<line x1="267.0" y1="724.5" x2="241.0" y2="724.5" class="ext-line"/>
+<line x1="766.3" y1="132.0" x2="766.3" y2="362.0" class="dim-line"/>
+<line x1="762.8" y1="135.5" x2="769.8" y2="128.5" class="dim-tick"/>
+<line x1="762.8" y1="365.5" x2="769.8" y2="358.5" class="dim-tick"/>
+<text x="758.3" y="250.5" class="dim-text" text-anchor="end">5.00</text>
+<line x1="740.3" y1="132.0" x2="766.3" y2="132.0" class="ext-line"/>
+<line x1="766.3" y1="362.0" x2="766.3" y2="563.5" class="dim-line"/>
+<line x1="762.8" y1="365.5" x2="769.8" y2="358.5" class="dim-tick"/>
+<line x1="762.8" y1="567.0" x2="769.8" y2="560.0" class="dim-tick"/>
+<text x="758.3" y="466.2" class="dim-text" text-anchor="end">4.38</text>
+<line x1="740.3" y1="362.0" x2="766.3" y2="362.0" class="ext-line"/>
+<line x1="766.3" y1="563.5" x2="766.3" y2="724.5" class="dim-line"/>
+<line x1="762.8" y1="567.0" x2="769.8" y2="560.0" class="dim-tick"/>
+<line x1="762.8" y1="728.0" x2="769.8" y2="721.0" class="dim-tick"/>
+<text x="758.3" y="647.5" class="dim-text" text-anchor="end">3.50</text>
+<line x1="740.3" y1="563.5" x2="766.3" y2="563.5" class="ext-line"/>
+<line x1="740.3" y1="724.5" x2="766.3" y2="724.5" class="ext-line"/>
+<line x1="244.0" y1="11.5" x2="244.0" y2="424.1" class="cut-line"/>
+<circle cx="244.0" cy="11.5" r="12" class="cut-bubble"/>
+<text x="244.0" y="15.5" class="cut-txt">A</text>
+<path d="M 256.0,11.5 l 16,0 l -5,-5 m 5,5 l -5,5" class="cut-arrow"/>
+<circle cx="244.0" cy="424.1" r="12" class="cut-bubble"/>
+<text x="244.0" y="428.1" class="cut-txt">A</text>
+<path d="M 256.0,424.1 l 16,0 l -5,-5 m 5,5 l -5,5" class="cut-arrow"/>
+<line x1="193.4" y1="500.0" x2="791.4" y2="500.0" class="cut-line"/>
+<circle cx="193.4" cy="500.0" r="12" class="cut-bubble"/>
+<text x="193.4" y="504.0" class="cut-txt">B</text>
+<path d="M 193.4,488.0 l 0,-16 l -5,5 m 5,-5 l 5,5" class="cut-arrow"/>
+<circle cx="791.4" cy="500.0" r="12" class="cut-bubble"/>
+<text x="791.4" y="504.0" class="cut-txt">B</text>
+<path d="M 791.4,488.0 l 0,-16 l -5,5 m 5,-5 l 5,5" class="cut-arrow"/>
+<g transform="translate(777.6,141.2)"><circle r="24" class="north-ring"/><path d="M0,-17 L7,10 L0,4.5 L-7,10 Z" class="north-needle"/><text x="0" y="-28" class="north-txt">N</text></g>
+<text x="152.0" y="800.5" class="note-txt-sm">มาตราส่วนอ้างอิง (เมตร)</text>
+<rect x="152.0" y="810.5" width="46.0" height="9" class="sb-dark"/>
+<text x="152.0" y="832.5" class="sb-txt">0</text>
+<rect x="198.0" y="810.5" width="46.0" height="9" class="sb-light"/>
+<text x="198.0" y="832.5" class="sb-txt">1</text>
+<rect x="244.0" y="810.5" width="46.0" height="9" class="sb-dark"/>
+<text x="244.0" y="832.5" class="sb-txt">2</text>
+<rect x="290.0" y="810.5" width="46.0" height="9" class="sb-light"/>
+<text x="290.0" y="832.5" class="sb-txt">3</text>
+<rect x="336.0" y="810.5" width="46.0" height="9" class="sb-dark"/>
+<text x="336.0" y="832.5" class="sb-txt">4</text>
+<text x="382.0" y="832.5" class="sb-txt">5</text>
+<text x="152.0" y="856.5" class="note-txt-sm">ระดับพื้นสำเร็จ (FFL) +0.50 ม. จากระดับดินเดิม · ผนังก่ออิฐบล็อกหนา 0.12 ม. ฉาบเรียบ 2 หน้า · ความสูงผนัง 3.00 ม.</text>
+<text x="152.0" y="873.1" class="note-txt-sm">บันไดหน้าบ้าน — กว้าง 4.00 ม. · 3 ขั้น · ลูกตั้ง 16.7 ซม. · ลูกนอน 34.9 ซม. · ยกจากระดับดิน 0.50 ม.</text>
+<text x="152.0" y="889.6" class="note-txt-sm">บันไดหลังบ้าน — กว้าง 1.00 ม. · 3 ขั้น · ลูกตั้ง 16.7 ซม. · ลูกนอน 28.0 ซม. · ยกจากระดับดิน 0.50 ม.</text>
+    </svg></div>
+    <div class="legend">
+      <span><span class="sw" style="background:var(--wall)"></span>ผนังก่ออิฐบล็อกฉาบเรียบ 0.12 ม.</span>
+      <span><span class="sw" style="background:var(--room)"></span>ห้องพักอาศัย</span>
+      <span><span class="sw" style="background:var(--room-wet)"></span>ห้องน้ำ (พื้นกันลื่น ลาดระบายน้ำ)</span>
+      <span><span class="sw" style="background:var(--room-out)"></span>ลานหน้าบ้าน (กึ่งภายนอก)</span>
+      <span><span class="sw" style="background:var(--paper-alt);border-color:var(--ink)"></span>บันได (ลูกศรชี้ทิศลง)</span>
+    </div>
+    <footer class="sf"><span>HOME-102 · บ้านชั้นเดียว 3 ห้องนอน</span><span>A-01 · ผังพื้น · REV.C</span></footer>
+  </section>
+
+  <section class="sheet" id="t-sched">
+    <div class="sheet-head"><h2>ตารางประตู-หน้าต่าง · Door &amp; Window Schedule</h2>
+      <span class="tagline">ประตู 9 บาน · หน้าต่าง 18 บาน</span></div>
+    <div class="stack">
+      <div class="canvas" style="padding:18px 20px">
+        <table class="sched"><caption>ตารางประตู (Door Schedule)</caption>
+        <thead><tr><th>เลข</th><th>ตำแหน่ง / การใช้งาน</th><th>กว้าง × สูง (ม.)</th><th>พื้นที่ (ตร.ม.)</th><th>ลักษณะบาน</th></tr></thead>
+        <tbody><tr><td><span class="pill">D1</span></td><td class="th-txt">ประตูหลังบ้าน (ข้างห้องเก็บของ)</td><td>0.80 × 2.00</td><td>1.60</td><td class="th-txt">บานพับซ้าย · เปิดออก</td></tr>
+<tr><td><span class="pill">D2</span></td><td class="th-txt">ประตูห้องนอน 1</td><td>0.80 × 2.00</td><td>1.60</td><td class="th-txt">บานพับขวา · เปิดเข้า</td></tr>
+<tr><td><span class="pill">D3</span></td><td class="th-txt">ประตูห้องนอน 2</td><td>0.80 × 2.00</td><td>1.60</td><td class="th-txt">บานพับซ้าย · เปิดเข้า</td></tr>
+<tr><td><span class="pill">D4</span></td><td class="th-txt">ประตูห้องน้ำ 1</td><td>0.70 × 2.00</td><td>1.40</td><td class="th-txt">บานพับซ้าย · เปิดออก</td></tr>
+<tr><td><span class="pill">D5</span></td><td class="th-txt">ประตูห้องน้ำ 2 (ทางเดิน)</td><td>0.70 × 2.00</td><td>1.40</td><td class="th-txt">บานพับขวา · เปิดออก</td></tr>
+<tr><td><span class="pill">D6</span></td><td class="th-txt">ประตูหลัก บานที่ 1 → ลานหน้าบ้าน</td><td>1.00 × 2.00</td><td>2.00</td><td class="th-txt">บานพับซ้าย · เปิดเข้า</td></tr>
+<tr><td><span class="pill">D7</span></td><td class="th-txt">ประตูหลัก บานที่ 2 → ลานหน้าบ้าน</td><td>1.00 × 2.00</td><td>2.00</td><td class="th-txt">บานพับขวา · เปิดเข้า</td></tr>
+<tr><td><span class="pill">D8</span></td><td class="th-txt">ประตูห้องเก็บของ</td><td>0.70 × 2.00</td><td>1.40</td><td class="th-txt">บานพับซ้าย · เปิดเข้า</td></tr>
+<tr><td><span class="pill">D9</span></td><td class="th-txt">ประตูห้องน้ำ 2 (ในตัว ห้องนอน 2)</td><td>0.90 × 2.10</td><td>1.89</td><td class="th-txt">บานพับขวา · เปิดเข้า</td></tr></tbody></table>
+      </div>
+      <div class="canvas" style="padding:18px 20px">
+        <table class="sched"><caption>ตารางหน้าต่าง (Window Schedule) — ระดับธรณีวัดจากพื้นสำเร็จ</caption>
+        <thead><tr><th>เลข</th><th>ตำแหน่ง</th><th>กว้าง × สูง (ม.)</th><th>ธรณี</th><th>ชนิด</th></tr></thead>
+        <tbody><tr><td><span class="pill alt">1</span></td><td class="th-txt">นอน 1 — ผนังหน้าบ้าน</td><td>0.50 × 1.50</td><td>+0.75</td><td class="th-txt">บานติดตาย</td></tr>
+<tr><td><span class="pill alt">2</span></td><td class="th-txt">นอน 1 — ผนังหน้าบ้าน</td><td>0.50 × 1.50</td><td>+0.75</td><td class="th-txt">บานติดตาย</td></tr>
+<tr><td><span class="pill alt">3</span></td><td class="th-txt">ห้องน้ำ 1 — ผนังหน้าบ้าน</td><td>0.80 × 0.50</td><td>+1.75</td><td class="th-txt">บล็อกแก้ว + บานเลื่อน 0.80×0.50 ธรณี +2.25</td></tr>
+<tr><td><span class="pill alt">4</span></td><td class="th-txt">ห้องน้ำ 2 — ผนังหน้าบ้าน</td><td>0.80 × 0.50</td><td>+1.75</td><td class="th-txt">บล็อกแก้ว + บานเลื่อน 0.80×0.50 ธรณี +2.25</td></tr>
+<tr><td><span class="pill alt">5</span></td><td class="th-txt">นอน 2 — ผนังหน้าบ้าน</td><td>0.50 × 1.50</td><td>+0.75</td><td class="th-txt">บานติดตาย</td></tr>
+<tr><td><span class="pill alt">6</span></td><td class="th-txt">นอน 2 — ผนังหน้าบ้าน</td><td>0.50 × 1.50</td><td>+0.75</td><td class="th-txt">บานติดตาย</td></tr>
+<tr><td><span class="pill alt">7</span></td><td class="th-txt">นอน 2 — ผนังด้านขวา</td><td>2.00 × 1.20</td><td>+0.90</td><td class="th-txt">บานติดตาย</td></tr>
+<tr><td><span class="pill alt">8</span></td><td class="th-txt">นั่งเล่น — ผนังด้านขวา</td><td>1.20 × 1.20</td><td>+0.90</td><td class="th-txt">บานติดตาย</td></tr>
+<tr><td><span class="pill alt">9</span></td><td class="th-txt">เก็บของ — ผนังด้านขวา</td><td>0.80 × 0.50</td><td>+1.75</td><td class="th-txt">บล็อกแก้ว</td></tr>
+<tr><td><span class="pill alt">10</span></td><td class="th-txt">เก็บของ — ผนังด้านหลัง</td><td>0.80 × 0.50</td><td>+1.55</td><td class="th-txt">บานเลื่อน</td></tr>
+<tr><td><span class="pill alt">11</span></td><td class="th-txt">นั่งเล่น — ผนังด้านขวา</td><td>2.00 × 1.80</td><td>+0.20</td><td class="th-txt">บานเลื่อน</td></tr>
+<tr><td><span class="pill alt">12</span></td><td class="th-txt">นั่งเล่น — ผนังหลังบ้าน</td><td>0.50 × 1.50</td><td>+0.75</td><td class="th-txt">บานติดตาย</td></tr>
+<tr><td><span class="pill alt">13</span></td><td class="th-txt">นั่งเล่น — ผนังหลังบ้าน</td><td>0.50 × 1.50</td><td>+0.75</td><td class="th-txt">บานติดตาย</td></tr>
+<tr><td><span class="pill alt">14</span></td><td class="th-txt">นอน 1 — ผนังด้านซ้าย</td><td>0.50 × 1.50</td><td>+0.75</td><td class="th-txt">บานติดตาย</td></tr>
+<tr><td><span class="pill alt">15</span></td><td class="th-txt">นอน 1 — ผนังด้านซ้าย</td><td>2.00 × 1.20</td><td>+0.90</td><td class="th-txt">บานติดตาย</td></tr>
+<tr><td><span class="pill alt">16</span></td><td class="th-txt">นั่งเล่น — ผนังกั้นลานหน้าบ้าน</td><td>2.00 × 1.80</td><td>+0.20</td><td class="th-txt">บานเลื่อน</td></tr></tbody></table>
+      </div>
+      <div class="canvas" style="padding:18px 20px">
+        <table class="sched"><caption>สรุปจำนวนตามขนาด (สำหรับสั่งซื้อ)</caption>
+        <thead><tr><th>ขนาด</th><th>ชนิด</th><th>จำนวน</th></tr></thead>
+        <tbody><tr class="grouphead"><td colspan="3">ประตู</td></tr>
+<tr><td>0.70 × 2.00 ม.</td><td class="th-txt">ประตูบานเปิด</td><td><b>3</b> บาน</td></tr>
+<tr><td>0.80 × 2.00 ม.</td><td class="th-txt">ประตูบานเปิด</td><td><b>3</b> บาน</td></tr>
+<tr><td>0.90 × 2.10 ม.</td><td class="th-txt">ประตูบานเปิด</td><td><b>1</b> บาน</td></tr>
+<tr><td>1.00 × 2.00 ม.</td><td class="th-txt">ประตูบานเปิด</td><td><b>2</b> บาน</td></tr>
+<tr class="grouphead"><td colspan="3">หน้าต่าง</td></tr>
+<tr><td>0.50 × 1.50 ม.</td><td class="th-txt">บานติดตาย</td><td><b>7</b> บาน</td></tr>
+<tr><td>0.80 × 0.50 ม.</td><td class="th-txt">บล็อกแก้ว</td><td><b>3</b> บาน</td></tr>
+<tr><td>0.80 × 0.50 ม.</td><td class="th-txt">บานเลื่อน</td><td><b>1</b> บาน</td></tr>
+<tr><td>0.80 × 0.50 ม.</td><td class="th-txt">บานเลื่อน (ซ้อนบนบล็อกแก้ว)</td><td><b>2</b> บาน</td></tr>
+<tr><td>1.20 × 1.20 ม.</td><td class="th-txt">บานติดตาย</td><td><b>1</b> บาน</td></tr>
+<tr><td>2.00 × 1.20 ม.</td><td class="th-txt">บานติดตาย</td><td><b>2</b> บาน</td></tr>
+<tr><td>2.00 × 1.80 ม.</td><td class="th-txt">บานเลื่อน</td><td><b>2</b> บาน</td></tr></tbody></table>
+      </div>
+    </div>
+    <div class="note">หน้าต่าง #3 และ #4 เป็นชุดซ้อน 2 ชั้นในช่องเดียวกัน: บล็อกแก้ว 0.80×0.50 ธรณี +1.75 ม. และบานเลื่อน 0.80×0.50 ธรณี +2.25 ม. อยู่เหนือขึ้นไป — ในผังพื้นเห็นเป็นช่องเดียว ดูตำแหน่งจริงในรูปด้านหน้า A-04</div>
+    <footer class="sf"><span>HOME-102 · บ้านชั้นเดียว 3 ห้องนอน</span><span>A-02 · ตารางประตู-หน้าต่าง · REV.B</span></footer>
+  </section>
+
+  <section class="sheet" id="t-roof">
+    <div class="sheet-head"><h2>ผังหลังคา · Roof Plan</h2><span class="tagline">เมทัลชีทลอน 760 มม.</span></div>
+    <div class="note">เส้นทึบหนา = สันหลังคา · เส้นประเทา = ขอบชายคา · เส้นประส้ม = แนวหุบเขาที่หลังคา 2 ผืนตัดกัน (ให้ช่างหลังคาวัดแนวตัดจริงหน้างานอีกครั้ง) · ลูกศรน้ำเงิน = ทิศทางน้ำไหล</div>
+    <div class="canvas"><svg viewBox="0 -110 900 1100" width="900" height="1100">
+<defs><marker id="ah" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" class="ah"/></marker></defs>
+<path d="M 152.0,132.0 L 655.2,132.0 L 655.2,359.2 L 737.6,359.2 L 737.6,566.2 L 655.2,566.2 L 655.2,724.5 L 269.8,724.5 L 269.8,359.2 L 152.0,359.2 Z" class="bldg-ghost"/>
+<rect x="106.0" y="86.0" width="654.6" height="319.2" class="roof-fill-a"/>
+<rect x="106.0" y="86.0" width="654.6" height="319.2" class="eave-rect"/>
+<line x1="106.0" y1="245.6" x2="760.6" y2="245.6" class="ridge-line" />
+<text x="290.0" y="219.4" class="pitch-label" text-anchor="middle">สันหลังคาปีกห้องนอน — ยาว 14.23 ม.</text>
+<text x="290.0" y="157.3" class="pitch-label" text-anchor="middle">ลาด 25°</text>
+<line x1="290.0" y1="180.3" x2="290.0" y2="134.3" class="slope-arrow" marker-end="url(#ah)"/>
+<text x="290.0" y="332.1" class="pitch-label" text-anchor="middle">ลาด 25°</text>
+<line x1="290.0" y1="311.4" x2="290.0" y2="357.4" class="slope-arrow" marker-end="url(#ah)"/>
+<rect x="391.2" y="235.5" width="137.5" height="545.1" class="roof-fill-b"/>
+<rect x="391.2" y="235.5" width="137.5" height="545.1" class="eave-rect"/>
+<rect x="528.7" y="235.5" width="242.8" height="545.1" class="roof-fill-b2"/>
+<rect x="528.7" y="235.5" width="242.8" height="545.1" class="eave-rect"/>
+<line x1="528.7" y1="235.5" x2="528.7" y2="780.6" class="ridge-line" />
+<text x="528.7" y="799.9" class="pitch-label" text-anchor="middle">สันหลังคาห้องนั่งเล่น — ยาว 11.85 ม. (สูงเท่ากันทั้ง 2 ฝั่ง)</text>
+<text x="460.0" y="638.0" class="pitch-label" text-anchor="middle">ลาด 28.4°  วิ่ง 2.99 ม.</text>
+<line x1="514.9" y1="638.0" x2="398.1" y2="638.0" class="slope-arrow" marker-end="url(#ah)"/>
+<text x="650.2" y="638.0" class="pitch-label" text-anchor="middle">ลาด 17.0°  วิ่ง 5.28 ม. (คลุมห้องเก็บของ)</text>
+<line x1="542.5" y1="638.0" x2="764.7" y2="638.0" class="slope-arrow" marker-end="url(#ah)"/>
+<rect x="223.8" y="359.2" width="178.5" height="391.9" class="roof-fill-c"/>
+<rect x="223.8" y="359.2" width="178.5" height="391.9" class="eave-rect"/>
+<line x1="402.2" y1="359.2" x2="402.2" y2="751.2" class="ridge-line" />
+<text x="313.0" y="527.6" class="pitch-label" text-anchor="middle">เพิงหมาแหงน ลาด 7°</text>
+<line x1="377.4" y1="564.4" x2="257.8" y2="564.4" class="slope-arrow" marker-end="url(#ah)"/>
+<text x="313.0" y="601.2" class="note-txt-sm" text-anchor="middle">ลาดลงไปทางทิศตะวันตก</text>
+<line x1="427.5" y1="245.6" x2="528.7" y2="235.5" class="valley-line" />
+<line x1="629.9" y1="245.6" x2="528.7" y2="235.5" class="valley-line" />
+<text x="528.7" y="295.3" class="valley-txt" text-anchor="middle">หุบเขา (valley)</text>
+<line x1="106.0" y1="60.0" x2="152.0" y2="60.0" class="dim-line"/>
+<line x1="102.5" y1="63.5" x2="109.5" y2="56.5" class="dim-tick"/>
+<line x1="148.5" y1="63.5" x2="155.5" y2="56.5" class="dim-tick"/>
+<text x="129.0" y="54.0" class="dim-text" text-anchor="middle">1.00</text>
+<line x1="106.0" y1="86.0" x2="106.0" y2="60.0" class="ext-line"/>
+<line x1="152.0" y1="86.0" x2="152.0" y2="60.0" class="ext-line"/>
+<line x1="748.6" y1="60.0" x2="771.6" y2="60.0" class="dim-line"/>
+<line x1="745.0" y1="63.5" x2="752.1" y2="56.5" class="dim-tick"/>
+<line x1="768.0" y1="63.5" x2="775.1" y2="56.5" class="dim-tick"/>
+<text x="760.1" y="54.0" class="dim-text" text-anchor="middle">ยื่น 0.74</text>
+<line x1="748.6" y1="86.0" x2="748.6" y2="60.0" class="ext-line"/>
+<line x1="771.6" y1="86.0" x2="771.6" y2="60.0" class="ext-line"/>
+<line x1="76.0" y1="86.0" x2="76.0" y2="132.0" class="dim-line"/>
+<line x1="72.5" y1="89.5" x2="79.5" y2="82.5" class="dim-tick"/>
+<line x1="72.5" y1="135.5" x2="79.5" y2="128.5" class="dim-tick"/>
+<text x="70.0" y="109.0" class="dim-text" text-anchor="middle" transform="rotate(-90 70.0 109.0)">1.00</text>
+<line x1="106.0" y1="86.0" x2="76.0" y2="86.0" class="ext-line"/>
+<line x1="106.0" y1="132.0" x2="76.0" y2="132.0" class="ext-line"/>
+<line x1="805.6" y1="724.5" x2="805.6" y2="780.6" class="dim-line"/>
+<line x1="802.0" y1="728.0" x2="809.1" y2="720.9" class="dim-tick"/>
+<line x1="802.0" y1="784.1" x2="809.1" y2="777.1" class="dim-tick"/>
+<text x="799.6" y="752.5" class="dim-text" text-anchor="middle" transform="rotate(-90 799.6 752.5)">ยื่น 1.22</text>
+<line x1="771.6" y1="724.5" x2="805.6" y2="724.5" class="ext-line"/>
+<line x1="771.6" y1="780.6" x2="805.6" y2="780.6" class="ext-line"/>
+<text x="124.4" y="822.0" class="note-txt">ระดับสันหลังคา: ปีกห้องนอน +5.12 ม. · ห้องนั่งเล่น +5.12 ม. · ชายคาทุกด้าน +3.50 ม. (จากระดับดินเดิม)</text>
+<text x="124.4" y="849.6" class="note-txt-sm">มุงเมทัลชีทลอน 760 มม. · แปเหล็กกล่อง 50×50×1.6 มม. @1.00 ม. · โครงถัก/จันทัน @1.20 ม. · เส้นประเทา = แนวผนังบ้านด้านล่าง</text>
+<g transform="translate(791.4,104.4)"><circle r="24" class="north-ring"/><path d="M0,-17 L7,10 L0,4.5 L-7,10 Z" class="north-needle"/><text x="0" y="-28" class="north-txt">N</text></g>
+    </svg></div>
+    <div class="legend">
+      <span><span class="sw" style="background:var(--accent);opacity:.35"></span>ปีกห้องนอน — จั่ว 25°</span>
+      <span><span class="sw" style="background:var(--warn);opacity:.35"></span>ห้องนั่งเล่น — จั่ว 22°</span>
+      <span><span class="sw" style="background:var(--ink);opacity:.2"></span>ลานหน้าบ้าน — เพิงหมาแหงน 7°</span>
+    </div>
+    <footer class="sf"><span>HOME-102 · บ้านชั้นเดียว 3 ห้องนอน</span><span>A-03 · ผังหลังคา · REV.B</span></footer>
+  </section>
+
+  <section class="sheet" id="t-elev">
+    <div class="sheet-head"><h2>รูปด้าน · Elevations</h2><span class="tagline">ระดับอ้างอิงจากดินเดิม ±0.00</span></div>
+    <div class="note">แต่ละรูปแสดงผนังภายนอกทีละด้าน (developed elevation) เพื่อให้อ่านตำแหน่ง-ขนาดช่องเปิดและระดับได้ตรง · เส้นหลังคาแสดงระดับชายคา/สันหลังคาที่ถูกต้อง แต่ไม่ได้วาดแนวหุบเขา-มุมหลังคาแบบเปอร์สเปคทีฟจริง</div>
+    <div class="grid2">
+      <div class="canvas"><svg id="svg-elev-front" viewBox="0 0 676 344" width="100%" style="max-width:676px"><line x1="114.0" y1="258.0" x2="639.6" y2="258.0" class="elev-ground"/>
+<line x1="114.0" y1="258.0" x2="107.0" y2="265.0" class="ground-hatch"/>
+<line x1="125.0" y1="258.0" x2="118.0" y2="265.0" class="ground-hatch"/>
+<line x1="136.0" y1="258.0" x2="129.0" y2="265.0" class="ground-hatch"/>
+<line x1="147.0" y1="258.0" x2="140.0" y2="265.0" class="ground-hatch"/>
+<line x1="158.0" y1="258.0" x2="151.0" y2="265.0" class="ground-hatch"/>
+<line x1="169.0" y1="258.0" x2="162.0" y2="265.0" class="ground-hatch"/>
+<line x1="180.0" y1="258.0" x2="173.0" y2="265.0" class="ground-hatch"/>
+<line x1="191.0" y1="258.0" x2="184.0" y2="265.0" class="ground-hatch"/>
+<line x1="202.0" y1="258.0" x2="195.0" y2="265.0" class="ground-hatch"/>
+<line x1="213.0" y1="258.0" x2="206.0" y2="265.0" class="ground-hatch"/>
+<line x1="224.0" y1="258.0" x2="217.0" y2="265.0" class="ground-hatch"/>
+<line x1="235.0" y1="258.0" x2="228.0" y2="265.0" class="ground-hatch"/>
+<line x1="246.0" y1="258.0" x2="239.0" y2="265.0" class="ground-hatch"/>
+<line x1="257.0" y1="258.0" x2="250.0" y2="265.0" class="ground-hatch"/>
+<line x1="268.0" y1="258.0" x2="261.0" y2="265.0" class="ground-hatch"/>
+<line x1="279.0" y1="258.0" x2="272.0" y2="265.0" class="ground-hatch"/>
+<line x1="290.0" y1="258.0" x2="283.0" y2="265.0" class="ground-hatch"/>
+<line x1="301.0" y1="258.0" x2="294.0" y2="265.0" class="ground-hatch"/>
+<line x1="312.0" y1="258.0" x2="305.0" y2="265.0" class="ground-hatch"/>
+<line x1="323.0" y1="258.0" x2="316.0" y2="265.0" class="ground-hatch"/>
+<line x1="334.0" y1="258.0" x2="327.0" y2="265.0" class="ground-hatch"/>
+<line x1="345.0" y1="258.0" x2="338.0" y2="265.0" class="ground-hatch"/>
+<line x1="356.0" y1="258.0" x2="349.0" y2="265.0" class="ground-hatch"/>
+<line x1="367.0" y1="258.0" x2="360.0" y2="265.0" class="ground-hatch"/>
+<line x1="378.0" y1="258.0" x2="371.0" y2="265.0" class="ground-hatch"/>
+<line x1="389.0" y1="258.0" x2="382.0" y2="265.0" class="ground-hatch"/>
+<line x1="400.0" y1="258.0" x2="393.0" y2="265.0" class="ground-hatch"/>
+<line x1="411.0" y1="258.0" x2="404.0" y2="265.0" class="ground-hatch"/>
+<line x1="422.0" y1="258.0" x2="415.0" y2="265.0" class="ground-hatch"/>
+<line x1="433.0" y1="258.0" x2="426.0" y2="265.0" class="ground-hatch"/>
+<line x1="444.0" y1="258.0" x2="437.0" y2="265.0" class="ground-hatch"/>
+<line x1="455.0" y1="258.0" x2="448.0" y2="265.0" class="ground-hatch"/>
+<line x1="466.0" y1="258.0" x2="459.0" y2="265.0" class="ground-hatch"/>
+<line x1="477.0" y1="258.0" x2="470.0" y2="265.0" class="ground-hatch"/>
+<line x1="488.0" y1="258.0" x2="481.0" y2="265.0" class="ground-hatch"/>
+<line x1="499.0" y1="258.0" x2="492.0" y2="265.0" class="ground-hatch"/>
+<line x1="510.0" y1="258.0" x2="503.0" y2="265.0" class="ground-hatch"/>
+<line x1="521.0" y1="258.0" x2="514.0" y2="265.0" class="ground-hatch"/>
+<line x1="532.0" y1="258.0" x2="525.0" y2="265.0" class="ground-hatch"/>
+<line x1="543.0" y1="258.0" x2="536.0" y2="265.0" class="ground-hatch"/>
+<line x1="554.0" y1="258.0" x2="547.0" y2="265.0" class="ground-hatch"/>
+<line x1="565.0" y1="258.0" x2="558.0" y2="265.0" class="ground-hatch"/>
+<line x1="576.0" y1="258.0" x2="569.0" y2="265.0" class="ground-hatch"/>
+<line x1="587.0" y1="258.0" x2="580.0" y2="265.0" class="ground-hatch"/>
+<line x1="598.0" y1="258.0" x2="591.0" y2="265.0" class="ground-hatch"/>
+<line x1="609.0" y1="258.0" x2="602.0" y2="265.0" class="ground-hatch"/>
+<line x1="620.0" y1="258.0" x2="613.0" y2="265.0" class="ground-hatch"/>
+<rect x="158.0" y="238.0" width="437.6" height="20.0" class="elev-plinth"/>
+<rect x="158.0" y="118.0" width="437.6" height="120.0" class="elev-wall"/>
+<path d="M 118.0,118.0 L 152.0,53.3 L 601.6,53.3 L 635.6,118.0 L 635.6,125.0 L 118.0,125.0 Z" class="elev-roof"/>
+<rect x="178.0" y="148.0" width="20.0" height="60.0" class="elev-window"/>
+<line x1="188.0" y1="148.0" x2="188.0" y2="208.0" class="mullion"/>
+<text x="188.0" y="221.0" class="elev-tag">1</text>
+<text x="188.0" y="143.0" class="elev-sill">ธรณี +0.75</text>
+<rect x="264.4" y="148.0" width="20.0" height="60.0" class="elev-window"/>
+<line x1="274.4" y1="148.0" x2="274.4" y2="208.0" class="mullion"/>
+<text x="274.4" y="221.0" class="elev-tag">2</text>
+<text x="274.4" y="143.0" class="elev-sill">ธรณี +0.75</text>
+<rect x="319.6" y="148.0" width="32.0" height="20.0" class="elev-block"/>
+<line x1="327.6" y1="148.0" x2="327.6" y2="168.0" class="mullion"/>
+<line x1="335.6" y1="148.0" x2="335.6" y2="168.0" class="mullion"/>
+<line x1="343.6" y1="148.0" x2="343.6" y2="168.0" class="mullion"/>
+<line x1="319.6" y1="158.0" x2="351.6" y2="158.0" class="mullion"/>
+<text x="335.6" y="181.0" class="elev-tag">3</text>
+<text x="335.6" y="143.0" class="elev-sill">ธรณี +1.75</text>
+<rect x="319.6" y="128.0" width="32.0" height="20.0" class="elev-window"/>
+<line x1="335.6" y1="128.0" x2="335.6" y2="148.0" class="mullion"/>
+<text x="335.6" y="161.0" class="elev-tag">3ก</text>
+<text x="335.6" y="123.0" class="elev-sill">ธรณี +2.25</text>
+<rect x="399.6" y="148.0" width="32.0" height="20.0" class="elev-block"/>
+<line x1="407.6" y1="148.0" x2="407.6" y2="168.0" class="mullion"/>
+<line x1="415.6" y1="148.0" x2="415.6" y2="168.0" class="mullion"/>
+<line x1="423.6" y1="148.0" x2="423.6" y2="168.0" class="mullion"/>
+<line x1="399.6" y1="158.0" x2="431.6" y2="158.0" class="mullion"/>
+<text x="415.6" y="181.0" class="elev-tag">4</text>
+<text x="415.6" y="143.0" class="elev-sill">ธรณี +1.75</text>
+<rect x="399.6" y="128.0" width="32.0" height="20.0" class="elev-window"/>
+<line x1="415.6" y1="128.0" x2="415.6" y2="148.0" class="mullion"/>
+<text x="415.6" y="161.0" class="elev-tag">4ก</text>
+<text x="415.6" y="123.0" class="elev-sill">ธรณี +2.25</text>
+<rect x="478.0" y="148.0" width="20.0" height="60.0" class="elev-window"/>
+<line x1="488.0" y1="148.0" x2="488.0" y2="208.0" class="mullion"/>
+<text x="488.0" y="221.0" class="elev-tag">5</text>
+<text x="488.0" y="143.0" class="elev-sill">ธรณี +0.75</text>
+<rect x="551.5" y="148.0" width="20.0" height="60.0" class="elev-window"/>
+<line x1="561.5" y1="148.0" x2="561.5" y2="208.0" class="mullion"/>
+<text x="561.5" y="221.0" class="elev-tag">6</text>
+<text x="561.5" y="143.0" class="elev-sill">ธรณี +0.75</text>
+<line x1="104.0" y1="258.0" x2="641.6" y2="258.0" class="level-line"/>
+<text x="102.0" y="254.0" class="level-txt" text-anchor="end">±0.00 ระดับดินเดิม</text>
+<line x1="104.0" y1="238.0" x2="641.6" y2="238.0" class="level-line"/>
+<text x="102.0" y="234.0" class="level-txt" text-anchor="end">+0.50 พื้นสำเร็จ</text>
+<line x1="104.0" y1="118.0" x2="641.6" y2="118.0" class="level-line"/>
+<text x="102.0" y="114.0" class="level-txt" text-anchor="end">+3.50 ชายคา</text>
+<line x1="104.0" y1="53.3" x2="641.6" y2="53.3" class="level-line"/>
+<text x="102.0" y="49.3" class="level-txt" text-anchor="end">+5.12 สันหลังคา</text>
+<line x1="158.0" y1="298.0" x2="595.6" y2="298.0" class="dim-line"/>
+<line x1="154.5" y1="301.5" x2="161.5" y2="294.5" class="dim-tick"/>
+<line x1="592.1" y1="301.5" x2="599.1" y2="294.5" class="dim-tick"/>
+<text x="376.8" y="292.0" class="dim-text" text-anchor="middle">10.94 ม.</text>
+<text x="376.8" y="24" class="elev-title" text-anchor="middle">รูปด้านหน้า (ทิศใต้) — ผนัง W1</text>
+<text x="376.8" y="40" class="note-txt-sm" text-anchor="middle">หลังคาปีกห้องนอน มองด้านยาว · สันหลังคาขนานผนังนี้ (อยู่ลึกเข้าไป 2.47 ม.)</text>
+<text x="376.8" y="322.0" class="note-txt-sm" text-anchor="middle">หน้าต่าง 3ก / 4ก คือบานเลื่อนซ้อนอยู่เหนือบล็อกแก้วห้องน้ำ</text></svg></div>
+      <div class="canvas"><svg id="svg-elev-back" viewBox="0 0 458 344" width="100%" style="max-width:458px"><line x1="114.0" y1="258.0" x2="422.0" y2="258.0" class="elev-ground"/>
+<line x1="114.0" y1="258.0" x2="107.0" y2="265.0" class="ground-hatch"/>
+<line x1="125.0" y1="258.0" x2="118.0" y2="265.0" class="ground-hatch"/>
+<line x1="136.0" y1="258.0" x2="129.0" y2="265.0" class="ground-hatch"/>
+<line x1="147.0" y1="258.0" x2="140.0" y2="265.0" class="ground-hatch"/>
+<line x1="158.0" y1="258.0" x2="151.0" y2="265.0" class="ground-hatch"/>
+<line x1="169.0" y1="258.0" x2="162.0" y2="265.0" class="ground-hatch"/>
+<line x1="180.0" y1="258.0" x2="173.0" y2="265.0" class="ground-hatch"/>
+<line x1="191.0" y1="258.0" x2="184.0" y2="265.0" class="ground-hatch"/>
+<line x1="202.0" y1="258.0" x2="195.0" y2="265.0" class="ground-hatch"/>
+<line x1="213.0" y1="258.0" x2="206.0" y2="265.0" class="ground-hatch"/>
+<line x1="224.0" y1="258.0" x2="217.0" y2="265.0" class="ground-hatch"/>
+<line x1="235.0" y1="258.0" x2="228.0" y2="265.0" class="ground-hatch"/>
+<line x1="246.0" y1="258.0" x2="239.0" y2="265.0" class="ground-hatch"/>
+<line x1="257.0" y1="258.0" x2="250.0" y2="265.0" class="ground-hatch"/>
+<line x1="268.0" y1="258.0" x2="261.0" y2="265.0" class="ground-hatch"/>
+<line x1="279.0" y1="258.0" x2="272.0" y2="265.0" class="ground-hatch"/>
+<line x1="290.0" y1="258.0" x2="283.0" y2="265.0" class="ground-hatch"/>
+<line x1="301.0" y1="258.0" x2="294.0" y2="265.0" class="ground-hatch"/>
+<line x1="312.0" y1="258.0" x2="305.0" y2="265.0" class="ground-hatch"/>
+<line x1="323.0" y1="258.0" x2="316.0" y2="265.0" class="ground-hatch"/>
+<line x1="334.0" y1="258.0" x2="327.0" y2="265.0" class="ground-hatch"/>
+<line x1="345.0" y1="258.0" x2="338.0" y2="265.0" class="ground-hatch"/>
+<line x1="356.0" y1="258.0" x2="349.0" y2="265.0" class="ground-hatch"/>
+<line x1="367.0" y1="258.0" x2="360.0" y2="265.0" class="ground-hatch"/>
+<line x1="378.0" y1="258.0" x2="371.0" y2="265.0" class="ground-hatch"/>
+<line x1="389.0" y1="258.0" x2="382.0" y2="265.0" class="ground-hatch"/>
+<line x1="400.0" y1="258.0" x2="393.0" y2="265.0" class="ground-hatch"/>
+<line x1="411.0" y1="258.0" x2="404.0" y2="265.0" class="ground-hatch"/>
+<rect x="158.0" y="238.0" width="220.0" height="20.0" class="elev-plinth"/>
+<rect x="158.0" y="118.0" width="220.0" height="120.0" class="elev-wall"/>
+<path d="M 118.0,118.0 L 158.0,132.8 L 268.0,53.3 L 378.0,107.0 L 418.0,118.0 L 418.0,125.0 L 118.0,125.0 Z" class="elev-roof"/>
+<line x1="158.0" y1="132.8" x2="158.0" y2="118.0" class="mullion"/>
+<line x1="378.0" y1="107.0" x2="378.0" y2="118.0" class="mullion"/>
+<rect x="198.6" y="148.0" width="20.0" height="60.0" class="elev-window"/>
+<line x1="208.6" y1="148.0" x2="208.6" y2="208.0" class="mullion"/>
+<text x="208.6" y="221.0" class="elev-tag">13</text>
+<text x="208.6" y="143.0" class="elev-sill">ธรณี +0.75</text>
+<rect x="316.8" y="148.0" width="20.0" height="60.0" class="elev-window"/>
+<line x1="326.8" y1="148.0" x2="326.8" y2="208.0" class="mullion"/>
+<text x="326.8" y="221.0" class="elev-tag">12</text>
+<text x="326.8" y="143.0" class="elev-sill">ธรณี +0.75</text>
+<line x1="104.0" y1="258.0" x2="424.0" y2="258.0" class="level-line"/>
+<text x="102.0" y="254.0" class="level-txt" text-anchor="end">±0.00 ระดับดินเดิม</text>
+<line x1="104.0" y1="238.0" x2="424.0" y2="238.0" class="level-line"/>
+<text x="102.0" y="234.0" class="level-txt" text-anchor="end">+0.50 พื้นสำเร็จ</text>
+<line x1="104.0" y1="118.0" x2="424.0" y2="118.0" class="level-line"/>
+<text x="102.0" y="114.0" class="level-txt" text-anchor="end">+3.50 ชายคา</text>
+<line x1="104.0" y1="53.3" x2="424.0" y2="53.3" class="level-line"/>
+<text x="102.0" y="49.3" class="level-txt" text-anchor="end">+5.12 สันหลังคา</text>
+<line x1="158.0" y1="298.0" x2="378.0" y2="298.0" class="dim-line"/>
+<line x1="154.5" y1="301.5" x2="161.5" y2="294.5" class="dim-tick"/>
+<line x1="374.5" y1="301.5" x2="381.5" y2="294.5" class="dim-tick"/>
+<text x="268.0" y="292.0" class="dim-text" text-anchor="middle">5.50 ม.</text>
+<text x="268.0" y="24" class="elev-title" text-anchor="middle">รูปด้านหลัง (ทิศเหนือ) — ผนัง W7</text>
+<text x="268.0" y="40" class="note-txt-sm" text-anchor="middle">หลังคาไม่สมมาตร: ลาด 28.4° ฝั่งซ้าย / 17.0° ฝั่งขวา · สันอยู่กึ่งกลางผนังพอดี (x=8.19)</text>
+<text x="268.0" y="322.0" class="note-txt-sm" text-anchor="middle">หลังคายังไม่ถึงชายคาที่ขอบผนังทั้ง 2 ฝั่ง (ยังลาดต่อไปนอกผนังนี้) — ถัดไปทางซ้ายเป็นลานหน้าบ้านเปิดโล่ง + เพิงหมาแหงน ดูผังหลังคา A-03</text></svg></div>
+      <div class="canvas"><svg id="svg-elev-left" viewBox="0 0 436 344" width="100%" style="max-width:436px"><line x1="114.0" y1="258.0" x2="399.6" y2="258.0" class="elev-ground"/>
+<line x1="114.0" y1="258.0" x2="107.0" y2="265.0" class="ground-hatch"/>
+<line x1="125.0" y1="258.0" x2="118.0" y2="265.0" class="ground-hatch"/>
+<line x1="136.0" y1="258.0" x2="129.0" y2="265.0" class="ground-hatch"/>
+<line x1="147.0" y1="258.0" x2="140.0" y2="265.0" class="ground-hatch"/>
+<line x1="158.0" y1="258.0" x2="151.0" y2="265.0" class="ground-hatch"/>
+<line x1="169.0" y1="258.0" x2="162.0" y2="265.0" class="ground-hatch"/>
+<line x1="180.0" y1="258.0" x2="173.0" y2="265.0" class="ground-hatch"/>
+<line x1="191.0" y1="258.0" x2="184.0" y2="265.0" class="ground-hatch"/>
+<line x1="202.0" y1="258.0" x2="195.0" y2="265.0" class="ground-hatch"/>
+<line x1="213.0" y1="258.0" x2="206.0" y2="265.0" class="ground-hatch"/>
+<line x1="224.0" y1="258.0" x2="217.0" y2="265.0" class="ground-hatch"/>
+<line x1="235.0" y1="258.0" x2="228.0" y2="265.0" class="ground-hatch"/>
+<line x1="246.0" y1="258.0" x2="239.0" y2="265.0" class="ground-hatch"/>
+<line x1="257.0" y1="258.0" x2="250.0" y2="265.0" class="ground-hatch"/>
+<line x1="268.0" y1="258.0" x2="261.0" y2="265.0" class="ground-hatch"/>
+<line x1="279.0" y1="258.0" x2="272.0" y2="265.0" class="ground-hatch"/>
+<line x1="290.0" y1="258.0" x2="283.0" y2="265.0" class="ground-hatch"/>
+<line x1="301.0" y1="258.0" x2="294.0" y2="265.0" class="ground-hatch"/>
+<line x1="312.0" y1="258.0" x2="305.0" y2="265.0" class="ground-hatch"/>
+<line x1="323.0" y1="258.0" x2="316.0" y2="265.0" class="ground-hatch"/>
+<line x1="334.0" y1="258.0" x2="327.0" y2="265.0" class="ground-hatch"/>
+<line x1="345.0" y1="258.0" x2="338.0" y2="265.0" class="ground-hatch"/>
+<line x1="356.0" y1="258.0" x2="349.0" y2="265.0" class="ground-hatch"/>
+<line x1="367.0" y1="258.0" x2="360.0" y2="265.0" class="ground-hatch"/>
+<line x1="378.0" y1="258.0" x2="371.0" y2="265.0" class="ground-hatch"/>
+<rect x="158.0" y="238.0" width="197.6" height="20.0" class="elev-plinth"/>
+<rect x="158.0" y="118.0" width="197.6" height="120.0" class="elev-wall"/>
+<path d="M 118.0,118.0 L 256.8,53.3 L 395.6,118.0 L 395.6,125.0 L 118.0,125.0 Z" class="elev-roof"/>
+<rect x="218.0" y="154.0" width="80.0" height="48.0" class="elev-window"/>
+<line x1="258.0" y1="154.0" x2="258.0" y2="202.0" class="mullion"/>
+<text x="258.0" y="215.0" class="elev-tag">15</text>
+<text x="258.0" y="149.0" class="elev-sill">ธรณี +0.90</text>
+<line x1="104.0" y1="258.0" x2="401.6" y2="258.0" class="level-line"/>
+<text x="102.0" y="254.0" class="level-txt" text-anchor="end">±0.00 ระดับดินเดิม</text>
+<line x1="104.0" y1="238.0" x2="401.6" y2="238.0" class="level-line"/>
+<text x="102.0" y="234.0" class="level-txt" text-anchor="end">+0.50 พื้นสำเร็จ</text>
+<line x1="104.0" y1="118.0" x2="401.6" y2="118.0" class="level-line"/>
+<text x="102.0" y="114.0" class="level-txt" text-anchor="end">+3.50 ชายคา</text>
+<line x1="104.0" y1="53.3" x2="401.6" y2="53.3" class="level-line"/>
+<text x="102.0" y="49.3" class="level-txt" text-anchor="end">+5.12 สันหลังคา</text>
+<line x1="158.0" y1="298.0" x2="355.6" y2="298.0" class="dim-line"/>
+<line x1="154.5" y1="301.5" x2="161.5" y2="294.5" class="dim-tick"/>
+<line x1="352.1" y1="301.5" x2="359.1" y2="294.5" class="dim-tick"/>
+<text x="256.8" y="292.0" class="dim-text" text-anchor="middle">4.94 ม.</text>
+<text x="256.8" y="24" class="elev-title" text-anchor="middle">รูปด้านซ้าย (ทิศตะวันตก) — ผนัง W10</text>
+<text x="256.8" y="40" class="note-txt-sm" text-anchor="middle">เห็นหน้าจั่วปีกห้องนอนเต็มหน้า · สันหลังคาตั้งฉากกับผนังนี้</text>
+<text x="256.8" y="322.0" class="note-txt-sm" text-anchor="middle">บันไดหน้าบ้าน 4.00 ม. อยู่ถัดไปทางขวาของภาพนี้ (ฝั่งลานหน้าบ้าน)</text></svg></div>
+      <div class="canvas"><svg id="svg-elev-right" viewBox="0 0 436 344" width="100%" style="max-width:436px"><line x1="114.0" y1="258.0" x2="399.6" y2="258.0" class="elev-ground"/>
+<line x1="114.0" y1="258.0" x2="107.0" y2="265.0" class="ground-hatch"/>
+<line x1="125.0" y1="258.0" x2="118.0" y2="265.0" class="ground-hatch"/>
+<line x1="136.0" y1="258.0" x2="129.0" y2="265.0" class="ground-hatch"/>
+<line x1="147.0" y1="258.0" x2="140.0" y2="265.0" class="ground-hatch"/>
+<line x1="158.0" y1="258.0" x2="151.0" y2="265.0" class="ground-hatch"/>
+<line x1="169.0" y1="258.0" x2="162.0" y2="265.0" class="ground-hatch"/>
+<line x1="180.0" y1="258.0" x2="173.0" y2="265.0" class="ground-hatch"/>
+<line x1="191.0" y1="258.0" x2="184.0" y2="265.0" class="ground-hatch"/>
+<line x1="202.0" y1="258.0" x2="195.0" y2="265.0" class="ground-hatch"/>
+<line x1="213.0" y1="258.0" x2="206.0" y2="265.0" class="ground-hatch"/>
+<line x1="224.0" y1="258.0" x2="217.0" y2="265.0" class="ground-hatch"/>
+<line x1="235.0" y1="258.0" x2="228.0" y2="265.0" class="ground-hatch"/>
+<line x1="246.0" y1="258.0" x2="239.0" y2="265.0" class="ground-hatch"/>
+<line x1="257.0" y1="258.0" x2="250.0" y2="265.0" class="ground-hatch"/>
+<line x1="268.0" y1="258.0" x2="261.0" y2="265.0" class="ground-hatch"/>
+<line x1="279.0" y1="258.0" x2="272.0" y2="265.0" class="ground-hatch"/>
+<line x1="290.0" y1="258.0" x2="283.0" y2="265.0" class="ground-hatch"/>
+<line x1="301.0" y1="258.0" x2="294.0" y2="265.0" class="ground-hatch"/>
+<line x1="312.0" y1="258.0" x2="305.0" y2="265.0" class="ground-hatch"/>
+<line x1="323.0" y1="258.0" x2="316.0" y2="265.0" class="ground-hatch"/>
+<line x1="334.0" y1="258.0" x2="327.0" y2="265.0" class="ground-hatch"/>
+<line x1="345.0" y1="258.0" x2="338.0" y2="265.0" class="ground-hatch"/>
+<line x1="356.0" y1="258.0" x2="349.0" y2="265.0" class="ground-hatch"/>
+<line x1="367.0" y1="258.0" x2="360.0" y2="265.0" class="ground-hatch"/>
+<line x1="378.0" y1="258.0" x2="371.0" y2="265.0" class="ground-hatch"/>
+<rect x="158.0" y="238.0" width="197.6" height="20.0" class="elev-plinth"/>
+<rect x="158.0" y="118.0" width="197.6" height="120.0" class="elev-wall"/>
+<path d="M 118.0,118.0 L 256.8,53.3 L 395.6,118.0 L 395.6,125.0 L 118.0,125.0 Z" class="elev-roof"/>
+<rect x="215.6" y="154.0" width="80.0" height="48.0" class="elev-window"/>
+<line x1="255.6" y1="154.0" x2="255.6" y2="202.0" class="mullion"/>
+<text x="255.6" y="215.0" class="elev-tag">7</text>
+<text x="255.6" y="149.0" class="elev-sill">ธรณี +0.90</text>
+<line x1="104.0" y1="258.0" x2="401.6" y2="258.0" class="level-line"/>
+<text x="102.0" y="254.0" class="level-txt" text-anchor="end">±0.00 ระดับดินเดิม</text>
+<line x1="104.0" y1="238.0" x2="401.6" y2="238.0" class="level-line"/>
+<text x="102.0" y="234.0" class="level-txt" text-anchor="end">+0.50 พื้นสำเร็จ</text>
+<line x1="104.0" y1="118.0" x2="401.6" y2="118.0" class="level-line"/>
+<text x="102.0" y="114.0" class="level-txt" text-anchor="end">+3.50 ชายคา</text>
+<line x1="104.0" y1="53.3" x2="401.6" y2="53.3" class="level-line"/>
+<text x="102.0" y="49.3" class="level-txt" text-anchor="end">+5.12 สันหลังคา</text>
+<line x1="158.0" y1="298.0" x2="355.6" y2="298.0" class="dim-line"/>
+<line x1="154.5" y1="301.5" x2="161.5" y2="294.5" class="dim-tick"/>
+<line x1="352.1" y1="301.5" x2="359.1" y2="294.5" class="dim-tick"/>
+<text x="256.8" y="292.0" class="dim-text" text-anchor="middle">4.94 ม.</text>
+<text x="256.8" y="24" class="elev-title" text-anchor="middle">รูปด้านขวา (ทิศตะวันออก) — ผนัง W2 ช่วงหน้า</text>
+<text x="256.8" y="40" class="note-txt-sm" text-anchor="middle">ช่วงห้องนอน 2 · ผนัง W4/W6 ที่ยื่นออก 1.79 ม. อยู่ถัดไปด้านหลัง</text>
+<text x="256.8" y="322.0" class="note-txt-sm" text-anchor="middle">ประตูหลังบ้าน D1 + บันไดหลังบ้าน อยู่มุมขวาสุดของผนังช่วงถัดไป</text></svg></div>
+    </div>
+    <footer class="sf"><span>HOME-102 · บ้านชั้นเดียว 3 ห้องนอน</span><span>A-04 · รูปด้าน · REV.B</span></footer>
+  </section>
+
+  <section class="sheet" id="t-sec">
+    <div class="sheet-head"><h2>รูปตัด · Sections</h2><span class="tagline">แนวตัดดูได้ในผังพื้น A-01</span></div>
+    <div class="note">รูปตัดแสดงลำดับการก่อสร้างจากล่างขึ้นบน: ทรายถมบดอัด → คานคอดิน → พื้น ค.ส.ล. → ผนัง → โครงหลังคา → เมทัลชีท · ตัวเลขวงกลม ①-⑥ อธิบายไว้ใต้รูป</div>
+    <div class="stack">
+      <div class="canvas"><svg id="svg-sec-a" viewBox="0 0 574 492" width="100%" style="max-width:574px"><line x1="158.0" y1="322.0" x2="514.4" y2="322.0" class="elev-ground"/>
+<line x1="158.0" y1="322.0" x2="151.0" y2="329.0" class="ground-hatch"/>
+<line x1="169.0" y1="322.0" x2="162.0" y2="329.0" class="ground-hatch"/>
+<line x1="180.0" y1="322.0" x2="173.0" y2="329.0" class="ground-hatch"/>
+<line x1="191.0" y1="322.0" x2="184.0" y2="329.0" class="ground-hatch"/>
+<line x1="202.0" y1="322.0" x2="195.0" y2="329.0" class="ground-hatch"/>
+<line x1="213.0" y1="322.0" x2="206.0" y2="329.0" class="ground-hatch"/>
+<line x1="224.0" y1="322.0" x2="217.0" y2="329.0" class="ground-hatch"/>
+<line x1="235.0" y1="322.0" x2="228.0" y2="329.0" class="ground-hatch"/>
+<line x1="246.0" y1="322.0" x2="239.0" y2="329.0" class="ground-hatch"/>
+<line x1="257.0" y1="322.0" x2="250.0" y2="329.0" class="ground-hatch"/>
+<line x1="268.0" y1="322.0" x2="261.0" y2="329.0" class="ground-hatch"/>
+<line x1="279.0" y1="322.0" x2="272.0" y2="329.0" class="ground-hatch"/>
+<line x1="290.0" y1="322.0" x2="283.0" y2="329.0" class="ground-hatch"/>
+<line x1="301.0" y1="322.0" x2="294.0" y2="329.0" class="ground-hatch"/>
+<line x1="312.0" y1="322.0" x2="305.0" y2="329.0" class="ground-hatch"/>
+<line x1="323.0" y1="322.0" x2="316.0" y2="329.0" class="ground-hatch"/>
+<line x1="334.0" y1="322.0" x2="327.0" y2="329.0" class="ground-hatch"/>
+<line x1="345.0" y1="322.0" x2="338.0" y2="329.0" class="ground-hatch"/>
+<line x1="356.0" y1="322.0" x2="349.0" y2="329.0" class="ground-hatch"/>
+<line x1="367.0" y1="322.0" x2="360.0" y2="329.0" class="ground-hatch"/>
+<line x1="378.0" y1="322.0" x2="371.0" y2="329.0" class="ground-hatch"/>
+<line x1="389.0" y1="322.0" x2="382.0" y2="329.0" class="ground-hatch"/>
+<line x1="400.0" y1="322.0" x2="393.0" y2="329.0" class="ground-hatch"/>
+<line x1="411.0" y1="322.0" x2="404.0" y2="329.0" class="ground-hatch"/>
+<line x1="422.0" y1="322.0" x2="415.0" y2="329.0" class="ground-hatch"/>
+<line x1="433.0" y1="322.0" x2="426.0" y2="329.0" class="ground-hatch"/>
+<line x1="444.0" y1="322.0" x2="437.0" y2="329.0" class="ground-hatch"/>
+<line x1="455.0" y1="322.0" x2="448.0" y2="329.0" class="ground-hatch"/>
+<line x1="466.0" y1="322.0" x2="459.0" y2="329.0" class="ground-hatch"/>
+<line x1="477.0" y1="322.0" x2="470.0" y2="329.0" class="ground-hatch"/>
+<line x1="488.0" y1="322.0" x2="481.0" y2="329.0" class="ground-hatch"/>
+<line x1="499.0" y1="322.0" x2="492.0" y2="329.0" class="ground-hatch"/>
+<rect x="228.4" y="304.4" width="217.4" height="17.6" class="fill-hatch"/>
+<rect x="228.4" y="300.0" width="217.4" height="4.4" class="slab"/>
+<rect x="224.0" y="304.4" width="8.8" height="13.2" class="beam-sec"/>
+<rect x="225.8" y="168.0" width="5.3" height="132.0" class="wall-sec"/>
+<rect x="441.4" y="304.4" width="8.8" height="13.2" class="beam-sec"/>
+<rect x="443.1" y="168.0" width="5.3" height="132.0" class="wall-sec"/>
+<line x1="184.4" y1="168.0" x2="489.8" y2="168.0" class="ceiling-line"/>
+<path d="M 184.4,190.0 L 337.1,118.8 L 489.8,190.0" class="roof-sec"/>
+<line x1="100.0" y1="322.0" x2="514.4" y2="322.0" class="level-line"/>
+<text x="98.0" y="318.0" class="level-txt" text-anchor="end">±0.00</text>
+<line x1="100.0" y1="300.0" x2="514.4" y2="300.0" class="level-line"/>
+<text x="98.0" y="296.0" class="level-txt" text-anchor="end">+0.50 พื้นสำเร็จ</text>
+<line x1="100.0" y1="168.0" x2="514.4" y2="168.0" class="level-line"/>
+<text x="98.0" y="164.0" class="level-txt" text-anchor="end">+3.50 ชายคา/ฝ้า</text>
+<line x1="100.0" y1="118.8" x2="514.4" y2="118.8" class="level-line"/>
+<text x="98.0" y="114.8" class="level-txt" text-anchor="end">+5.12 สันหลังคา</text>
+<text x="100.0" y="384.0" class="note-txt-sm">① เมทัลชีทลอน 760 บนแปเหล็กกล่อง 50×50×1.6 @1.00 ม.</text>
+<text x="100.0" y="399.0" class="note-txt-sm">② ฝ้าชายคาไฟเบอร์ซีเมนต์ 8 มม. ฉาบเรียบ (ยื่น 1.00 ม.)</text>
+<text x="100.0" y="414.0" class="note-txt-sm">③ ผนังก่ออิฐบล็อก 9×19×39 หนา 0.12 ม. ฉาบเรียบ 2 หน้า สูง 3.00 ม.</text>
+<text x="100.0" y="429.0" class="note-txt-sm">④ พื้น ค.ส.ล. หนา 0.10 ม. เสริมไวร์เมช 4 มม.@0.20 ม. บนทรายถมบดอัด</text>
+<text x="100.0" y="444.0" class="note-txt-sm">⑤ คานคอดิน 0.20×0.30 ม. เหล็กหลัก RB9 4 เส้น ปลอก RB6@0.20 ม.</text>
+<text x="100.0" y="459.0" class="note-txt-sm">⑥ ทรายถมบดอัดแน่น + ทรายรองพื้น 0.05 ม. + แผ่นพลาสติกกันซึม PE</text>
+<text x="336.2" y="26" class="elev-title" text-anchor="middle">รูปตัด A-A (ตัดตามแนวเหนือ-ใต้ ที่ x = 2.00 ม. ผ่านห้องนอน 1)</text>
+<text x="336.2" y="42" class="note-txt-sm" text-anchor="middle">เห็นหน้าจั่วปีกห้องนอน มุมลาด 25° · ชายคายื่น 1.00 ม. ทั้งสองด้าน</text></svg></div>
+      <div class="canvas"><svg id="svg-sec-b" viewBox="0 0 632 462" width="100%" style="max-width:632px"><line x1="158.0" y1="322.0" x2="571.6" y2="322.0" class="elev-ground"/>
+<line x1="158.0" y1="322.0" x2="151.0" y2="329.0" class="ground-hatch"/>
+<line x1="169.0" y1="322.0" x2="162.0" y2="329.0" class="ground-hatch"/>
+<line x1="180.0" y1="322.0" x2="173.0" y2="329.0" class="ground-hatch"/>
+<line x1="191.0" y1="322.0" x2="184.0" y2="329.0" class="ground-hatch"/>
+<line x1="202.0" y1="322.0" x2="195.0" y2="329.0" class="ground-hatch"/>
+<line x1="213.0" y1="322.0" x2="206.0" y2="329.0" class="ground-hatch"/>
+<line x1="224.0" y1="322.0" x2="217.0" y2="329.0" class="ground-hatch"/>
+<line x1="235.0" y1="322.0" x2="228.0" y2="329.0" class="ground-hatch"/>
+<line x1="246.0" y1="322.0" x2="239.0" y2="329.0" class="ground-hatch"/>
+<line x1="257.0" y1="322.0" x2="250.0" y2="329.0" class="ground-hatch"/>
+<line x1="268.0" y1="322.0" x2="261.0" y2="329.0" class="ground-hatch"/>
+<line x1="279.0" y1="322.0" x2="272.0" y2="329.0" class="ground-hatch"/>
+<line x1="290.0" y1="322.0" x2="283.0" y2="329.0" class="ground-hatch"/>
+<line x1="301.0" y1="322.0" x2="294.0" y2="329.0" class="ground-hatch"/>
+<line x1="312.0" y1="322.0" x2="305.0" y2="329.0" class="ground-hatch"/>
+<line x1="323.0" y1="322.0" x2="316.0" y2="329.0" class="ground-hatch"/>
+<line x1="334.0" y1="322.0" x2="327.0" y2="329.0" class="ground-hatch"/>
+<line x1="345.0" y1="322.0" x2="338.0" y2="329.0" class="ground-hatch"/>
+<line x1="356.0" y1="322.0" x2="349.0" y2="329.0" class="ground-hatch"/>
+<line x1="367.0" y1="322.0" x2="360.0" y2="329.0" class="ground-hatch"/>
+<line x1="378.0" y1="322.0" x2="371.0" y2="329.0" class="ground-hatch"/>
+<line x1="389.0" y1="322.0" x2="382.0" y2="329.0" class="ground-hatch"/>
+<line x1="400.0" y1="322.0" x2="393.0" y2="329.0" class="ground-hatch"/>
+<line x1="411.0" y1="322.0" x2="404.0" y2="329.0" class="ground-hatch"/>
+<line x1="422.0" y1="322.0" x2="415.0" y2="329.0" class="ground-hatch"/>
+<line x1="433.0" y1="322.0" x2="426.0" y2="329.0" class="ground-hatch"/>
+<line x1="444.0" y1="322.0" x2="437.0" y2="329.0" class="ground-hatch"/>
+<line x1="455.0" y1="322.0" x2="448.0" y2="329.0" class="ground-hatch"/>
+<line x1="466.0" y1="322.0" x2="459.0" y2="329.0" class="ground-hatch"/>
+<line x1="477.0" y1="322.0" x2="470.0" y2="329.0" class="ground-hatch"/>
+<line x1="488.0" y1="322.0" x2="481.0" y2="329.0" class="ground-hatch"/>
+<line x1="499.0" y1="322.0" x2="492.0" y2="329.0" class="ground-hatch"/>
+<line x1="510.0" y1="322.0" x2="503.0" y2="329.0" class="ground-hatch"/>
+<line x1="521.0" y1="322.0" x2="514.0" y2="329.0" class="ground-hatch"/>
+<line x1="532.0" y1="322.0" x2="525.0" y2="329.0" class="ground-hatch"/>
+<line x1="543.0" y1="322.0" x2="536.0" y2="329.0" class="ground-hatch"/>
+<line x1="554.0" y1="322.0" x2="547.0" y2="329.0" class="ground-hatch"/>
+<rect x="195.0" y="304.4" width="320.8" height="17.6" class="fill-hatch"/>
+<rect x="195.0" y="300.0" width="320.8" height="4.4" class="slab"/>
+<rect x="190.6" y="304.4" width="8.8" height="13.2" class="beam-sec"/>
+<rect x="192.3" y="168.0" width="5.3" height="132.0" class="wall-sec"/>
+<rect x="432.6" y="304.4" width="8.8" height="13.2" class="beam-sec"/>
+<rect x="434.3" y="168.0" width="5.3" height="132.0" class="wall-sec"/>
+<rect x="511.3" y="304.4" width="8.8" height="13.2" class="beam-sec"/>
+<rect x="513.1" y="168.0" width="5.3" height="132.0" class="wall-sec"/>
+<line x1="184.4" y1="168.0" x2="548.2" y2="168.0" class="ceiling-line"/>
+<path d="M 184.4,190.0 L 316.0,118.8 L 548.2,190.0" class="roof-sec"/>
+<line x1="100.0" y1="322.0" x2="571.6" y2="322.0" class="level-line"/>
+<text x="98.0" y="318.0" class="level-txt" text-anchor="end">±0.00</text>
+<line x1="100.0" y1="300.0" x2="571.6" y2="300.0" class="level-line"/>
+<text x="98.0" y="296.0" class="level-txt" text-anchor="end">+0.50 พื้นสำเร็จ</text>
+<line x1="100.0" y1="168.0" x2="571.6" y2="168.0" class="level-line"/>
+<text x="98.0" y="164.0" class="level-txt" text-anchor="end">+3.50 ชายคา/ฝ้า</text>
+<line x1="100.0" y1="118.8" x2="571.6" y2="118.8" class="level-line"/>
+<text x="98.0" y="114.8" class="level-txt" text-anchor="end">+5.12 สันหลังคา</text>
+<text x="100.0" y="384.0" class="note-txt-sm">ผนัง x=5.44 คือผนังกั้นลานหน้าบ้าน · x=10.94 และ 12.73 คือผนังห้องเก็บของ</text>
+<text x="100.0" y="399.0" class="note-txt-sm">ระดับพื้นทุกห้องเสมอกันที่ +0.50 ม. · ฝ้าเพดาน/ชายคาที่ +3.50 ม.</text>
+<text x="100.0" y="414.0" class="note-txt-sm">คานคอดินวางตามแนวผนังทุกเส้น ขนาด 0.20×0.30 ม.</text>
+<text x="100.0" y="429.0" class="note-txt-sm">ฝั่งขวาลาดตื้นกว่า (คลุมยื่นไกลกว่าเพื่อครอบห้องเก็บของ) — สันหลังคาสูงเท่ากับปีกห้องนอนพอดี (+5.12 ม. ≈ +5.12 ม.)</text>
+<text x="364.8" y="26" class="elev-title" text-anchor="middle">รูปตัด B-B (ตัดตามแนวตะวันออก-ตะวันตก ที่ z = 8.00 ม. ผ่านห้องนั่งเล่น + ห้องเก็บของ)</text>
+<text x="364.8" y="42" class="note-txt-sm" text-anchor="middle">หลังคาไม่สมมาตร — สันอยู่ที่ x = 8.19 ม. · ลาด 28.4° ฝั่งซ้าย (วิ่ง 2.99 ม.) / 17.0° ฝั่งขวา (วิ่ง 5.28 ม.)</text></svg></div>
+    </div>
+    <footer class="sf"><span>HOME-102 · บ้านชั้นเดียว 3 ห้องนอน</span><span>A-05 · รูปตัด · REV.B</span></footer>
+  </section>
+
+  <section class="sheet" id="t-beam">
+    <div class="sheet-head"><h2>ผังคานคอดิน &amp; ตำแหน่งเสา · Ground Beam Plan</h2>
+      <span class="tagline">GB1 0.20 × 0.30 ม.</span></div>
+    <div class="note warn">ตำแหน่งฐานราก/ตอม่อ และขนาดเหล็กเสริมจริง ต้องให้วิศวกรออกแบบตามผลเจาะสำรวจดิน (soil test) ก่อนดำเนินการ — ผังนี้แสดงเฉพาะแนวคานตามศูนย์กลางผนังและตำแหน่งเสาที่แนะนำ</div>
+    <div class="canvas"><svg viewBox="0 -110 900 1100" width="900" height="1100">
+<path d="M 152.0,132.0 L 655.2,132.0 L 655.2,359.2 L 737.6,359.2 L 737.6,566.2 L 655.2,566.2 L 655.2,724.5 L 269.8,724.5 L 269.8,359.2 L 152.0,359.2 Z" class="bldg-ghost"/>
+<line x1="152.0" y1="132.0" x2="655.2" y2="132.0" class="beam-line"/>
+<line x1="655.2" y1="132.0" x2="655.2" y2="359.2" class="beam-line"/>
+<line x1="655.2" y1="359.2" x2="737.6" y2="359.2" class="beam-line"/>
+<line x1="737.6" y1="359.2" x2="737.6" y2="566.2" class="beam-line"/>
+<line x1="737.6" y1="566.2" x2="655.2" y2="566.2" class="beam-line"/>
+<line x1="655.2" y1="566.2" x2="655.2" y2="724.5" class="beam-line"/>
+<line x1="655.2" y1="724.5" x2="402.2" y2="724.5" class="beam-line"/>
+<line x1="269.8" y1="359.2" x2="152.0" y2="359.2" class="beam-line"/>
+<line x1="152.0" y1="359.2" x2="152.0" y2="132.0" class="beam-line"/>
+<line x1="310.2" y1="132.0" x2="310.2" y2="267.2" class="beam-line"/>
+<line x1="310.2" y1="267.2" x2="402.2" y2="267.2" class="beam-line"/>
+<line x1="402.2" y1="267.2" x2="494.2" y2="267.2" class="beam-line"/>
+<line x1="402.2" y1="132.0" x2="402.2" y2="267.2" class="beam-line"/>
+<line x1="402.2" y1="267.2" x2="402.2" y2="359.2" class="beam-line"/>
+<line x1="402.2" y1="359.2" x2="402.2" y2="724.5" class="beam-line"/>
+<line x1="269.8" y1="359.2" x2="402.2" y2="359.2" class="beam-line"/>
+<line x1="494.2" y1="132.0" x2="494.2" y2="267.2" class="beam-line"/>
+<line x1="494.2" y1="267.2" x2="494.2" y2="359.2" class="beam-line"/>
+<line x1="494.2" y1="359.2" x2="655.2" y2="359.2" class="beam-line"/>
+<line x1="655.2" y1="474.2" x2="737.6" y2="474.2" class="beam-line"/>
+<line x1="655.2" y1="474.2" x2="655.2" y2="566.2" class="beam-line"/>
+<rect x="145.0" y="125.0" width="14" height="14" class="col-corner"/>
+<rect x="648.2" y="125.0" width="14" height="14" class="col-corner"/>
+<rect x="648.2" y="352.2" width="14" height="14" class="col-corner"/>
+<rect x="730.6" y="352.2" width="14" height="14" class="col-corner"/>
+<rect x="730.6" y="559.2" width="14" height="14" class="col-corner"/>
+<rect x="648.2" y="559.2" width="14" height="14" class="col-corner"/>
+<rect x="648.2" y="717.5" width="14" height="14" class="col-corner"/>
+<rect x="395.2" y="717.5" width="14" height="14" class="col-corner"/>
+<rect x="262.8" y="352.2" width="14" height="14" class="col-corner"/>
+<rect x="145.0" y="352.2" width="14" height="14" class="col-corner"/>
+<rect x="303.2" y="125.0" width="14" height="14" class="col-corner"/>
+<rect x="303.2" y="260.2" width="14" height="14" class="col-corner"/>
+<rect x="395.2" y="260.2" width="14" height="14" class="col-corner"/>
+<rect x="487.2" y="260.2" width="14" height="14" class="col-corner"/>
+<rect x="395.2" y="125.0" width="14" height="14" class="col-corner"/>
+<rect x="395.2" y="352.2" width="14" height="14" class="col-corner"/>
+<rect x="487.2" y="125.0" width="14" height="14" class="col-corner"/>
+<rect x="487.2" y="352.2" width="14" height="14" class="col-corner"/>
+<rect x="648.2" y="467.2" width="14" height="14" class="col-corner"/>
+<rect x="730.6" y="467.2" width="14" height="14" class="col-corner"/>
+<rect x="262.8" y="717.5" width="14" height="14" class="col-corner"/>
+<rect x="521.7" y="717.5" width="14" height="14" class="col-mid"/>
+<rect x="395.2" y="474.0" width="14" height="14" class="col-mid"/>
+<rect x="395.2" y="595.7" width="14" height="14" class="col-mid"/>
+<rect x="145.0" y="238.6" width="14" height="14" class="col-mid"/>
+<rect x="648.2" y="238.6" width="14" height="14" class="col-mid"/>
+<line x1="152.0" y1="98.0" x2="186.5" y2="98.0" class="dim-line"/>
+<line x1="148.5" y1="101.5" x2="155.5" y2="94.5" class="dim-tick"/>
+<line x1="183.0" y1="101.5" x2="190.0" y2="94.5" class="dim-tick"/>
+<text x="169.2" y="92.0" class="dim-text" text-anchor="middle">0.75</text>
+<line x1="186.5" y1="98.0" x2="310.2" y2="98.0" class="dim-line"/>
+<line x1="183.0" y1="101.5" x2="190.0" y2="94.5" class="dim-tick"/>
+<line x1="306.7" y1="101.5" x2="313.8" y2="94.5" class="dim-tick"/>
+<text x="248.4" y="92.0" class="dim-text" text-anchor="middle">2.69</text>
+<line x1="310.2" y1="98.0" x2="356.2" y2="98.0" class="dim-line"/>
+<line x1="306.7" y1="101.5" x2="313.8" y2="94.5" class="dim-tick"/>
+<line x1="352.7" y1="101.5" x2="359.8" y2="94.5" class="dim-tick"/>
+<text x="333.2" y="92.0" class="dim-text" text-anchor="middle">1.00</text>
+<line x1="356.2" y1="98.0" x2="402.2" y2="98.0" class="dim-line"/>
+<line x1="352.7" y1="101.5" x2="359.8" y2="94.5" class="dim-tick"/>
+<line x1="398.7" y1="101.5" x2="405.8" y2="94.5" class="dim-tick"/>
+<text x="379.2" y="92.0" class="dim-text" text-anchor="middle">1.00</text>
+<line x1="402.2" y1="98.0" x2="448.2" y2="98.0" class="dim-line"/>
+<line x1="398.7" y1="101.5" x2="405.8" y2="94.5" class="dim-tick"/>
+<line x1="444.7" y1="101.5" x2="451.8" y2="94.5" class="dim-tick"/>
+<text x="425.2" y="92.0" class="dim-text" text-anchor="middle">1.00</text>
+<line x1="448.2" y1="98.0" x2="494.2" y2="98.0" class="dim-line"/>
+<line x1="444.7" y1="101.5" x2="451.8" y2="94.5" class="dim-tick"/>
+<line x1="490.7" y1="101.5" x2="497.8" y2="94.5" class="dim-tick"/>
+<text x="471.2" y="92.0" class="dim-text" text-anchor="middle">1.00</text>
+<line x1="494.2" y1="98.0" x2="531.5" y2="98.0" class="dim-line"/>
+<line x1="490.7" y1="101.5" x2="497.8" y2="94.5" class="dim-tick"/>
+<line x1="528.0" y1="101.5" x2="535.0" y2="94.5" class="dim-tick"/>
+<text x="512.9" y="92.0" class="dim-text" text-anchor="middle">0.81</text>
+<line x1="531.5" y1="98.0" x2="616.1" y2="98.0" class="dim-line"/>
+<line x1="528.0" y1="101.5" x2="535.0" y2="94.5" class="dim-tick"/>
+<line x1="612.6" y1="101.5" x2="619.7" y2="94.5" class="dim-tick"/>
+<text x="573.8" y="92.0" class="dim-text" text-anchor="middle">1.84</text>
+<line x1="616.1" y1="98.0" x2="655.2" y2="98.0" class="dim-line"/>
+<line x1="612.6" y1="101.5" x2="619.7" y2="94.5" class="dim-tick"/>
+<line x1="651.7" y1="101.5" x2="658.8" y2="94.5" class="dim-tick"/>
+<text x="635.7" y="92.0" class="dim-text" text-anchor="middle">0.85</text>
+<line x1="152.0" y1="132.0" x2="152.0" y2="98.0" class="ext-line"/>
+<line x1="186.5" y1="132.0" x2="186.5" y2="98.0" class="ext-line"/>
+<line x1="310.2" y1="132.0" x2="310.2" y2="98.0" class="ext-line"/>
+<line x1="356.2" y1="132.0" x2="356.2" y2="98.0" class="ext-line"/>
+<line x1="402.2" y1="132.0" x2="402.2" y2="98.0" class="ext-line"/>
+<line x1="448.2" y1="132.0" x2="448.2" y2="98.0" class="ext-line"/>
+<line x1="494.2" y1="132.0" x2="494.2" y2="98.0" class="ext-line"/>
+<line x1="531.5" y1="132.0" x2="531.5" y2="98.0" class="ext-line"/>
+<line x1="616.1" y1="132.0" x2="616.1" y2="98.0" class="ext-line"/>
+<line x1="655.2" y1="132.0" x2="655.2" y2="98.0" class="ext-line"/>
+<line x1="152.0" y1="66.0" x2="310.2" y2="66.0" class="dim-line"/>
+<line x1="148.5" y1="69.5" x2="155.5" y2="62.5" class="dim-tick"/>
+<line x1="306.7" y1="69.5" x2="313.8" y2="62.5" class="dim-tick"/>
+<text x="231.1" y="60.0" class="dim-text" text-anchor="middle">3.44</text>
+<line x1="310.2" y1="66.0" x2="402.2" y2="66.0" class="dim-line"/>
+<line x1="306.7" y1="69.5" x2="313.8" y2="62.5" class="dim-tick"/>
+<line x1="398.7" y1="69.5" x2="405.8" y2="62.5" class="dim-tick"/>
+<text x="356.2" y="60.0" class="dim-text" text-anchor="middle">2.00</text>
+<line x1="402.2" y1="66.0" x2="494.2" y2="66.0" class="dim-line"/>
+<line x1="398.7" y1="69.5" x2="405.8" y2="62.5" class="dim-tick"/>
+<line x1="490.7" y1="69.5" x2="497.8" y2="62.5" class="dim-tick"/>
+<text x="448.2" y="60.0" class="dim-text" text-anchor="middle">2.00</text>
+<line x1="494.2" y1="66.0" x2="655.2" y2="66.0" class="dim-line"/>
+<line x1="490.7" y1="69.5" x2="497.8" y2="62.5" class="dim-tick"/>
+<line x1="651.7" y1="69.5" x2="658.8" y2="62.5" class="dim-tick"/>
+<text x="574.7" y="60.0" class="dim-text" text-anchor="middle">3.50</text>
+<line x1="152.0" y1="132.0" x2="152.0" y2="66.0" class="ext-line"/>
+<line x1="310.2" y1="132.0" x2="310.2" y2="66.0" class="ext-line"/>
+<line x1="402.2" y1="132.0" x2="402.2" y2="66.0" class="ext-line"/>
+<line x1="494.2" y1="132.0" x2="494.2" y2="66.0" class="ext-line"/>
+<line x1="655.2" y1="132.0" x2="655.2" y2="66.0" class="ext-line"/>
+<line x1="152.0" y1="36.0" x2="655.2" y2="36.0" class="dim-line"/>
+<line x1="148.5" y1="39.5" x2="155.5" y2="32.5" class="dim-tick"/>
+<line x1="651.7" y1="39.5" x2="658.8" y2="32.5" class="dim-tick"/>
+<text x="403.6" y="30.0" class="dim-text" text-anchor="middle">10.94 (ความกว้างตัวบ้านด้านหน้า)</text>
+<line x1="152.0" y1="132.0" x2="152.0" y2="36.0" class="ext-line"/>
+<line x1="655.2" y1="132.0" x2="655.2" y2="36.0" class="ext-line"/>
+<line x1="118.0" y1="132.0" x2="118.0" y2="267.2" class="dim-line"/>
+<line x1="114.5" y1="135.5" x2="121.5" y2="128.5" class="dim-tick"/>
+<line x1="114.5" y1="270.8" x2="121.5" y2="263.7" class="dim-tick"/>
+<text x="112.0" y="199.6" class="dim-text" text-anchor="middle" transform="rotate(-90 112.0 199.6)">2.94</text>
+<line x1="118.0" y1="267.2" x2="118.0" y2="359.2" class="dim-line"/>
+<line x1="114.5" y1="270.8" x2="121.5" y2="263.7" class="dim-tick"/>
+<line x1="114.5" y1="362.8" x2="121.5" y2="355.7" class="dim-tick"/>
+<text x="112.0" y="313.2" class="dim-text" text-anchor="middle" transform="rotate(-90 112.0 313.2)">2.00</text>
+<line x1="152.0" y1="132.0" x2="118.0" y2="132.0" class="ext-line"/>
+<line x1="152.0" y1="267.2" x2="118.0" y2="267.2" class="ext-line"/>
+<line x1="152.0" y1="359.2" x2="118.0" y2="359.2" class="ext-line"/>
+<line x1="86.0" y1="132.0" x2="86.0" y2="359.2" class="dim-line"/>
+<line x1="82.5" y1="135.5" x2="89.5" y2="128.5" class="dim-tick"/>
+<line x1="82.5" y1="362.8" x2="89.5" y2="355.7" class="dim-tick"/>
+<text x="80.0" y="245.6" class="dim-text" text-anchor="middle" transform="rotate(-90 80.0 245.6)">4.94</text>
+<line x1="152.0" y1="132.0" x2="86.0" y2="132.0" class="ext-line"/>
+<line x1="152.0" y1="359.2" x2="86.0" y2="359.2" class="ext-line"/>
+<line x1="48.0" y1="132.0" x2="48.0" y2="724.5" class="dim-line"/>
+<line x1="44.5" y1="135.5" x2="51.5" y2="128.5" class="dim-tick"/>
+<line x1="44.5" y1="728.0" x2="51.5" y2="720.9" class="dim-tick"/>
+<text x="42.0" y="428.2" class="dim-text" text-anchor="middle" transform="rotate(-90 42.0 428.2)">12.88 (ความลึกรวม)</text>
+<line x1="152.0" y1="132.0" x2="48.0" y2="132.0" class="ext-line"/>
+<line x1="152.0" y1="724.5" x2="48.0" y2="724.5" class="ext-line"/>
+<line x1="777.6" y1="132.0" x2="777.6" y2="359.2" class="dim-line"/>
+<line x1="774.0" y1="135.5" x2="781.1" y2="128.5" class="dim-tick"/>
+<line x1="774.0" y1="362.8" x2="781.1" y2="355.7" class="dim-tick"/>
+<text x="771.6" y="245.6" class="dim-text" text-anchor="middle" transform="rotate(-90 771.6 245.6)">4.94</text>
+<line x1="777.6" y1="359.2" x2="777.6" y2="474.2" class="dim-line"/>
+<line x1="774.0" y1="362.8" x2="781.1" y2="355.7" class="dim-tick"/>
+<line x1="774.0" y1="477.8" x2="781.1" y2="470.7" class="dim-tick"/>
+<text x="771.6" y="416.7" class="dim-text" text-anchor="middle" transform="rotate(-90 771.6 416.7)">2.50</text>
+<line x1="777.6" y1="474.2" x2="777.6" y2="566.2" class="dim-line"/>
+<line x1="774.0" y1="477.8" x2="781.1" y2="470.7" class="dim-tick"/>
+<line x1="774.0" y1="569.8" x2="781.1" y2="562.7" class="dim-tick"/>
+<text x="771.6" y="520.2" class="dim-text" text-anchor="middle" transform="rotate(-90 771.6 520.2)">2.00</text>
+<line x1="777.6" y1="566.2" x2="777.6" y2="724.5" class="dim-line"/>
+<line x1="774.0" y1="569.8" x2="781.1" y2="562.7" class="dim-tick"/>
+<line x1="774.0" y1="728.0" x2="781.1" y2="720.9" class="dim-tick"/>
+<text x="771.6" y="645.4" class="dim-text" text-anchor="middle" transform="rotate(-90 771.6 645.4)">3.44</text>
+<line x1="737.6" y1="132.0" x2="777.6" y2="132.0" class="ext-line"/>
+<line x1="737.6" y1="359.2" x2="777.6" y2="359.2" class="ext-line"/>
+<line x1="737.6" y1="474.2" x2="777.6" y2="474.2" class="ext-line"/>
+<line x1="737.6" y1="566.2" x2="777.6" y2="566.2" class="ext-line"/>
+<line x1="737.6" y1="724.5" x2="777.6" y2="724.5" class="ext-line"/>
+<line x1="815.6" y1="359.2" x2="815.6" y2="566.2" class="dim-line"/>
+<line x1="812.0" y1="362.8" x2="819.1" y2="355.7" class="dim-tick"/>
+<line x1="812.0" y1="569.8" x2="819.1" y2="562.7" class="dim-tick"/>
+<text x="809.6" y="462.7" class="dim-text" text-anchor="middle" transform="rotate(-90 809.6 462.7)">4.50</text>
+<line x1="737.6" y1="359.2" x2="815.6" y2="359.2" class="ext-line"/>
+<line x1="737.6" y1="566.2" x2="815.6" y2="566.2" class="ext-line"/>
+<line x1="269.8" y1="764.5" x2="402.2" y2="764.5" class="dim-line"/>
+<line x1="266.2" y1="768.0" x2="273.3" y2="760.9" class="dim-tick"/>
+<line x1="398.7" y1="768.0" x2="405.8" y2="760.9" class="dim-tick"/>
+<text x="336.0" y="758.5" class="dim-text" text-anchor="middle">2.88</text>
+<line x1="402.2" y1="764.5" x2="655.2" y2="764.5" class="dim-line"/>
+<line x1="398.7" y1="768.0" x2="405.8" y2="760.9" class="dim-tick"/>
+<line x1="651.7" y1="768.0" x2="658.8" y2="760.9" class="dim-tick"/>
+<text x="528.7" y="758.5" class="dim-text" text-anchor="middle">5.50</text>
+<line x1="269.8" y1="724.5" x2="269.8" y2="764.5" class="ext-line"/>
+<line x1="402.2" y1="724.5" x2="402.2" y2="764.5" class="ext-line"/>
+<line x1="655.2" y1="724.5" x2="655.2" y2="764.5" class="ext-line"/>
+<line x1="152.0" y1="800.5" x2="737.6" y2="800.5" class="dim-line"/>
+<line x1="148.5" y1="804.0" x2="155.5" y2="796.9" class="dim-tick"/>
+<line x1="734.0" y1="804.0" x2="741.1" y2="796.9" class="dim-tick"/>
+<text x="444.8" y="794.5" class="dim-text" text-anchor="middle">12.73 (ความกว้างรวม)</text>
+<line x1="152.0" y1="724.5" x2="152.0" y2="800.5" class="ext-line"/>
+<line x1="737.6" y1="724.5" x2="737.6" y2="800.5" class="ext-line"/>
+<line x1="655.2" y1="337.2" x2="737.6" y2="337.2" class="dim-line"/>
+<line x1="651.7" y1="340.8" x2="658.8" y2="333.7" class="dim-tick"/>
+<line x1="734.0" y1="340.8" x2="741.1" y2="333.7" class="dim-tick"/>
+<text x="696.4" y="331.2" class="dim-text" text-anchor="middle">1.79</text>
+<line x1="655.2" y1="359.2" x2="655.2" y2="337.2" class="ext-line"/>
+<line x1="737.6" y1="359.2" x2="737.6" y2="337.2" class="ext-line"/>
+<g transform="translate(777.6,141.2)"><circle r="24" class="north-ring"/><path d="M0,-17 L7,10 L0,4.5 L-7,10 Z" class="north-needle"/><text x="0" y="-28" class="north-txt">N</text></g>
+<text x="152.0" y="789.0" class="note-txt-sm">มาตราส่วนอ้างอิง (เมตร)</text>
+<rect x="152.0" y="799.0" width="46.0" height="9" class="sb-dark"/>
+<text x="152.0" y="821.0" class="sb-txt">0</text>
+<rect x="198.0" y="799.0" width="46.0" height="9" class="sb-light"/>
+<text x="198.0" y="821.0" class="sb-txt">1</text>
+<rect x="244.0" y="799.0" width="46.0" height="9" class="sb-dark"/>
+<text x="244.0" y="821.0" class="sb-txt">2</text>
+<rect x="290.0" y="799.0" width="46.0" height="9" class="sb-light"/>
+<text x="290.0" y="821.0" class="sb-txt">3</text>
+<rect x="336.0" y="799.0" width="46.0" height="9" class="sb-dark"/>
+<text x="336.0" y="821.0" class="sb-txt">4</text>
+<text x="382.0" y="821.0" class="sb-txt">5</text>
+<text x="152.0" y="-17.5" class="note-txt">คานคอดิน (GB1) 0.20 × 0.30 ม. ทุกแนว — เหล็กหลัก RB9 4 เส้น (บน 2 / ล่าง 2) · เหล็กปลอก RB6 @0.20 ม. · คอนกรีต 1:2:4</text>
+<text x="152.0" y="-1.5" class="note-txt-sm">ความยาวคานคอดินรวม 75.33 ม. · เสาสำเร็จ 0.15×0.15 ม. ยาว 3.50 ม. รวม 26 ต้น (■ มุม/จุดตัดผนัง 21 ต้น · ■ เสริมกลางช่วงยาว 5 ต้น)</text>
+    </svg></div>
+    <div class="legend">
+      <span><span class="sw" style="background:var(--warn)"></span>แนวคานคอดิน GB1 (ศูนย์กลางผนัง)</span>
+      <span><span class="sw" style="background:var(--ink)"></span>เสามุม/จุดตัดผนัง — 21 ต้น</span>
+      <span><span class="sw" style="background:var(--accent)"></span>เสาเสริมกลางช่วงยาว — 5 ต้น</span>
+    </div>
+    <footer class="sf"><span>HOME-102 · บ้านชั้นเดียว 3 ห้องนอน</span><span>S-01 · ผังคาน-ฐานราก · REV.B</span></footer>
+  </section>
+
+  <section class="sheet" id="t-mat">
+    <div class="sheet-head"><h2>ตารางวัสดุ &amp; หมายเหตุงานก่อสร้าง</h2><span class="tagline">ปริมาณจาก BOQ</span></div>
+    <div class="canvas" style="padding:18px 20px">
+      <table class="sched"><caption>สรุปวัสดุหลักและปริมาณ</caption>
+      <thead><tr><th>รายการ</th><th>สเปก</th><th>ปริมาณ</th></tr></thead>
+      <tbody><tr class="grouphead"><td colspan="3">โครงสร้าง</td></tr>
+<tr><td class="th-txt"><b>คานคอดิน</b></td><td class="th-txt">0.20 × 0.30 ม. ทุกแนวผนัง — คอนกรีต 1:2:4, RB9 4 เส้น, ปลอก RB6@0.20 ม.</td><td>75.33 ม.</td></tr>
+<tr><td class="th-txt"><b>เสาสำเร็จรูป</b></td><td class="th-txt">0.15 × 0.15 ม. ยาว 3.50 ม. (ฝังในคาน 0.50 ม.)</td><td>26 ต้น</td></tr>
+<tr><td class="th-txt"><b>พื้น ค.ส.ล. วางบนดิน</b></td><td class="th-txt">หนา 0.10 ม. เสริมไวร์เมช 4 มม.@0.20×0.20 ม.</td><td>128.64 ตร.ม.</td></tr>
+<tr><td class="th-txt"><b>ทรายถมบดอัด</b></td><td class="th-txt">ลึกเฉลี่ย 0.30 ม. ภายในคานคอดิน</td><td>38.59 ลบ.ม.</td></tr>
+<tr class="grouphead"><td colspan="3">สถาปัตยกรรม</td></tr>
+<tr><td class="th-txt"><b>ผนังก่ออิฐบล็อก</b></td><td class="th-txt">9×19×39 ซม. หนา 0.12 ม. ฉาบเรียบ 2 หน้า สูง 3.00 ม.</td><td>ตามผัง A-01</td></tr>
+<tr><td class="th-txt"><b>พื้นกระเบื้องแกรนิโต</b></td><td class="th-txt">60 × 60 ซม. (ยกเว้นห้องน้ำ ใช้กระเบื้องกันลื่น)</td><td>121.37 ตร.ม.</td></tr>
+<tr><td class="th-txt"><b>ฝ้าชายคารอบบ้าน</b></td><td class="th-txt">ไฟเบอร์ซีเมนต์ 8 มม. โครงคร่าวเหล็กชุบสังกะสี ฉาบเรียบ ทาสี</td><td>43.28 ตร.ม.</td></tr>
+<tr><td class="th-txt"><b>ประตู-หน้าต่าง</b></td><td class="th-txt">ตามตาราง A-02</td><td>9 + 18 บาน</td></tr>
+<tr class="grouphead"><td colspan="3">หลังคา</td></tr>
+<tr><td class="th-txt"><b>แผ่นมุงเมทัลชีท</b></td><td class="th-txt">ลอน 760 มม. ตัดยาวตามความยาวลาด</td><td>53 แผ่น / 213.2 ม.</td></tr>
+<tr><td class="th-txt"><b>แปเหล็กกล่อง</b></td><td class="th-txt">50 × 50 × 1.6 มม. ระยะ @1.00 ม. ตามแนวลาด</td><td>222.7 ม.</td></tr>
+<tr><td class="th-txt"><b>โครงถัก/จันทันเหล็กตัวซี</b></td><td class="th-txt">100 × 50 × 20 × 1.6 มม. ระยะ @1.20 ม.</td><td>360.6 ม.</td></tr>
+<tr><td class="th-txt"><b>มุมลาดหลังคา</b></td><td class="th-txt">ปีกห้องนอน 25° · ห้องนั่งเล่น 22° · เพิงหมาแหงน 7°</td><td>—</td></tr></tbody></table>
+    </div>
+    <div class="note" style="margin-top:16px">
+      <b>ลำดับงานที่แนะนำ</b> — ① ปรับพื้นที่ + วางผังเสาเข็ม/ฐานราก ② หล่อคานคอดินตามผัง S-01 ③ ถมทรายบดอัดภายในคาน
+      ④ ปูทรายรองพื้น + แผ่นพลาสติกกันซึม + วางไวร์เมช ⑤ เทพื้น ค.ส.ล. 0.10 ม. ⑥ ตั้งเสาสำเร็จ + ก่อผนัง
+      ⑦ ติดตั้งโครงหลังคาเหล็ก + มุงเมทัลชีท ⑧ ติดตั้งวงกบ ประตู-หน้าต่าง ⑨ ฉาบผนัง + ติดฝ้าชายคา ⑩ ปูกระเบื้อง + งานสี
+    </div>
+    <div class="note warn">
+      <b>สิ่งที่แบบชุดนี้ยังไม่ครอบคลุม</b> — งานระบบไฟฟ้า, งานประปา-สุขาภิบาล, บ่อเกรอะ-บ่อซึม, รางน้ำฝน,
+      ฐานรากและเสาเข็ม, รายการคำนวณโครงสร้าง และแบบขออนุญาตก่อสร้าง
+    </div>
+    <footer class="sf"><span>HOME-102 · บ้านชั้นเดียว 3 ห้องนอน</span><span>A-06 · วัสดุ &amp; หมายเหตุ · REV.B</span></footer>
+  </section>
+</div>
+<svg width="0" height="0" style="position:absolute">
+  <defs><marker id="ah2" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+    <path d="M0,0 L9,4.5 L0,9 Z" fill="var(--warn)"/></marker></defs>
+</svg>
+<script>
+document.getElementById('d').textContent = new Date().toLocaleDateString('th-TH',{year:'numeric',month:'long',day:'numeric'});
+document.querySelectorAll('.tabbar button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.tabbar button').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('.sheet').forEach(s=>s.classList.remove('active'));
+  b.classList.add('active');
+  document.getElementById('t-'+b.dataset.t).classList.add('active');
+}));
+</script>

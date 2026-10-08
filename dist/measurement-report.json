@@ -1,0 +1,191 @@
+[
+  {
+    "id": "door_ade3baoke3xnd34x",
+    "name": "ประตู_นั่งเล่น_เหนือ",
+    "width": 0.799999,
+    "height": 2.0,
+    "sill": 0.0
+  },
+  {
+    "id": "door_bo5tj7ymarotgmw5",
+    "name": "ประตู_นอน1-นั่งเล่น",
+    "width": 0.8,
+    "height": 2.0,
+    "sill": 0.0
+  },
+  {
+    "id": "door_9h8gyvuts59zg08t",
+    "name": "ประตู_นั่งเล่น-นอน2",
+    "width": 0.8,
+    "height": 2.0,
+    "sill": 0.0
+  },
+  {
+    "id": "door_lkeebf09vol0lyzi",
+    "name": "ประตู_นอน1-น้ำ1",
+    "width": 0.7,
+    "height": 2.0,
+    "sill": 0.0
+  },
+  {
+    "id": "door_8173pfiuvzrteap0",
+    "name": "ประตู_นั่งเล่น-น้ำ2",
+    "width": 0.7,
+    "height": 2.0,
+    "sill": 0.0
+  },
+  {
+    "id": "door_6xc1hcmw57rbvqo3",
+    "name": "ประตู_ลานหน้าบ้าน-นั่งเล่น_2",
+    "width": 1.0,
+    "height": 2.0,
+    "sill": 0.0
+  },
+  {
+    "id": "door_mo3ae6e2mm32opox",
+    "name": "ประตู_ลานหน้าบ้าน-นั่งเล่น_1",
+    "width": 1.0,
+    "height": 2.0,
+    "sill": 0.0
+  },
+  {
+    "id": "door_l54vd4bwg8l8glt4",
+    "name": "ประตู_เก็บของ-นั่งเล่น",
+    "width": 0.700001,
+    "height": 2.0,
+    "sill": 0.0
+  },
+  {
+    "id": "window_kvyeycp9yqhipobu",
+    "name": "หน้าต่าง_นอน1_เหนือ_2",
+    "width": 0.5,
+    "height": 1.5,
+    "sill": 0.75
+  },
+  {
+    "id": "window_ydv8zsi12a9i57oh",
+    "name": "หน้าต่าง_น้ำ1_เหนือ_1",
+    "width": 0.8,
+    "height": 0.5,
+    "sill": 1.75
+  },
+  {
+    "id": "window_yz066zj3zg1e07r2",
+    "name": "หน้าต่าง_น้ำ2_เหนือ_1",
+    "width": 0.8,
+    "height": 0.5,
+    "sill": 1.75
+  },
+  {
+    "id": "window_qinbhwcndk0ge5s8",
+    "name": "หน้าต่าง_นอน2_เหนือ_1",
+    "width": 0.5,
+    "height": 1.5,
+    "sill": 0.75
+  },
+  {
+    "id": "window_fkcgv43dnzoa73tl",
+    "name": "หน้าต่าง_นอน2_เหนือ_2",
+    "width": 0.5,
+    "height": 1.5,
+    "sill": 0.75
+  },
+  {
+    "id": "window_0pmya5ei9vxpbhb9",
+    "name": "หน้าต่าง_นอน1_ตะวันตก",
+    "width": 2.0,
+    "height": 1.2,
+    "sill": 0.9
+  },
+  {
+    "id": "window_41c9dxhk04hm1fmy",
+    "name": "หน้าต่าง_นอน2_ตะวันออก",
+    "width": 2.0,
+    "height": 1.2,
+    "sill": 0.9
+  },
+  {
+    "id": "window_aafaqoeo7798gd4p",
+    "name": "หน้าต่าง_นอน1_ใต้",
+    "width": 0.5,
+    "height": 1.5,
+    "sill": 0.75
+  },
+  {
+    "id": "window_t8ksge8cbfdnxkd1",
+    "name": "หน้าต่าง_นั่งเล่น_ตะวันออก_2",
+    "width": 1.199999,
+    "height": 1.2,
+    "sill": 0.9
+  },
+  {
+    "id": "window_n0hx9tzz4krac6fa",
+    "name": "หน้าต่าง_นั่งเล่น_ใต้_1",
+    "width": 0.5,
+    "height": 1.5,
+    "sill": 0.75
+  },
+  {
+    "id": "window_sgpy37kec4uj4t3b",
+    "name": "หน้าต่าง_นั่งเล่น_ใต้_2",
+    "width": 0.5,
+    "height": 1.5,
+    "sill": 0.75
+  },
+  {
+    "id": "window_i9rojivie4p2ypo3",
+    "name": "หน้าต่าง_นั่งเล่น_ตะวันออก_1",
+    "width": 2.0,
+    "height": 1.8,
+    "sill": 0.2
+  },
+  {
+    "id": "window_8vqprtxdnoj15iun",
+    "name": "หน้าต่าง_เก็บของ_ใต้",
+    "width": 0.799999,
+    "height": 0.5,
+    "sill": 1.55
+  },
+  {
+    "id": "window_cu6wedyewylfhofj",
+    "name": "หน้าต่าง_ลานหน้าบ้าน-นั่งเล่น",
+    "width": 2.000001,
+    "height": 2.0,
+    "sill": 0.0
+  },
+  {
+    "id": "door_tro6927o2xi7a88k",
+    "name": "ประตู_น้ำ2-นอน2",
+    "width": 0.9,
+    "height": 2.1,
+    "sill": 0.0
+  },
+  {
+    "id": "window_qsv6r0m40cfybtxy",
+    "name": "หน้าต่าง_เก็บของ_ตะวันออก",
+    "width": 0.799999,
+    "height": 0.5,
+    "sill": 1.75
+  },
+  {
+    "id": "window_h64feo6zvzb80665",
+    "name": "หน้าต่าง_น้ำ1_เหนือ_2",
+    "width": 0.8,
+    "height": 0.5,
+    "sill": 2.25
+  },
+  {
+    "id": "window_71miziafmc4855cy",
+    "name": "หน้าต่าง_น้ำ2_เหนือ_2",
+    "width": 0.8,
+    "height": 0.5,
+    "sill": 2.25
+  },
+  {
+    "id": "window_lyrijengw7pt234w",
+    "name": "หน้าต่าง_นอน1_เหนือ_1",
+    "width": 0.5,
+    "height": 1.5,
+    "sill": 0.75
+  }
+]

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%274%27 fill=%27%23245b59%27/%3E%3Ctext x=%2716%27 y=%2723%27 text-anchor=%27middle%27 fill=%27white%27 font-size=%2721%27 font-family=%27sans-serif%27%3EH%3C/text%3E%3C/svg%3E">
+<title>HOME102 — บ้านชั้นเดียว 3 ห้องนอน · V412</title>
+<meta name="description" content="ดูแบบบ้าน HOME102 สามมิติจากแบบ STABLE v412 หมุนดูรอบบ้านและเปิดหลังคาเพื่อดูพื้นที่ภายใน">
+<link rel="stylesheet" href="./home102-viewer/style.css">
+<script type="importmap">{"imports":{"three":"./home102-viewer/vendor/three.module.js"}}</script>
+</head>
+<body>
+<header class="masthead"><a class="brand" href="./index2.html" aria-label="HOME102 หน้าแรก"><span class="brand-mark">H<span>102</span></span><span class="brand-copy">HOME102<small>บ้านชั้นเดียว · 3 ห้องนอน</small></span></a><div class="header-right"><span class="version"><i></i> STABLE V412</span><a class="drawing-link" href="./construction_drawings.html">แบบก่อสร้างเดิม <span>↗</span></a></div></header>
+<main>
+<div class="page-heading"><div><p class="eyebrow">THE HOUSE / 3D EXPLORER</p><h1>มองบ้านในทุกมุม</h1><p class="intro">สำรวจภายนอก เปิดหลังคา แล้วดูพื้นที่ภายในบ้าน</p></div><span class="edition">MODEL EDITION <strong>412</strong></span></div>
+<div class="workspace">
+<section class="viewer" aria-label="แบบบ้านสามมิติ">
+<div id="canvas-host" tabindex="0" aria-label="โมเดลบ้าน หมุนด้วยการลากเมาส์ ซูมด้วยล้อเมาส์ เลื่อนด้วยปุ่มลูกศร"></div>
+<div class="view-caption"><span class="live-dot"></span><span id="view-label">มุมมองสามมิติ</span></div>
+<div class="viewer-actions"><button id="capture" title="บันทึกภาพมุมมองนี้" aria-label="บันทึกภาพมุมมองนี้" disabled>▣</button><button id="reset" title="กลับมุมเริ่มต้น" aria-label="กลับมุมเริ่มต้น" disabled>↺</button></div>
+<div id="loading" class="loading" role="status"><span class="spinner"></span><strong id="loading-title">กำลังเปิดแบบบ้าน</strong><p id="loading-text">กำลังโหลดโมเดล STABLE v412…</p><button id="retry" hidden>ลองอีกครั้ง</button></div>
+<div class="compass" aria-label="ทิศเหนือ"><span id="compass-arrow">↑</span><b>N</b></div>
+<div class="viewer-bottom"><span>ลากเพื่อหมุน · เลื่อนล้อเพื่อซูม · คลิกขวาลากเพื่อเลื่อน</span><span class="mobile-help">หนึ่งนิ้วหมุน · สองนิ้วซูมและเลื่อน</span><span class="scale-label">HOME102 / V412</span></div>
+</section>
+<aside class="controls">
+<div class="panel-heading"><span class="eyebrow">EXPLORE THE MODEL</span><h2>เลือกมุมมอง</h2></div>
+<fieldset id="view-controls" disabled><legend class="sr-only">มุมมองบ้าน</legend><div class="views">
+<button data-view="iso" class="active" aria-pressed="true"><span>◇</span>สามมิติ</button>
+<button data-view="top" aria-pressed="false"><span>▤</span>ด้านบน</button>
+<button data-view="front" aria-pressed="false"><span>⌂</span>ด้านหน้า</button>
+<button data-view="back" aria-pressed="false"><span>⌂</span>ด้านหลัง</button>
+<button data-view="left" aria-pressed="false"><span>◧</span>ด้านซ้าย</button>
+<button data-view="right" aria-pressed="false"><span>◨</span>ด้านขวา</button>
+</div></fieldset>
+<div class="divider"></div>
+<fieldset id="layer-controls" disabled><legend>ส่วนประกอบที่แสดง</legend><label class="toggle-row"><span>หลังคาและฝ้า<small>ปิดเพื่อดูห้องและเฟอร์นิเจอร์</small></span><input id="roof" type="checkbox" checked><span class="switch"></span></label><label class="toggle-row"><span>เส้นกริดพื้น<small>ช่องละ 1 เมตร</small></span><input id="grid" type="checkbox" checked><span class="switch"></span></label><label class="toggle-row"><span>หมุนรอบบ้านอัตโนมัติ</span><input id="rotate" type="checkbox"><span class="switch"></span></label></fieldset>
+<div class="model-note"><span class="note-icon">↳</span><p>ลองเลือก <b>ด้านบน</b> แล้วปิดหลังคา<br>เพื่อดูการจัดพื้นที่ภายในบ้าน</p></div>
+<div class="model-meta"><p class="eyebrow">SOURCE MODEL</p><strong>บ้านชั้นเดียว 3 ห้องนอน</strong><span>Blender · STABLE v412</span><dl><div><dt>ชิ้นส่วนโมเดล</dt><dd id="mesh-count">—</dd></div><div><dt>ขนาดโดยรวมรวมชายคา</dt><dd id="model-size">—</dd></div></dl><a href="./home102-viewer/assets/house-stable-v412.glb" download>ดาวน์โหลดโมเดล 3D <span>↓</span></a></div>
+</aside>
+</div>
+<footer><span>HOME102 <b>/</b> แบบบ้านสามมิติ</span><span>วัสดุและแสงปรับสำหรับการแสดงผลบนเว็บ</span></footer>
+</main>
+<script>window.showModelError=function(message){document.getElementById('loading').hidden=false;document.querySelector('.spinner').hidden=true;document.getElementById('loading-title').textContent='เปิดโมเดลไม่ได้';document.getElementById('loading-text').textContent=message;document.getElementById('retry').hidden=false};document.getElementById('retry').onclick=()=>location.reload();if(location.protocol==='file:')showModelError('กรุณาเปิดผ่าน local server ตามคำแนะนำใน README-index2.md');</script>
+<script type="module" src="./home102-viewer/app.js" onerror="showModelError('โหลดตัวแสดงผลไม่สำเร็จ กรุณาเปิดผ่าน local server และตรวจสอบโฟลเดอร์ home102-viewer')"></script>
+</body></html>

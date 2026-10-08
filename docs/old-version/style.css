@@ -47,5 +47,3 @@ body.roof-capture-mode{overflow:hidden}
 .house-dimensions [role=button]:focus-visible rect{stroke:#d18f35;stroke-width:2}
 @media print{.whole-house-print{page:dimension-sheet;break-before:page}#print-sheet .whole-house-print svg{height:245mm;max-height:245mm}#print-sheet .dimension-print p{margin:0}}
 @page dimension-sheet{size:A3 landscape;margin:12mm}
-
-.old-version-link{white-space:nowrap;text-decoration:none;font-size:11px}#loading{z-index:10}@media(max-width:680px){header{flex-wrap:wrap;height:auto;padding:12px;gap:8px}.old-version-link{padding:6px 8px}}
