@@ -43,3 +43,7 @@ Repository: https://github.com/danupon5/OhmHouse
 - เว็บไม่แก้ไขแบบ Pascal ต้นทาง
 
 เว็บเดิม: https://baan-sitebook.danupon5.chatgpt.site
+
+## หน้าแสดงภาพรวม
+
+เปิด `dist/overview.html` หรือ https://ohm-house.vercel.app/overview.html สำหรับมุม 2D / 3D เต็มจอ มีตัวเลือกซ่อนหลังคาและอุปกรณ์ ผัง 2D มีกริด ระยะ และชื่อเสา ซูมด้วยล้อเมาส์หรือปุ่ม +/− และลากเพื่อเลื่อน ใช้โมเดล v413 ร่วมกับหน้าหลัก
