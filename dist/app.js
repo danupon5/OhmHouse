@@ -48,6 +48,15 @@ for(const entry of modelMeshes){
    object.add(edges);roofParts.push({mesh:object,edges,readingMaterial:roofReading,originalMaterial:object.material});
  }
 }
+// Mesh-local outlines follow each layer and never intercept opening selection.
+let outlinesEnabled=true;const outlineObjects=[];
+const outlineMaterial=new T.LineBasicMaterial({color:0x26343b,transparent:true,opacity:.65,depthWrite:false});
+for(const {object,isSite,isRoofSurface} of modelMeshes){
+ if(isSite||isRoofSurface||!object.visible||object.isSkinnedMesh)continue;
+ const geometry=new T.EdgesGeometry(object.geometry,30);
+ if(!geometry.getAttribute('position').count){geometry.dispose();continue}
+ const edge=new T.LineSegments(geometry,outlineMaterial);edge.name='model-outline';edge.raycast=()=>{};object.add(edge);outlineObjects.push(edge);
+}
 // Walls and openings remain separately controllable after preserving world transforms.
 const ground=new T.Mesh(new T.PlaneGeometry(42,42),new T.MeshStandardMaterial({color:'#e3ebee',roughness:1}));
 ground.rotation.x=-Math.PI/2;ground.position.set(6.2,-.09,6.4);ground.receiveShadow=true;scene.add(ground);
@@ -97,7 +106,8 @@ $('#dimension-filters').querySelectorAll('[data-dim-filter]').forEach(input=>inp
 $('#plan-zoom-in').onclick=()=>planViewport.zoomIn();$('#plan-zoom-out').onclick=()=>planViewport.zoomOut();$('#plan-fit').onclick=()=>planViewport.fit();
 
 function setMode(m){mode=m;roofView.sync(m);$('#viewer').hidden=m!=='3d';$('#device-layers').hidden=m!=='3d';$('#plan').hidden=m!=='2d';$('#plan-tools').hidden=m!=='2d';$('.workspace').classList.toggle('plan-workspace',m==='2d');$('#dimension-control').hidden=m!=='2d';planViewport.resize();$('#mode3d').classList.toggle('selected',m==='3d');$('#mode2d').classList.toggle('selected',m==='2d');$('#view-help').textContent=m==='3d'?'ลากเพื่อหมุน · เลื่อนเพื่อซูม · แตะช่องเปิดเพื่อดูระยะ':'ใช้ + / − เพื่อซูม · ลากหรือเลื่อนผัง · แตะหมายเลขเพื่อดูจุดติดตั้ง';}
-$('#device-options').innerHTML=deviceLayers.map(([key,label,visible])=>`<label><input type="checkbox" data-layer="${key}" ${visible?'checked':''}> ${label}</label>`).join('');for(const input of document.querySelectorAll('[data-layer]'))input.onchange=()=>{groups[input.dataset.layer].visible=input.checked;};
+$('#device-options').innerHTML='<label><input type="checkbox" id="model-outlines" checked> เส้นขอบผนัง / อุปกรณ์</label>'+deviceLayers.map(([key,label,visible])=>`<label><input type="checkbox" data-layer="${key}" ${visible?'checked':''}> ${label}</label>`).join('');for(const input of document.querySelectorAll('[data-layer]'))input.onchange=()=>{groups[input.dataset.layer].visible=input.checked;};
+$('#model-outlines').onchange=e=>{outlinesEnabled=e.target.checked;for(const edge of outlineObjects)edge.visible=outlinesEnabled;};
 $('#mode3d').onclick=()=>setMode('3d');$('#mode2d').onclick=()=>setMode('2d');$('#dimensions').onchange=e=>{showDimensions=e.target.checked;plan();setMode(mode)};$('#reset').onclick=()=>{if(mode==='2d')planViewport.fit();else reset()};for(const key of ['roof','walls','columns','labels'])$('#'+key).onchange=e=>{groups[key].visible=e.target.checked;if(key==='walls'||key==='columns'||key==='labels')plan();roofView.sync(mode);};$('#filter').onchange=table;$('#search').oninput=table;
 function structureTable(){return `<h3>ผนัง · ระยะจากแกน A ถึง B</h3><table><thead><tr><th>ผนัง</th><th>A (X,Z)</th><th>B (X,Z)</th><th>ยาว</th><th>สูง / หนา</th></tr></thead><tbody>${walls.map(w=>`<tr><td>${w.code}</td><td>${w.start.map(f).join(', ')}</td><td>${w.end.map(f).join(', ')}</td><td>${f(w.L)}</td><td>${f(w.height)} / ${f(w.thickness)}</td></tr>`).join('')}</tbody></table><h3>ตำแหน่งศูนย์กลางเสา</h3><table><thead><tr><th>เสา</th><th>X</th><th>Z</th><th>ขนาด</th><th>สูง</th></tr></thead><tbody>${cols.map(c=>`<tr><td>${esc(c.name)}</td><td>${f(c.position[0])}</td><td>${f(c.position[2])}</td><td>${f(c.width)} × ${f(c.depth)}</td><td>${f(c.height)}</td></tr>`).join('')}</tbody></table><h3>พื้นที่ห้องตามเส้นขอบเขตในไฟล์</h3><table><thead><tr><th>ห้อง</th><th>พื้นที่</th><th>ช่วง X</th><th>ช่วง Z</th></tr></thead><tbody>${rooms.filter(r=>r.polygon.length>=3&&area(r.polygon)>.001).map(r=>`<tr><td>${esc(r.name)}</td><td>${f(area(r.polygon))}</td><td>${f(Math.max(...r.polygon.map(p=>p[0]))-Math.min(...r.polygon.map(p=>p[0])))}</td><td>${f(Math.max(...r.polygon.map(p=>p[1]))-Math.min(...r.polygon.map(p=>p[1])))}</td></tr>`).join('')}</tbody></table><p class="subtle">มีขอบเขต Zone 8 ที่ไม่สมบูรณ์ในไฟล์ จึงไม่นำมาคำนวณพื้นที่ · ช่วง X/Z เป็นกรอบครอบห้อง สำหรับห้องรูปตัว L ไม่ใช่ความกว้างสุทธิทุกช่วง พื้นที่ยังไม่หักผนังหรือผิวฉาบ</p>`}
 document.querySelectorAll('.nav').forEach(b=>b.onclick=()=>{tab=b.dataset.tab;document.querySelectorAll('.nav').forEach(n=>n.classList.toggle('active',n===b));$('#schedule-title').textContent=tab==='walls'?'ระยะผนัง เสา และห้อง':'ประตูและหน้าต่าง';$('.filter').style.display=tab==='walls'?'none':'flex';if(tab==='walls'){$('#table').innerHTML=structureTable();setMode('2d')}else table();if(tab==='openings')$('.schedule').scrollIntoView({behavior:'smooth',block:'start'})});
@@ -109,4 +119,4 @@ detail();table();plan();
 if(document.modelContext?.registerTool){document.modelContext.registerTool({name:'select_house_opening',description:'เลือกประตูหรือหน้าต่างตามรหัส D01 หรือ W01 เพื่ออ่านระยะจากแบบ',inputSchema:{type:'object',properties:{code:{type:'string'}},required:['code'],additionalProperties:false},annotations:{readOnlyHint:false},execute:async(input)=>{const code=input?.code;if(typeof code!=='string')throw new Error('ต้องระบุรหัสช่องเปิด');const ok=select(code);return{content:[{type:'text',text:ok?JSON.stringify({code:selected.code,width:selected.width,height:selected.height,wall:selected.wall.code,offsetFromA:selected.left,sill:selected.sill,head:selected.head,issues:selected.issues}):'ไม่พบรหัส'}]}}})}
 
 
-window.houseQA={version:data.meta.version,categoryCounts,openings,cols,walls,groups,selectedCode:()=>selected.code,select,mode:()=>mode,sourceHash:data.meta.sourceSha256};
+window.houseQA={outlines:outlineObjects,outlinesEnabled:()=>outlinesEnabled,version:data.meta.version,categoryCounts,openings,cols,walls,groups,selectedCode:()=>selected.code,select,mode:()=>mode,sourceHash:data.meta.sourceSha256};
