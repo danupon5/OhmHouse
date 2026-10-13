@@ -1,3 +1,4 @@
+import {resizeDownlights} from './downlight-size.js';
 import {deviceLayers,classifyDevice} from './device-layers.js';
 import * as T from 'three';
 import {OrbitControls} from './vendor/OrbitControls.js';
@@ -18,7 +19,7 @@ let selected=openings.find(o=>o.width===2)||openings[0],tab='model',mode='3d',sh
 const scene=new T.Scene();scene.background=new T.Color('#e8eef0');const camera=new T.PerspectiveCamera(38,1,.1,150);const renderer=new T.WebGLRenderer({antialias:true,alpha:false});renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.shadowMap.enabled=true;renderer.shadowMap.type=T.PCFSoftShadowMap;renderer.outputColorSpace=T.SRGBColorSpace;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.05;$('#viewer').appendChild(renderer.domElement);$('#loading').textContent='กำลังโหลดโมเดล Blender STABLE v413…';const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.maxPolarAngle=Math.PI*.49;controls.minDistance=8;controls.maxDistance=100;controls.target.set(6.2,0.7,6.1);function reset(){camera.position.set(-16,22,29);controls.target.set(6.2,0.7,6.1);controls.update()}reset();scene.add(new T.HemisphereLight(0xffffff,0x84949b,1.5));const light=new T.DirectionalLight(0xfff7e8,2.2);light.position.set(-7,24,12);light.castShadow=true;light.shadow.mapSize.set(2048,2048);Object.assign(light.shadow.camera,{left:-22,right:22,top:22,bottom:-22});light.shadow.bias=-.001;scene.add(light);
 const groups={walls:new T.Group(),columns:new T.Group(),roof:new T.Group(),labels:new T.Group(),openings:new T.Group()};for(const [key,,visible] of deviceLayers)groups[key]=new T.Group();Object.values(groups).forEach(g=>scene.add(g));groups.roof.visible=true;groups.labels.visible=false;for(const [key,,visible] of deviceLayers)groups[key].visible=visible;
 const model=await new GLTFLoader().loadAsync('./home102-viewer/assets/house-stable-v413.glb');
-scene.add(model.scene);model.scene.updateMatrixWorld(true);
+resizeDownlights(model.scene);scene.add(model.scene);model.scene.updateMatrixWorld(true);
 const openingById=new Map(openings.map(o=>[o.id,o])), roofParts=[],categoryCounts={walls:0,columns:0,roof:0,openings:0},modelMeshes=[];for(const [key] of deviceLayers)categoryCounts[key]=0;
 const roofReading=new T.MeshStandardMaterial({color:'#a8b6be',roughness:1,side:T.DoubleSide});
 model.scene.traverse(object=>{
