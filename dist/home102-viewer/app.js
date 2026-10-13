@@ -1,3 +1,4 @@
+import {resizeDownlights} from '../downlight-size.js';
 import * as THREE from 'three';
 import { OrbitControls } from './vendor/OrbitControls.js';
 import { GLTFLoader } from './vendor/GLTFLoader.js';
@@ -88,6 +89,7 @@ async function start() {
     if(event.total) $('loading-text').textContent=`กำลังโหลดโมเดล ${Math.round(event.loaded/event.total*100)}%`;
   });
   model = gltf.scene;
+  resizeDownlights(model);
   let meshCount=0;
   model.traverse(o => {
     let roofPart = Boolean(o.userData.webRoof);
