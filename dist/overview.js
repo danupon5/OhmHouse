@@ -1,3 +1,4 @@
+import {resizeDownlights} from './downlight-size.js';
 import * as T from 'three';
 import {OrbitControls} from './vendor/OrbitControls.js';
 import {GLTFLoader} from './home102-viewer/vendor/GLTFLoader.js';
@@ -51,7 +52,7 @@ try{
  }
  for(const r of rooms)addDimensionLabel(r.n.name+' · '+(r.rectangular?r.width.toFixed(2)+' × '+r.depth.toFixed(2)+' ม.':r.area.toFixed(2)+' ตร.ม.'),r.x,r.y,.65,'#213941');
  setDimensions(dimensionsEnabled);
- const model=await new GLTFLoader().loadAsync('./home102-viewer/assets/house-stable-v413.glb');scene.add(model.scene);model.scene.updateMatrixWorld(true);const entries=[];model.scene.traverse(o=>{if(!o.isMesh)return;let category=null,site=false,names=[];for(let p=o;p;p=p.parent){const e=p.userData;names.push(e.webLabel||p.name);if(e.kind==='site'&&o.parent===p)site=true;if(e.webRoof||e.kind==='ceiling'||/^(ฝ้า|ช่องลมจั่ว)/.test(e.webLabel||p.name))category='roof';else if(!category&&e.kind==='wall')category='walls';else if(!category&&e.kind==='column')category='columns';else if(!category&&(e.kind==='door'||e.kind==='window'))category='openings'}entries.push({o,site,category:category||classifyDevice(names)})});for(const {o,site,category} of entries){if(site)o.visible=false;else if(category)groups[category].attach(o)}// Add edges after traversal so helpers are never classified as model meshes.
+ const model=await new GLTFLoader().loadAsync('./home102-viewer/assets/house-stable-v413.glb');resizeDownlights(model.scene);scene.add(model.scene);model.scene.updateMatrixWorld(true);const entries=[];model.scene.traverse(o=>{if(!o.isMesh)return;let category=null,site=false,names=[];for(let p=o;p;p=p.parent){const e=p.userData;names.push(e.webLabel||p.name);if(e.kind==='site'&&o.parent===p)site=true;if(e.webRoof||e.kind==='ceiling'||/^(ฝ้า|ช่องลมจั่ว)/.test(e.webLabel||p.name))category='roof';else if(!category&&e.kind==='wall')category='walls';else if(!category&&e.kind==='column')category='columns';else if(!category&&(e.kind==='door'||e.kind==='window'))category='openings'}entries.push({o,site,category:category||classifyDevice(names)})});for(const {o,site,category} of entries){if(site)o.visible=false;else if(category)groups[category].attach(o)}// Add edges after traversal so helpers are never classified as model meshes.
 // Parenting each outline to its mesh preserves transforms and layer visibility.
 const outlineMaterial=new T.LineBasicMaterial({color:0x26343b,transparent:true,opacity:.65,depthWrite:false});
 for(const {o,site} of entries){
