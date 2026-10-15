@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": 413,
-    "updatedAt": "2026-10-13T17:07:53.900873+00:00",
+    "updatedAt": "2026-10-15T15:38:43.770907+00:00",
     "name": "บ้านชั้นเดียว 3 ห้องนอน (12.73 x 12.88 m)",
-    "source": "Blender v413 - latest saved model 2026-10-14",
+    "source": "Blender v413 - current open scene",
     "floorDatum": 0.5,
-    "sourceSha256": "89f68f515cbb84b7a927fec0422a3b70869cebc36215e0e4e8e3403fa66c4bf2"
+    "sourceSha256": "719afbbee3392910fbbaa3781ba9d164f5dd699ef3b89f73624fba1e8864cc8f"
   },
   "nodes": {
     "site_xcqfx3ldie6e0lfq": {
@@ -833,7 +833,7 @@
         0
       ],
       "wallId": "wall_xu0956t2s2a9vy7e",
-      "width": 0.799999,
+      "width": 0.8,
       "height": 2.0,
       "constructionType": "framed",
       "dimensionReference": "nominal",
@@ -1401,7 +1401,7 @@
         0
       ],
       "wallId": "wall_rdq8y4fzcv74e3rj",
-      "width": 0.700001,
+      "width": 0.7,
       "height": 2.0,
       "constructionType": "framed",
       "dimensionReference": "nominal",
@@ -1780,7 +1780,7 @@
       },
       "position": [
         2.49964,
-        1.5,
+        1.55,
         0
       ],
       "rotation": [
@@ -1790,7 +1790,7 @@
       ],
       "wallId": "wall_1uz3tefepftn9u3n",
       "width": 2.0,
-      "height": 1.2,
+      "height": 1.1,
       "constructionType": "framed",
       "dimensionReference": "nominal",
       "openingKind": "window",
@@ -1841,7 +1841,7 @@
       },
       "position": [
         2.44036,
-        1.5,
+        1.55,
         0
       ],
       "rotation": [
@@ -1851,7 +1851,7 @@
       ],
       "wallId": "wall_6kr84fh5bo1o40v0",
       "width": 2.0,
-      "height": 1.2,
+      "height": 1.1,
       "constructionType": "framed",
       "dimensionReference": "nominal",
       "openingKind": "window",
@@ -1960,7 +1960,7 @@
       },
       "position": [
         1.251,
-        1.5,
+        1.55,
         0
       ],
       "rotation": [
@@ -1969,8 +1969,8 @@
         0
       ],
       "wallId": "wall_zl9a4kpbcno5bpet",
-      "width": 1.199999,
-      "height": 1.2,
+      "width": 1.2,
+      "height": 1.1,
       "constructionType": "framed",
       "dimensionReference": "nominal",
       "openingKind": "window",
@@ -2017,7 +2017,7 @@
         "frame": "library:preset-nearblack"
       },
       "position": [
-        4.220168,
+        4.22017,
         1.5,
         0
       ],
@@ -2133,7 +2133,7 @@
         "frame": "library:preset-nearblack"
       },
       "position": [
-        1.441361,
+        1.44136,
         1.1,
         0
       ],
@@ -2204,7 +2204,7 @@
         0
       ],
       "wallId": "wall_fw8w01jq7o649wkp",
-      "width": 0.799999,
+      "width": 0.8,
       "height": 0.5,
       "constructionType": "framed",
       "dimensionReference": "nominal",
@@ -2253,8 +2253,8 @@
         "frame": "library:preset-nearblack"
       },
       "position": [
-        5.899419784545972,
-        1.100000023841858,
+        5.89942,
+        1.0,
         0
       ],
       "rotation": [
@@ -2263,7 +2263,7 @@
         0
       ],
       "wallId": "wall_ve2tnrjrjlenn9z8",
-      "width": 2.000001,
+      "width": 2.0,
       "height": 2.0,
       "constructionType": "framed",
       "dimensionReference": "nominal",
@@ -2769,7 +2769,7 @@
         0
       ],
       "wallId": "wall_zl9a4kpbcno5bpet",
-      "width": 0.799999,
+      "width": 0.8,
       "height": 0.5,
       "constructionType": "framed",
       "dimensionReference": "nominal",
@@ -2824,7 +2824,7 @@
         "frame": "library:preset-nearblack"
       },
       "position": [
-        4.500546,
+        4.50055,
         2.5,
         0
       ],
@@ -2885,7 +2885,7 @@
         "frame": "library:preset-nearblack"
       },
       "position": [
-        6.500378,
+        6.50038,
         2.5,
         0
       ],
@@ -3087,7 +3087,7 @@
         "frame": "library:preset-nearblack"
       },
       "position": [
-        0.750593,
+        0.75059,
         1.5,
         0
       ],
@@ -3413,9 +3413,9 @@
         "columnLabel": "C1"
       },
       "position": [
-        0,
+        0.0,
         -0.55,
-        0
+        -0.0
       ],
       "rotation": 0,
       "supportSlabId": "slab_ml0yinv0445zy6c4",
@@ -3506,7 +3506,7 @@
       "position": [
         5.5,
         -0.55,
-        0
+        -0.0
       ],
       "rotation": 0,
       "supportSlabId": "slab_ml0yinv0445zy6c4",
@@ -3595,9 +3595,9 @@
         "columnLabel": "C3"
       },
       "position": [
-        11,
+        11.0,
         -0.55,
-        0
+        -0.0
       ],
       "rotation": 0,
       "supportSlabId": "slab_ml0yinv0445zy6c4",
@@ -3688,7 +3688,7 @@
       "position": [
         5.5,
         -0.55,
-        2.940000057220459
+        2.94
       ],
       "rotation": 0,
       "supportSlabId": "slab_ml0yinv0445zy6c4",
@@ -3779,7 +3779,7 @@
       "position": [
         7.5,
         -0.55,
-        2.940000057220459
+        2.94
       ],
       "rotation": 0,
       "supportSlabId": "slab_ml0yinv0445zy6c4",
@@ -3868,9 +3868,9 @@
         "columnLabel": "C6"
       },
       "position": [
-        0,
+        0.0,
         -0.55,
-        5
+        5.0
       ],
       "rotation": 0,
       "supportSlabId": "slab_ml0yinv0445zy6c4",
@@ -3961,7 +3961,7 @@
       "position": [
         5.5,
         -0.55,
-        5
+        5.0
       ],
       "rotation": 0,
       "supportSlabId": "slab_ml0yinv0445zy6c4",
@@ -4052,7 +4052,7 @@
       "position": [
         7.5,
         -0.55,
-        5
+        5.0
       ],
       "rotation": 0,
       "supportSlabId": "slab_ml0yinv0445zy6c4",
@@ -4141,9 +4141,9 @@
         "columnLabel": "C9"
       },
       "position": [
-        11,
+        11.0,
         -0.55,
-        5
+        5.0
       ],
       "rotation": 0,
       "supportSlabId": "slab_ml0yinv0445zy6c4",
@@ -4232,9 +4232,9 @@
         "columnLabel": "C10"
       },
       "position": [
-        12.789999961853027,
+        12.79,
         -0.55,
-        5
+        5.0
       ],
       "rotation": 0,
       "supportSlabId": "slab_ml0yinv0445zy6c4",
@@ -4323,9 +4323,9 @@
         "columnLabel": "C11"
       },
       "position": [
-        11,
+        11.0,
         -0.55,
-        9.380000114440918
+        9.38
       ],
       "rotation": 0,
       "supportSlabId": "slab_ml0yinv0445zy6c4",
@@ -4414,9 +4414,9 @@
         "columnLabel": "C12"
       },
       "position": [
-        12.789999961853027,
+        12.79,
         -0.55,
-        9.380000114440918
+        9.38
       ],
       "rotation": 0,
       "supportSlabId": "slab_ml0yinv0445zy6c4",
@@ -4507,7 +4507,7 @@
       "position": [
         5.5,
         -0.55,
-        12.880000114440918
+        12.88
       ],
       "rotation": 0,
       "supportSlabId": "slab_ml0yinv0445zy6c4",
@@ -4596,9 +4596,9 @@
         "columnLabel": "C14"
       },
       "position": [
-        11,
+        11.0,
         -0.55,
-        12.880000114440918
+        12.88
       ],
       "rotation": 0,
       "supportSlabId": "slab_ml0yinv0445zy6c4",
@@ -4689,7 +4689,7 @@
       "position": [
         5.5,
         -0.55,
-        9.380000114440918
+        9.38
       ],
       "rotation": 0,
       "supportSlabId": "slab_ml0yinv0445zy6c4",
@@ -4778,9 +4778,9 @@
         "columnLabel": "P1"
       },
       "position": [
-        2.572000026702881,
+        2.572,
         -0.55,
-        9.380000114440918
+        9.38
       ],
       "rotation": 0,
       "supportSlabId": "slab_ml0yinv0445zy6c4",
@@ -4869,9 +4869,9 @@
         "columnLabel": "P2"
       },
       "position": [
-        2.572000026702881,
+        2.572,
         -0.55,
-        12.808000564575195
+        12.808
       ],
       "rotation": 0,
       "supportSlabId": "slab_ml0yinv0445zy6c4",
@@ -4960,9 +4960,9 @@
         "columnLabel": "P3"
       },
       "position": [
-        12.729999542236328,
+        12.73,
         -0.55,
-        0
+        -0.0
       ],
       "rotation": 0,
       "supportSlabId": "slab_ml0yinv0445zy6c4",
@@ -5051,9 +5051,9 @@
         "columnLabel": "P4"
       },
       "position": [
-        12.729999542236328,
+        12.73,
         -0.55,
-        12.880000114440918
+        12.88
       ],
       "rotation": 0,
       "supportSlabId": "slab_ml0yinv0445zy6c4",

@@ -18,7 +18,7 @@ export function classifyDevice(names){
  if(has(/^(ระบบน้ำดี|น้ำดี_|วาล์วน้ำ_|ก๊อกน้ำ_|ท่อน้ำดี)/))return 'waterPipes';
  if(has(/^(ชุดเครื่องกรอง|ถังน้ำดี_|เครื่องกรอง|ปั๊มน้ำ)/))return 'waterEquipment';
  if(has(/^(สวิตช์_|เต้ารับ_|กล่องฝาทึบ_|กล่องปลั๊ก_CCTV|ตู้คอนซูมเมอร์|ช่องเสาอากาศทีวี)/))return 'electrical';
- if(has(/^ไฟ/))return 'lighting';
+ if(has(/^(ไฟ|โคม)/))return 'lighting';
  if(has(/^(เครื่องซักผ้า|ตู้เย็น|ทีวี_ติด|แอร์|เครื่องทำน้ำอุ่น)/))return 'appliances';
  if(has(/^ห้องน้ำ[12]_(กระจก|ก๊อกอ่าง|ฉาก|ฉีดชำระ|ชุดฝักบัว|ตัวยึดกระจก|อ่าง|เคาน์เตอร์|โถสุขภัณฑ์)/))return 'bathroom';
  if(has(/^(เคาน์เตอร์ครัว|ซิงค์|ก๊อกซิงค์)/))return 'kitchen';
