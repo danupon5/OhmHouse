@@ -1,11 +1,12 @@
 {
   "meta": {
     "version": 413,
-    "updatedAt": "2026-10-15T15:38:43.770907+00:00",
+    "updatedAt": "2026-10-15T15:50:44.312547+00:00",
     "name": "บ้านชั้นเดียว 3 ห้องนอน (12.73 x 12.88 m)",
     "source": "Blender v413 - current open scene",
     "floorDatum": 0.5,
-    "sourceSha256": "719afbbee3392910fbbaa3781ba9d164f5dd699ef3b89f73624fba1e8864cc8f"
+    "sourceSha256": "287806be9850ec6285487176735afc8f5c29b6759dea5dcf9f960886769d5594",
+    "modelRevision": "e901fc04130d"
   },
   "nodes": {
     "site_xcqfx3ldie6e0lfq": {

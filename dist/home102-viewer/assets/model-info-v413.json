@@ -1,6 +1,6 @@
 {
   "source": "บ้านชั้นเดียว_3ห้องนอน_v413.blend",
-  "sha256": "719afbbee3392910fbbaa3781ba9d164f5dd699ef3b89f73624fba1e8864cc8f",
+  "sha256": "287806be9850ec6285487176735afc8f5c29b6759dea5dcf9f960886769d5594",
   "bakedObjects": [
     "Mesh_158",
     "Mesh_159",
@@ -29,7 +29,6 @@
     "ห้องน้ำ2_พื้นกระเบื้อง",
     "ห้องน้ำ2_ผนังกระเบื้อง_X",
     "ห้องน้ำ2_ผนังกระเบื้อง_Y",
-    "ฝ้าลอนลายไม้_ลานหน้าบ้าน",
     "เตียง_นอน1",
     "เตียง_นอน2",
     "เคาน์เตอร์วางของ",
@@ -47,14 +46,20 @@
     "d",
     "e",
     "merged-roof.001",
-    "ฝ้าลอนลายไม้_ลานหน้าบ้าน"
+    "ฝ้าเมทัลชีทลอน_ลานหน้าบ้าน"
   ],
   "exportResult": [
     "FINISHED"
   ],
-  "bytes": 17762240,
-  "snapshotSha256": "b3fc7d492c4c2dd5e88c0dc14c0191f25959d679bfe10b8f54d33c0e5469833c",
+  "bytes": 17660084,
+  "snapshotSha256": "6e0e314d866ad8df0af02b42eb1311e43f0ba89d13762b233104aa4311a86431",
+  "modelFile": "house-v413-e901fc04130d.glb",
+  "modelRevision": "e901fc04130d",
   "snapshotOfOpenScene": true,
   "sourceHadUnsavedChanges": false,
-  "exportedAt": "2026-10-15T15:38:43.770907+00:00"
+  "exportedAt": "2026-10-15T15:50:44.312547+00:00",
+  "frontPorch": {
+    "ceiling": "ฝ้าเมทัลชีทลอน สีขาว",
+    "downlights": 6
+  }
 }

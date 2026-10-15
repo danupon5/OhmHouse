@@ -3,7 +3,7 @@
 Updated scene snapshot, 15 October 2026 (Asia/Bangkok). Changes since 8 October are listed at the end.
 
 - Blender source: `บ้านชั้นเดียว_3ห้องนอน_v413.blend`
-- Portable model: `home102-viewer/assets/house-stable-v413.glb`
+- Portable model: `home102-viewer/assets/house-v413-e901fc04130d.glb`
 - Export manifest and source SHA-256: `home102-viewer/assets/model-info-v413.json`
 - Electrical device quantities: `ELECTRICAL-DEVICES-v413.md`
 
@@ -44,3 +44,6 @@ Other equipment includes a 1000 L / 1.8 m clean-water tank, two filters and pump
 ## Web snapshot and BOQ publication - 15 October 2026
 
 Both index and overview now use a fresh export of the scene actually open in Blender. The export manifest records the source and snapshot hashes. Three updated windows are 1.10 m high; installation metadata was measured from the same snapshot. `boq.html` uses 99 recalculated rows from the latest local BOQ summary, with the unchanged source workbook available for download. Purchase checks are browser-local.
+
+
+ฝ้าลานหน้าบ้านแก้เป็นเมทัลชีทลอนสีขาว พร้อมไฟหลุม 6 ดวง; revision e901fc04130d
