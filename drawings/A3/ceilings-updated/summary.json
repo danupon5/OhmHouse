@@ -1,0 +1,38 @@
+{
+  "updated": "2026-10-17",
+  "interior": {
+    "material": "Gyproc regular gypsum SE 9 mm, 120x240 cm",
+    "area_m2": 94.42020000000001,
+    "boards_as_drawn": 38,
+    "unit_price_assumed_all_boards": 134,
+    "price_as_drawn": 5092,
+    "recommended_boards_including_4_spares": 42,
+    "recommended_price": 5628,
+    "excluded": [
+      "both bathrooms",
+      "porch",
+      "eaves"
+    ]
+  },
+  "porch": {
+    "material": "Duraone grooved fiber cement 6 mm, 120x240 cm",
+    "size_m": [
+      4.03,
+      8.94
+    ],
+    "orientation": "240 cm across 4.03 m width",
+    "boards_as_drawn": 15,
+    "price_as_drawn": 4935,
+    "unit_price": 329,
+    "optional_boards_with_1_spare": 16,
+    "optional_price": 5264
+  },
+  "totals": {
+    "boards_as_drawn": 53,
+    "price_as_drawn": 10027,
+    "interior_42_plus_porch_15_boards": 57,
+    "interior_42_plus_porch_15_price": 10563,
+    "both_with_spares_boards": 58,
+    "both_with_spares_price": 10892
+  }
+}
