@@ -177,18 +177,21 @@
     "cut_dimensions_before_joint_adjustment": true
   },
   "eaves": {
-    "material": "ventilated soffit board, brand/thickness/price pending",
+    "material": "SHERA ventilated smooth soffit, 3-inch groove",
     "board_size_cm": [
       120,
       60
     ],
-    "orientation_provisional": "120 cm wall-to-eave, 60 cm repeated along run",
     "source_blueprint_area_m2_unverified_against_latest_porch": 43.28,
     "area_only_lower_bound_boards_not_purchase_quantity": 61,
     "used_boards": null,
     "purchase_boards": null,
-    "unit_price_thb": null,
-    "quantity_status": "pending flat/sloped confirmation and actual eave widths; exclude overlap with porch",
-    "included_in_known_totals": false
+    "unit_price_thb": 58,
+    "quantity_status": "sloped installation and product/price confirmed; actual eave widths and porch overlap require measurement",
+    "included_in_known_totals": false,
+    "product_code": "60322144",
+    "thickness_mm": 4,
+    "roof_alignment_confirmed": "sloped along gable",
+    "orientation_confirmed": "60 cm repeated along sloped gable; 120 cm wall-to-eave"
   }
 }
