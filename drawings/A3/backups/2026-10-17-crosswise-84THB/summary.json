@@ -1,0 +1,90 @@
+{
+  "revision": "5 zones, CROSSWISE 120cm wall-to-fascia, insect screen vent boards 84THB each, straight right edge",
+  "material_stock": [
+    {
+      "zone": "ภายใน",
+      "material": "ยิปซัมธรรมดา9มม120x240",
+      "used": 37,
+      "spare": 4,
+      "buy": 41,
+      "unit_price": 134,
+      "total": 5494,
+      "status": "existing cutting plan"
+    },
+    {
+      "zone": "ห้องน้ำ",
+      "material": "ยิปซัมกันชื้น120x240",
+      "used": 5,
+      "spare": 1,
+      "buy": 6,
+      "unit_price": 215,
+      "total": 1290,
+      "status": "existing cutting plan"
+    },
+    {
+      "zone": "ลาน",
+      "material": "ไฟเบอร์ซีเมนต์ลายร่อง6มม120x240",
+      "used": 15,
+      "spare": 1,
+      "buy": 16,
+      "unit_price": 329,
+      "total": 5264,
+      "status": "existing cutting plan"
+    },
+    {
+      "zone": "ชายคาA1ม",
+      "material": "เฌอร่ามีรู+ตะแกรง4มม60x120",
+      "used": 80,
+      "spare": 8,
+      "buy": 88,
+      "unit_price": 84,
+      "total": 7392,
+      "status": "hypothetical corrected band model; verify roof fits"
+    },
+    {
+      "zone": "ชายคาB70ซม",
+      "material": "เฌอร่ามีรู+ตะแกรง4มม60x120",
+      "used": 76,
+      "spare": 8,
+      "buy": 84,
+      "unit_price": 84,
+      "total": 7056,
+      "status": "alternative toA; do not add both"
+    },
+    {
+      "zone": "Smartboard2จุด",
+      "material": "เรียบ60x120 ความหนารอเลือก",
+      "used": 21,
+      "spare": 3,
+      "buy": 24,
+      "unit_price": "",
+      "total": "",
+      "status": "rectangular approximation of documented net areas; price pending"
+    }
+  ],
+  "option_A": {
+    "purchase_boards": 175,
+    "known_cost_excluding_smartboard": 19440,
+    "smartboard_boards": 24,
+    "exterior_boards": 128
+  },
+  "option_B": {
+    "purchase_boards": 171,
+    "known_cost_excluding_smartboard": 19104,
+    "smartboard_boards": 24,
+    "exterior_boards": 124
+  },
+  "smartboard_price": null,
+  "deprecated_counts": [
+    "155 boards/17384 THB",
+    "83 vs77 ventilated boards following stepped house walls"
+  ],
+  "assumptions": [
+    "Eave model uses straight covered envelope including Smartboard pockets, not stepped room walls",
+    "Band A1m orB0.7m measured as hypothetical projection from covered envelope",
+    "Existing roof must accommodate selected band width; no roof alteration work priced",
+    "Porch exclusion uses4.03x9.04m ceiling reference frame, not measured shed roof edge",
+    "Smartboard dimensions1.79x4.83 and1.79x3.38 approximate source areas8.65 and6.05m2, not surveyed dimensions",
+    "No Smartboard price or thickness invented"
+  ]
+}
