@@ -1,0 +1,7 @@
+﻿zone,material,used,spare,buy,unit_price,total,status
+ภายใน,ยิปซัมธรรมดา9มม120x240,37,4,41,134,5494,existing cutting plan
+ห้องน้ำ,ยิปซัมกันชื้น120x240,5,1,6,215,1290,existing cutting plan
+ลาน,ไฟเบอร์ซีเมนต์ลายร่อง6มม120x240,15,1,16,329,5264,existing cutting plan
+ชายคาA1ม,เฌอร่ามีรู4มม60x120,80,8,88,58,5104,hypothetical corrected band model; verify roof fits
+ชายคาB70ซม,เฌอร่ามีรู4มม60x120,76,8,84,58,4872,alternative toA; do not add both
+Smartboard2จุด,เรียบ60x120 ความหนารอเลือก,21,3,24,,,rectangular approximation of documented net areas; price pending

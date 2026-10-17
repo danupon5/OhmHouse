@@ -1,210 +1,90 @@
 {
-  "date": "2026-10-17",
-  "revision": "living-room full board at bottom-right; interior offcuts shared",
-  "exterior_scope": "porch measured-layout takeoff plus sloped ventilated eaves provisional budget",
-  "stock": [
+  "revision": "approved 5 zones, straight right roof edge, plain Smartboard pockets excluded from vent boards",
+  "material_stock": [
     {
-      "zone": "ภายใน ไม่รวมห้องน้ำ",
-      "material": "ยิปซัมธรรมดา 9 มม.",
-      "width_cm": 120,
-      "length_cm": 240,
-      "installed_area_m2": 94.4202,
-      "used_boards": 37,
-      "spare_boards": 4,
-      "purchase_boards": 41,
-      "unit_price_thb": 134,
-      "used_cost_thb": 4958,
-      "purchase_cost_thb": 5494
+      "zone": "ภายใน",
+      "material": "ยิปซัมธรรมดา9มม120x240",
+      "used": 37,
+      "spare": 4,
+      "buy": 41,
+      "unit_price": 134,
+      "total": 5494,
+      "status": "existing cutting plan"
     },
     {
-      "zone": "ห้องน้ำ 1–2",
-      "material": "ยิปซัมกันชื้น 9 มม.",
-      "width_cm": 120,
-      "length_cm": 240,
-      "installed_area_m2": 11.76,
-      "used_boards": 5,
-      "spare_boards": 1,
-      "purchase_boards": 6,
-      "unit_price_thb": 215,
-      "used_cost_thb": 1075,
-      "purchase_cost_thb": 1290
+      "zone": "ห้องน้ำ",
+      "material": "ยิปซัมกันชื้น120x240",
+      "used": 5,
+      "spare": 1,
+      "buy": 6,
+      "unit_price": 215,
+      "total": 1290,
+      "status": "existing cutting plan"
     },
     {
-      "zone": "ภายนอก ลานหน้าบ้าน",
-      "material": "ไฟเบอร์ซีเมนต์ลายร่อง 6 มม.",
-      "width_cm": 120,
-      "length_cm": 240,
-      "installed_area_m2": 36.0282,
-      "used_boards": 15,
-      "spare_boards": 1,
-      "purchase_boards": 16,
-      "unit_price_thb": 329,
-      "used_cost_thb": 4935,
-      "purchase_cost_thb": 5264
+      "zone": "ลาน",
+      "material": "ไฟเบอร์ซีเมนต์ลายร่อง6มม120x240",
+      "used": 15,
+      "spare": 1,
+      "buy": 16,
+      "unit_price": 329,
+      "total": 5264,
+      "status": "existing cutting plan"
+    },
+    {
+      "zone": "ชายคาA1ม",
+      "material": "เฌอร่ามีรู4มม60x120",
+      "used": 80,
+      "spare": 8,
+      "buy": 88,
+      "unit_price": 58,
+      "total": 5104,
+      "status": "hypothetical corrected band model; verify roof fits"
+    },
+    {
+      "zone": "ชายคาB70ซม",
+      "material": "เฌอร่ามีรู4มม60x120",
+      "used": 76,
+      "spare": 8,
+      "buy": 84,
+      "unit_price": 58,
+      "total": 4872,
+      "status": "alternative toA; do not add both"
+    },
+    {
+      "zone": "Smartboard2จุด",
+      "material": "เรียบ60x120 ความหนารอเลือก",
+      "used": 21,
+      "spare": 3,
+      "buy": 24,
+      "unit_price": "",
+      "total": "",
+      "status": "rectangular approximation of documented net areas; price pending"
     }
   ],
-  "totals": {
-    "used_boards": 57,
-    "spare_boards": 6,
-    "purchase_boards": 63,
-    "used_cost_thb": 10968,
-    "purchase_cost_thb": 12048,
-    "scope": "confirmed interior + bathrooms + porch only, excluding pending ventilated eaves",
-    "budget_boards_including_provisional_eaves": 155,
-    "budget_cost_including_provisional_eaves": 17384
+  "option_A": {
+    "purchase_boards": 175,
+    "known_cost_excluding_smartboard": 17152,
+    "smartboard_boards": 24,
+    "exterior_boards": 128
   },
-  "regular_gypsum_price_assumption": "134 THB per board for every purchased board",
-  "bathroom_price_confirmation": "215 THB PER BOARD confirmed by user",
-  "interior": {
-    "board_size_m": [
-      2.4,
-      1.2
-    ],
-    "material": "ยิปซัมธรรมดาขอบเรียบ",
-    "thickness_mm": 9,
-    "unit_price": 134,
-    "inside_area_m2": 94.42020000000001,
-    "boards": 37,
-    "installed_pieces": 53,
-    "price": 4958,
-    "rooms": [
-      {
-        "name": "นอน1",
-        "area_m2": 21.62,
-        "installed_pieces": 13,
-        "board_ids": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          27,
-          28,
-          30,
-          33,
-          36
-        ]
-      },
-      {
-        "name": "นอน2",
-        "area_m2": 17.5,
-        "installed_pieces": 10,
-        "board_ids": [
-          7,
-          8,
-          9,
-          10,
-          31,
-          32,
-          33,
-          37
-        ]
-      },
-      {
-        "name": "นั่งเล่น",
-        "area_m2": 51.827600000000004,
-        "installed_pieces": 28,
-        "board_ids": [
-          11,
-          12,
-          13,
-          14,
-          15,
-          16,
-          17,
-          18,
-          19,
-          20,
-          21,
-          22,
-          23,
-          24,
-          25,
-          27,
-          28,
-          29,
-          33,
-          34,
-          35,
-          36
-        ]
-      },
-      {
-        "name": "เก็บของ",
-        "area_m2": 3.4726,
-        "installed_pieces": 2,
-        "board_ids": [
-          26,
-          29
-        ]
-      }
-    ]
+  "option_B": {
+    "purchase_boards": 171,
+    "known_cost_excluding_smartboard": 16920,
+    "smartboard_boards": 24,
+    "exterior_boards": 124
   },
-  "bathrooms": {
-    "material": "Gyproc moisture resistant gypsum",
-    "thickness_mm_assumed": 9,
-    "board_size_cm": [
-      120,
-      240
-    ],
-    "rooms": 2,
-    "room_size_m": [
-      2,
-      2.94
-    ],
-    "installed_area_m2": 11.76,
-    "boards": 5,
-    "installed_pieces": 6,
-    "price_unit": "THB per sheet, confirmed by user",
-    "unit_price": 215,
-    "price": 1075,
-    "recommended_boards_including_one_spare": 6,
-    "recommended_price": 1290
-  },
-  "porch": {
-    "area_m2": 36.0282,
-    "size_m": [
-      4.03,
-      8.94
-    ],
-    "material": "ไฟเบอร์ซีเมนต์ลายร่อง",
-    "thickness_mm": 6,
-    "boards": 15,
-    "unit_price": 329,
-    "price": 4935,
-    "installed_pieces": 16,
-    "spare_option_boards": 16,
-    "spare_option_price": 5264,
-    "cut_dimensions_before_joint_adjustment": true
-  },
-  "eaves": {
-    "material": "SHERA ventilated smooth soffit, 3-inch groove",
-    "board_size_cm": [
-      120,
-      60
-    ],
-    "source_blueprint_area_m2_unverified_against_latest_porch": 43.28,
-    "area_only_lower_bound_boards_not_purchase_quantity": 61,
-    "used_boards": null,
-    "purchase_boards": null,
-    "unit_price_thb": 58,
-    "quantity_status": "provisional budget only, verify actual widths/corners/porch overlap before ordering",
-    "included_in_known_totals": false,
-    "product_code": "60322144",
-    "thickness_mm": 4,
-    "roof_alignment_confirmed": "sloped along gable",
-    "orientation_confirmed": "60 cm repeated along sloped gable; 120 cm wall-to-eave",
-    "source_area_m2": 43.28,
-    "source_area_status": "legacy blueprint table, overlap and slope basis unverified",
-    "assumed_wall_to_eave_width_m": 1.0,
-    "base_estimated_boards": 73,
-    "contingency_factor": 1.1372295176946152,
-    "contingency_description": "budget reserve for slope/corners/uncertainty, not asserted surface-area conversion",
-    "working_estimated_boards": 83,
-    "waste_allowance_boards": 9,
-    "budget_boards": 92,
-    "budget_cost_thb": 5336,
-    "included_in_budget_totals": true
-  }
+  "smartboard_price": null,
+  "deprecated_counts": [
+    "155 boards/17384 THB",
+    "83 vs77 ventilated boards following stepped house walls"
+  ],
+  "assumptions": [
+    "Eave model uses straight covered envelope including Smartboard pockets, not stepped room walls",
+    "Band A1m orB0.7m measured as hypothetical projection from covered envelope",
+    "Existing roof must accommodate selected band width; no roof alteration work priced",
+    "Porch exclusion uses4.03x9.04m ceiling reference frame, not measured shed roof edge",
+    "Smartboard dimensions1.79x4.83 and1.79x3.38 approximate source areas8.65 and6.05m2, not surveyed dimensions",
+    "No Smartboard price or thickness invented"
+  ]
 }
