@@ -1,21 +1,32 @@
-# Updated ceiling layouts — 17 October 2026
+# สรุปฝ้า Ohm House — สำรองชุดล่าสุด 17 ต.ค. 2026
 
-Interior: regular gypsum SE 9 mm, 120 × 240 cm. Bathrooms, porch and eaves excluded. Model room-boundary area 94.4202 m². 38 boards / 53 installed pieces; 134 baht per board assumed available for every board; 5,092 baht. Recommended purchase 42 boards including 4 spares: 5,628 baht.
+ใช้ผังห้องนั่งเล่นเริ่มเต็มแผ่นที่มุมขวาล่าง ไล่ซ้ายและขึ้นด้านบน รวมการใช้เศษกับห้องอื่นเป็นยิปซัมธรรมดาภายใน 37 แผ่น ไม่บวกยอดทำเฉพาะห้องนั่งเล่น 21 แผ่นซ้ำ
 
-Porch: grooved fiber cement 6 mm, 120 × 240 cm, 240 cm side across the width. Effective area 4.03 × 8.94 m after reducing original length 9.04 m by a total of 10 cm. 15 boards / 16 installed pieces; 329 baht each; 4,935 baht. Board 15 cuts into 240 × 54 cm and 163 × 54 cm; it is used, not a spare. Optional 16th spare brings porch price to 5,264 baht.
+| โซน | วัสดุ 120 × 240 ซม. | ใช้ตามผัง | เผื่อ | ซื้อแนะนำ | บาท/แผ่น | เงินซื้อแนะนำ |
+|---|---|---:|---:|---:|---:|---:|
+| ภายใน ไม่รวมห้องน้ำ | ยิปซัมธรรมดา 9 มม. | 37 | 4 | 41 | 134 | 5,494 |
+| ห้องน้ำ 1–2 | ยิปซัมกันชื้น วางแผน 9 มม. | 5 | 1 | 6 | 215 | 1,290 |
+| ภายนอก ลานหน้าบ้าน | ไฟเบอร์ซีเมนต์ลายร่อง 6 มม. | 15 | 1 | 16 | 329 | 5,264 |
+| รวม | แยกวัสดุสามชนิด | 57 | 6 | 63 | — | 12,048 |
 
-Total as drawn: 53 boards, 10,027 baht. Interior 42 including spares + porch 15: 57 boards, 10,563 baht. Both with spares (42 + 16): 58 boards, 10,892 baht. Only board prices; framing, fasteners, finishing, labor and transport excluded.
+ซื้อพอดีตามผัง 57 แผ่น = 10,968 บาท ก่อนเผื่อเสีย ราคานี้เฉพาะแผ่น ไม่รวมโครง อุปกรณ์ สี ค่าแรง และขนส่ง ยิปซัมธรรมดาคิดราคาโปร 134 บาททุกแผ่น กันชื้น 215 บาทต่อแผ่นตามยืนยันของผู้ใช้
 
-Same board number with A/B/C suffix indicates pieces from one original board. Source room boundaries match the supplied blueprint; verify clear finished dimensions before cutting. Interior cut packing includes a nominal 3 mm tool allowance. Porch cut dimensions must be adjusted for joints and cutting loss. Every board edge requires support and installation must follow the selected manufacturer's system. The two materials are tracked separately; porch offcuts are not counted in interior gypsum quantities. Numbering has been regenerated for the interior layout after excluding the bathrooms.
+## ขอบเขตและวิธีอ่าน
 
-## Bathrooms added — confirmed price correction
+- พื้นที่ภายในไม่รวมห้องน้ำ 94.4202 ตร.ม. ใช้ยิปซัมธรรมดา 37 แผ่น / 53 ชิ้นติดตั้ง
+- ห้องน้ำห้องละ 2.00 × 2.94 ม. รวม 11.76 ตร.ม. ใช้ 5 แผ่น / 6 ชิ้น หมายเลข B01–B05 แยกจากชุดภายใน
+- ภายนอกในชุดนี้หมายถึงลานหน้าบ้าน 4.03 × 8.94 ม. หลังร่นความยาวรวม 10 ซม. จาก 9.04 ม. ใช้ 15 แผ่น / 16 ชิ้น แผ่นที่ 15 ใช้งานจริง ไม่ใช่แผ่นเผื่อ
+- ยังไม่ได้ถอดฝ้าชายคารอบบ้านเพิ่ม จึงไม่อ้างว่าเป็นปริมาณฝ้าภายนอกทุกพื้นที่
+- เลขเดียวกันพร้อม A/B/C คือชิ้นตัดจากแผ่นต้นฉบับเดียวกัน ไม่ใช่แผ่นซื้อเพิ่ม นำเศษร่วมเฉพาะวัสดุชนิดเดียวกัน
+- ผังเป็นการถอดวัสดุตามขอบห้อง ไม่ใช่แบบติดตั้งโครง วัดสุทธิจริง ปรับรอยต่อ เผื่อใบตัด และจัดโครงรองรับตามระบบผู้ผลิต ความหนารุ่นกันชื้นให้ตรวจฉลากก่อนซื้อ
 
-The user confirmed 215 baht PER SHEET, not per square metre. Two bathrooms each 2.00 × 2.94 m use moisture-resistant gypsum (planned 9 mm, 120 × 240 cm; verify label), installed area 11.76 m². Five purchased boards / six installed pieces; 1,075 baht. Optional sixth spare: 1,290 baht. B01–B04 each produce a 200 × 120 cm piece. B05 supplies two 200 × 54 cm pieces, one for each bathroom.
+## ไฟล์
 
-Superseding totals including bathrooms: 58 boards / 11,102 baht as drawn. Interior 42 + bathrooms 6 + porch 15: 63 boards / 11,853 baht. All with spares (42 + 6 + 16): 64 boards / 12,182 baht. The updated combined PDF includes a material summary, the six-page interior set, bathroom layout, and two-page porch set (10 pages total). Earlier totals in this README described the earlier package without bathrooms.
+PDF รวม 10 หน้า: หน้าสรุปซื้อ + ภายใน 6 หน้า + ห้องน้ำ 1 หน้า + ลาน 2 หน้า
+ZIP สำรองรวม PDF แต่ละโซน, ภาพผัง, SVG, รายการตัด CSV/JSON และสคริปต์สร้างแบบ เพื่อให้ตรวจสอบและแก้ไขต่อได้
 
-## Bathrooms added — confirmed price correction
+## เพิ่มชายคารอบบ้านแผ่นมีรูตามคำตอบผู้ใช้
 
-The user confirmed 215 baht PER SHEET, not per square metre. Two bathrooms each 2.00 × 2.94 m use moisture-resistant gypsum (planned 9 mm, 120 × 240 cm; verify label), installed area 11.76 m². Five purchased boards / six installed pieces; 1,075 baht. Optional sixth spare: 1,290 baht. B01–B04 each produce a 200 × 120 cm piece. B05 supplies two 200 × 54 cm pieces, one for each bathroom.
+เพิ่มโซนที่ 4 แผ่นมีรูระบายอากาศ 120 × 60 ซม. แนววางเบื้องต้น 120 ซม. พาดจากผนังออกขอบชายคา และ 60 ซม. เรียงตามแนวชายคา ต้องยืนยันฝ้าราบ/ตามลาดและช่วงยื่นจริงก่อนถอดซื้อ แบบเดิมระบุชายคา 43.28 ตร.ม. ซึ่งยังไม่ได้ตรวจพื้นที่ซ้ำกับฝ้าลานล่าสุด ค่า 61 แผ่นจากพื้นที่หารเป็นเพียงขอบล่าง ไม่ใช่ยอดสั่งซื้อ จำนวนใช้ ซื้อ และราคาชายคาจึงเว้นว่าง ไม่ปะปนกับยอด 63 แผ่น / 12,048 บาทของสามโซนที่ยืนยันแล้ว
 
-Superseding totals including bathrooms: 58 boards / 11,102 baht as drawn. Interior 42 + bathrooms 6 + porch 15: 63 boards / 11,853 baht. All with spares (42 + 6 + 16): 64 boards / 12,182 baht. The updated combined PDF includes a material summary, the six-page interior set, bathroom layout, and two-page porch set (10 pages total). Earlier totals in this README described the earlier package without bathrooms.
+PDF รวมเพิ่มหน้าขอบเขตชายคาเป็น 11 หน้า ยอดรวมก่อนหน้าหมายถึงเฉพาะสามโซนที่ยืนยัน ไม่ใช่ฝ้าภายนอกทุกส่วน
