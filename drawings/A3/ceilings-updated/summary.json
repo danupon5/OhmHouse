@@ -1,7 +1,7 @@
 {
   "date": "2026-10-17",
   "revision": "living-room full board at bottom-right; interior offcuts shared",
-  "exterior_scope": "porch confirmed; ventilated eaves added as pending takeoff",
+  "exterior_scope": "porch measured-layout takeoff plus sloped ventilated eaves provisional budget",
   "stock": [
     {
       "zone": "ภายใน ไม่รวมห้องน้ำ",
@@ -49,7 +49,9 @@
     "purchase_boards": 63,
     "used_cost_thb": 10968,
     "purchase_cost_thb": 12048,
-    "scope": "confirmed interior + bathrooms + porch only, excluding pending ventilated eaves"
+    "scope": "confirmed interior + bathrooms + porch only, excluding pending ventilated eaves",
+    "budget_boards_including_provisional_eaves": 155,
+    "budget_cost_including_provisional_eaves": 17384
   },
   "regular_gypsum_price_assumption": "134 THB per board for every purchased board",
   "bathroom_price_confirmation": "215 THB PER BOARD confirmed by user",
@@ -187,11 +189,22 @@
     "used_boards": null,
     "purchase_boards": null,
     "unit_price_thb": 58,
-    "quantity_status": "sloped installation and product/price confirmed; actual eave widths and porch overlap require measurement",
+    "quantity_status": "provisional budget only, verify actual widths/corners/porch overlap before ordering",
     "included_in_known_totals": false,
     "product_code": "60322144",
     "thickness_mm": 4,
     "roof_alignment_confirmed": "sloped along gable",
-    "orientation_confirmed": "60 cm repeated along sloped gable; 120 cm wall-to-eave"
+    "orientation_confirmed": "60 cm repeated along sloped gable; 120 cm wall-to-eave",
+    "source_area_m2": 43.28,
+    "source_area_status": "legacy blueprint table, overlap and slope basis unverified",
+    "assumed_wall_to_eave_width_m": 1.0,
+    "base_estimated_boards": 73,
+    "contingency_factor": 1.1372295176946152,
+    "contingency_description": "budget reserve for slope/corners/uncertainty, not asserted surface-area conversion",
+    "working_estimated_boards": 83,
+    "waste_allowance_boards": 9,
+    "budget_boards": 92,
+    "budget_cost_thb": 5336,
+    "included_in_budget_totals": true
   }
 }
